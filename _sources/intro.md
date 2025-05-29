@@ -1,6 +1,8 @@
 # Poison-NOF
 
-This page presents the results of the Piris Natural Orbital Functionals (PNOF) benchmarked within the [Poison Set (P30)](https://doi.org/10.1039/D2CP00268J). This benchmark consist on the 30 most challenging reactions to reproduce with density functional approximations (DFAs), identified from the [GMTKN55](https://doi.org/10.1039/C7CP04913G) benchmark. In particular, the P30 benchmark has three sets:
+This page presents the results of the Piris Natural Orbital Functionals (PNOF) benchmarked within the [Poison Set (P30)](https://doi.org/10.1039/D2CP00268J). This benchmark consist on the 30 most challenging reactions to reproduce with density functional approximations (DFAs), identified from the [GMTKN55](https://doi.org/10.1039/C7CP04913G) benchmark. 
+
+The P30 benchmark has three sets:
 
 - **P30-5**: The 30 most difficult reactions with molecules formed by at most 5 atoms.
 - **P30-10**: The 30 most difficult reactions with molecules formed by at most 10 atoms.
@@ -9,8 +11,10 @@ This page presents the results of the Piris Natural Orbital Functionals (PNOF) b
 By studying the performance of the current Natural Orbital Functinals, we aim to point out its capabilities to address the current challenges of electronic structure methods.
 
 ```{admonition} Availavility of data
-:class: note
-Current data (.inp, .out, .gcf, .fchk and .mld) files can be found at: https://github.com/imitxelena003/Poison-Set
+:class: warning
+The current webpage only present the results of **P30-5**.
+
+The **def2-QZVP** basis set has been used for all the calculations.
 ```
 
 Calculations were performed using [DoNOF software](https://github.com/DoNOF/DoNOFsw) 
