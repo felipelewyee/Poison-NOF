@@ -21,6 +21,6 @@ p.maxloop = 10
 p.h_cut = 0.02
 
 C = DoNOF.read_C(title=p.title)
-n = nothing#DoNOF.read_n(title=p.title)
+n = DoNOF.read_n(title=p.title)
 
 DoNOF.energy(bset,p,C=C,n=n,do_hfidr=false,do_m_diagnostic=true)
