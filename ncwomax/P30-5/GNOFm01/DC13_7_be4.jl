@@ -1,0 +1,28 @@
+using DoNOF
+
+mol = """
+0 1
+Be     0.7279036  -0.7279036  0.7279036
+Be     -0.7279036  0.7279036  0.7279036
+Be     -0.7279036  -0.7279036  -0.7279036
+Be     0.7279036  0.7279036  -0.7279036
+"""
+
+bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+
+p.title = "DC13_7_be4"
+
+p.ipnof = 9
+
+p.RI = true
+p.maxit = 40
+
+p.maxloop = 10
+
+#DoNOF.set_ncwo(p,1)
+p.h_cut = 0.01
+
+C = DoNOF.read_C(title=p.title)
+n = nothing#DoNOF.read_n(title=p.title)
+
+DoNOF.energy(bset,p,C=C,n=n,do_hfidr=false,do_m_diagnostic=true)

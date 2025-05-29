@@ -1,0 +1,68 @@
+G2RC_20_1
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on nh017
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/166710
+/scratch/pobleyef/166710 directory
+cp G2RC_20_1.jl G2RC_20_1.jld2 to  /scratch/pobleyef/166710/.
+Computing Integrals
+Elapsed time:    5.85 Seconds
+
+Number of basis functions                   (NBF)    = 60
+Number of auxiliary basis functions         (NBFAUX) = 36
+Inactive Doubly occupied orbitals up to     (NO1)    = 0
+No. considered Strongly Doubly occupied MOs (NDOC)   = 1
+No. considered Strongly Singly occupied MOs (NSOC)   = 0
+NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 1
+Dimension of the Nat. Orb. subspace         (NBF5)   = 2
+No. of electrons                                     = 2
+    No. of alpha electrons                           = 1
+    No. of beta electrons                            = 1
+Multiplicity                                         = 1
+
+Geometry
+========
+ H       0.0000000       0.0000000      -0.3715911
+ H       0.0000000       0.0000000       0.3715911
+
+No violations of the orthonormality
+No violations of the orthonormality
+ 
+PNOF8/ADABelief Calculation
+==================
+ 
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    2.8e+01    0    3.3e+01    -1.86416328    -1.15212247 -10000.86416328   0.000452   1.8e-03   8.1e-05 0.02
+ 
+RESULTS OF THE OCCUPATION OPTIMIZATION
+========================================
+   1    1.9755837  -0.60325126
+   2    0.0244163  -0.01646744
+ 
+----------------
+ Final Energies 
+----------------
+Final NOF Total Energy =      -1.1521225
+ 
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
+ 
+Elapsed time:   78.99 Seconds
+
+---------------------------------
+   Lowdin Population Analysis    
+---------------------------------
+ Idx  Atom   Population   Charge 
+---------------------------------
+  1     H     1.000      -0.000
+  2     H     1.000       0.000
+
+---------------------------------
+   M Diagnostic: 0.02
+---------------------------------
+
+Recovering execution output...
+Moving from /scratch/pobleyef/166710 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOF/arina.166710
+mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOF/arina.166710
+mv /scratch/pobleyef/166710/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOF/arina.166710

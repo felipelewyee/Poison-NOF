@@ -1,0 +1,99 @@
+W4-11_134_fo2
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on nh031
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/166740
+/scratch/pobleyef/166740 directory
+cp W4-11_134_fo2.jl W4-11_134_fo2.jld2 to  /scratch/pobleyef/166740/.
+Computing Integrals
+Elapsed time:    6.27 Seconds
+
+Number of basis functions                   (NBF)    = 171
+Number of auxiliary basis functions         (NBFAUX) = 231
+Inactive Doubly occupied orbitals up to     (NO1)    = 0
+No. considered Strongly Doubly occupied MOs (NDOC)   = 12
+No. considered Strongly Singly occupied MOs (NSOC)   = 1
+NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 1
+Dimension of the Nat. Orb. subspace         (NBF5)   = 25
+No. of electrons                                     = 25
+    No. of alpha electrons                           = 13
+    No. of beta electrons                            = 12
+Multiplicity                                         = 2
+
+Geometry
+========
+ F      -1.0111950      -0.7062760       0.0000000
+ O       0.0000000       0.5752150       0.0000000
+ O       1.1375950       0.2193450       0.0000000
+
+No violations of the orthonormality
+No violations of the orthonormality
+ 
+PNOF8/ADABelief Calculation
+==================
+ 
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    2.9e+01    6    3.3e+01  -317.44489378  -249.40689365 -10316.44489378   0.025489   1.0e-01   1.4e-04 0.32
+     2      20    2.5e+00    4    6.5e-03  -317.48749831  -249.44949818    -0.04260453   0.013239   5.3e-02   1.8e-04 0.30
+     3      20    2.3e+00    5    6.0e-03  -317.49400727  -249.45600715    -0.00650897   0.017746   7.1e-02   4.8e-05 0.30
+     4      20    2.5e+00    4    2.6e-02  -317.49579767  -249.45779754    -0.00179040   0.012201   4.9e-02   2.1e-04 0.29
+     5      20    2.2e+00    0    1.5e-02  -317.49600080  -249.45800067    -0.00020313   0.012201   4.9e-02   2.1e-04 0.29
+     6      40    4.6e+00    4    9.4e-03  -317.49790926  -249.45990913    -0.00190845   0.001925   7.7e-03   7.7e-05 0.29
+     7      40    5.0e+00    1    1.8e-02  -317.49797935  -249.45997922    -0.00007010   0.000838   3.4e-03   1.4e-04 0.29
+ 
+RESULTS OF THE OCCUPATION OPTIMIZATION
+========================================
+   1    1.9998546  -26.40344390
+   2    1.9998097  -20.79095022
+   3    1.9998180  -20.73555331
+   4    1.9903848  -1.20369392
+   5    1.9893254  -1.07346987
+   6    1.9892126  -1.05663567
+   7    1.9882265  -1.02193739
+   8    1.9880069  -1.01493630
+   9    1.9879170  -0.99055987
+  10    1.9641054  -0.89564257
+  11    1.9872310  -0.87692186
+  12    1.7074142  -0.60479575
+  13    1.0000000  -0.30066489
+  14    0.2925858  -0.14467499
+  15    0.0127690  -0.02091389
+  16    0.0358946  -0.06122577
+  17    0.0120830  -0.02435280
+  18    0.0119931  -0.02449875
+  19    0.0117735  -0.02423096
+  20    0.0107874  -0.02024643
+  21    0.0106746  -0.02023725
+  22    0.0096152  -0.02006744
+  23    0.0001820  -0.00633142
+  24    0.0001903  -0.00655416
+  25    0.0001454  -0.00645658
+ 
+----------------
+ Final Energies 
+----------------
+Final NOF Total Energy =    -249.4599792
+ 
+Total Orbital Internal Iterations = 170
+Total Occupation Internal Iterations = 24
+ 
+Elapsed time:  100.34 Seconds
+
+---------------------------------
+   Lowdin Population Analysis    
+---------------------------------
+ Idx  Atom   Population   Charge 
+---------------------------------
+  1     F     9.038      -0.038
+  2     O     7.988       0.012
+  3     O     7.974       0.026
+
+---------------------------------
+   M Diagnostic: 0.29
+---------------------------------
+
+Recovering execution output...
+Moving from /scratch/pobleyef/166740 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOF/arina.166740
+mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOF/arina.166740
+mv /scratch/pobleyef/166740/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOF/arina.166740

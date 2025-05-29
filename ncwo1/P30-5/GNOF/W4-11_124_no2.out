@@ -1,0 +1,99 @@
+W4-11_124_no2
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on nh032
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/166737
+/scratch/pobleyef/166737 directory
+cp W4-11_124_no2.jl W4-11_124_no2.jld2 to  /scratch/pobleyef/166737/.
+Computing Integrals
+Elapsed time:    6.31 Seconds
+
+Number of basis functions                   (NBF)    = 171
+Number of auxiliary basis functions         (NBFAUX) = 231
+Inactive Doubly occupied orbitals up to     (NO1)    = 0
+No. considered Strongly Doubly occupied MOs (NDOC)   = 11
+No. considered Strongly Singly occupied MOs (NSOC)   = 1
+NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 1
+Dimension of the Nat. Orb. subspace         (NBF5)   = 23
+No. of electrons                                     = 23
+    No. of alpha electrons                           = 12
+    No. of beta electrons                            = 11
+Multiplicity                                         = 2
+
+Geometry
+========
+ N       0.0000000       0.0000000       0.3239670
+ O       0.0000000       1.1012340      -0.1417350
+ O       0.0000000      -1.1012340      -0.1417350
+
+No violations of the orthonormality
+No violations of the orthonormality
+ 
+PNOF8/ADABelief Calculation
+==================
+ 
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    2.9e+01    8    3.3e+01  -269.39558262  -204.44943030 -10268.39558262   0.024568   9.8e-02   8.7e-05 0.05
+     2      20    2.6e+00    5    1.0e-02  -269.49791668  -204.55176436    -0.10233406   0.007022   2.8e-02   2.1e-04 0.04
+     3      20    2.4e+00    6    4.9e-03  -269.50636295  -204.56021062    -0.00844627   0.012627   5.1e-02   1.6e-04 0.04
+     4      20    2.4e+00    5    9.4e-03  -269.51035317  -204.56420084    -0.00399022   0.016016   6.4e-02   1.9e-04 0.04
+     5      20    2.3e+00    4    8.8e-03  -269.51354593  -204.56739361    -0.00319276   0.013765   5.5e-02   1.7e-04 0.04
+     6      20    2.4e+00    3    3.7e-02  -269.51429772  -204.56814539    -0.00075179   0.016698   6.7e-02   2.4e-04 0.04
+     7      20    2.3e+00    3    4.3e-03  -269.51481068  -204.56865836    -0.00051297   0.018341   7.3e-02   1.5e-04 0.04
+     8      20    2.4e+00    0    3.5e-03  -269.51484792  -204.56869560    -0.00003724   0.018341   7.3e-02   1.5e-04 0.04
+     9      40    4.7e+00    3    9.6e-03  -269.51642874  -204.57027642    -0.00158082   0.000872   3.5e-03   1.2e-04 0.04
+ 
+RESULTS OF THE OCCUPATION OPTIMIZATION
+========================================
+   1    1.9998199  -20.70151272
+   2    1.9998186  -20.68791891
+   3    1.9995992  -15.84104437
+   4    1.9934064  -1.45544008
+   5    1.9924386  -1.41204442
+   6    1.9706474  -0.85975590
+   7    1.9890270  -0.84367310
+   8    1.9717362  -0.80150683
+   9    1.9870290  -0.80054447
+  10    1.9865398  -0.77402793
+  11    1.9580864  -0.58446329
+  12    1.0000000  -0.26908987
+  13    0.0419136  -0.06584958
+  14    0.0134602  -0.02040652
+  15    0.0129710  -0.02150821
+  16    0.0282638  -0.04893305
+  17    0.0109730  -0.02032313
+  18    0.0293526  -0.05090572
+  19    0.0075614  -0.01840820
+  20    0.0065936  -0.01546036
+  21    0.0004008  -0.00987156
+  22    0.0001814  -0.00636803
+  23    0.0001801  -0.00631549
+ 
+----------------
+ Final Energies 
+----------------
+Final NOF Total Energy =    -204.5702764
+ 
+Total Orbital Internal Iterations = 190
+Total Occupation Internal Iterations = 37
+ 
+Elapsed time:  103.67 Seconds
+
+---------------------------------
+   Lowdin Population Analysis    
+---------------------------------
+ Idx  Atom   Population   Charge 
+---------------------------------
+  1     N     7.257      -0.257
+  2     O     7.887       0.113
+  3     O     7.856       0.144
+
+---------------------------------
+   M Diagnostic: 0.04
+---------------------------------
+
+Recovering execution output...
+Moving from /scratch/pobleyef/166737 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOF/arina.166737
+mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOF/arina.166737
+mv /scratch/pobleyef/166737/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOF/arina.166737
