@@ -1,13 +1,13 @@
 f
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na06
+Job runing on na11
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/173857
-/scratch/pobleyef/173857 directory
-cp f.jl f.jld2 to  /scratch/pobleyef/173857/.
+/scratch/pobleyef/179032
+/scratch/pobleyef/179032 directory
+cp f.jl f.jld2 to  /scratch/pobleyef/179032/.
 Computing Integrals
-Elapsed time:    3.88 Seconds
+Elapsed time:    3.65 Seconds
 
 Number of basis functions                   (NBF)    = 57
 Number of auxiliary basis functions         (NBFAUX) = 77
@@ -32,9 +32,7 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.8e+01    3    2.4e+01   -99.54267216   -99.54267216 -10098.54267216   0.001545   6.2e-03   3.0e-05 0.02
-     2      20    8.5e-03    0    2.4e-04   -99.54288547   -99.54288547    -0.00021331   0.001545   6.2e-03   3.0e-05 0.02
-     3      40    3.1e-02    2    3.5e-04   -99.54310848   -99.54310848    -0.00022301   0.000910   3.6e-03   3.9e-05 0.01
+     1      10    1.6e+01    0    2.0e+01   -99.54311474   -99.54311474 -10098.54311474   0.000910   3.6e-03   3.9e-05 0.01
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -51,12 +49,12 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =     -99.5431085
+Final NOF Total Energy =     -99.5431147
  
-Total Orbital Internal Iterations = 70
-Total Occupation Internal Iterations = 5
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:   54.36 Seconds
+Elapsed time:   47.06 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -70,6 +68,6 @@ Elapsed time:   54.36 Seconds
 ---------------------------------
 
 Recovering execution output...
-Moving from /scratch/pobleyef/173857 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173857
-mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173857
-mv /scratch/pobleyef/173857/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173857
+Moving from /scratch/pobleyef/179032 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179032
+mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179032
+mv /scratch/pobleyef/179032/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179032

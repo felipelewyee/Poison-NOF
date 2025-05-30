@@ -1,13 +1,13 @@
 BH76_9_hf
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na16
+Job runing on na01
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/173851
-/scratch/pobleyef/173851 directory
-cp BH76_9_hf.jl BH76_9_hf.jld2 to  /scratch/pobleyef/173851/.
+/scratch/pobleyef/179026
+/scratch/pobleyef/179026 directory
+cp BH76_9_hf.jl BH76_9_hf.jld2 to  /scratch/pobleyef/179026/.
 Computing Integrals
-Elapsed time:    3.93 Seconds
+Elapsed time:    4.33 Seconds
 
 Number of basis functions                   (NBF)    = 87
 Number of auxiliary basis functions         (NBFAUX) = 95
@@ -33,9 +33,7 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.6e+01    4    2.0e+01  -105.45447111  -100.25163465 -10104.45447111   0.001993   8.0e-03   8.1e-05 0.03
-     2      20    3.1e-02    0    4.0e-04  -105.45469867  -100.25186222    -0.00022757   0.001993   8.0e-03   8.1e-05 0.03
-     3      40    4.3e-02    2    3.8e-04  -105.45476692  -100.25193046    -0.00006824   0.000499   2.0e-03   1.4e-04 0.03
+     1      10    1.7e+01    0    2.0e+01  -105.45477483  -100.25193837 -10104.45477483   0.000499   2.0e-03   1.4e-04 0.03
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -53,12 +51,12 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =    -100.2519305
+Final NOF Total Energy =    -100.2519384
  
-Total Orbital Internal Iterations = 70
-Total Occupation Internal Iterations = 6
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:   46.91 Seconds
+Elapsed time:   48.30 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -73,6 +71,6 @@ Elapsed time:   46.91 Seconds
 ---------------------------------
 
 Recovering execution output...
-Moving from /scratch/pobleyef/173851 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173851
-mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173851
-mv /scratch/pobleyef/173851/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173851
+Moving from /scratch/pobleyef/179026 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179026
+mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179026
+mv /scratch/pobleyef/179026/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179026

@@ -1,13 +1,13 @@
 G2RC_20_13
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na09
+Job runing on na11
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/173862
-/scratch/pobleyef/173862 directory
-cp G2RC_20_13.jl G2RC_20_13.jld2 to  /scratch/pobleyef/173862/.
+/scratch/pobleyef/179037
+/scratch/pobleyef/179037 directory
+cp G2RC_20_13.jl G2RC_20_13.jld2 to  /scratch/pobleyef/179037/.
 Computing Integrals
-Elapsed time:    4.65 Seconds
+Elapsed time:    3.74 Seconds
 
 Number of basis functions                   (NBF)    = 117
 Number of auxiliary basis functions         (NBFAUX) = 113
@@ -34,9 +34,7 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    5.0e+01    3    2.0e+01   -85.40379136   -76.24872195 -10084.40379136   0.001846   7.4e-03   1.8e-04 0.03
-     2      20    6.4e+01    0    3.8e-02   -85.40399709   -76.24892769    -0.00020574   0.001846   7.4e-03   1.8e-04 0.03
-     3      40    1.4e+02    2    1.2e-03   -85.40410954   -76.24904013    -0.00011244   0.000478   1.9e-03   2.1e-04 0.03
+     1      10    2.8e+01    0    2.0e+01   -85.40411389   -76.24904449 -10084.40411389   0.000478   1.9e-03   2.1e-04 0.03
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -54,12 +52,12 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =     -76.2490401
+Final NOF Total Energy =     -76.2490445
  
-Total Orbital Internal Iterations = 70
-Total Occupation Internal Iterations = 5
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:  279.83 Seconds
+Elapsed time:   59.31 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -75,6 +73,6 @@ Elapsed time:  279.83 Seconds
 ---------------------------------
 
 Recovering execution output...
-Moving from /scratch/pobleyef/173862 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173862
-mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173862
-mv /scratch/pobleyef/173862/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173862
+Moving from /scratch/pobleyef/179037 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179037
+mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179037
+mv /scratch/pobleyef/179037/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179037

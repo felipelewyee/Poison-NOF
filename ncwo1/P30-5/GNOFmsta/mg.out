@@ -1,13 +1,13 @@
 mg
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na10
+Job runing on na11
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/173869
-/scratch/pobleyef/173869 directory
-cp mg.jl mg.jld2 to  /scratch/pobleyef/173869/.
+/scratch/pobleyef/179044
+/scratch/pobleyef/179044 directory
+cp mg.jl mg.jld2 to  /scratch/pobleyef/179044/.
 Computing Integrals
-Elapsed time:    4.95 Seconds
+Elapsed time:    3.88 Seconds
 
 Number of basis functions                   (NBF)    = 51
 Number of auxiliary basis functions         (NBFAUX) = 112
@@ -32,12 +32,7 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.6e+01    3    2.0e+01  -199.76213120  -199.76213120 -10198.76213120   0.001319   5.3e-03   1.1e-04 0.02
-     2      20    9.7e-03    0    3.3e-04  -199.76228857  -199.76228857    -0.00015737   0.001319   5.3e-03   1.1e-04 0.02
-     3      40    2.3e-02    2    3.1e-04  -199.76229443  -199.76229443    -0.00000586   0.003166   1.3e-02   1.4e-04 0.02
-     4      40    2.1e-02    1    2.9e-04  -199.76231963  -199.76231963    -0.00002520   0.002466   9.9e-03   1.1e-04 0.02
-     5      40    2.0e-02    0    2.6e-04  -199.76232080  -199.76232080    -0.00000118   0.002466   9.9e-03   1.1e-04 0.02
-     6      40    2.0e-02    0    3.0e-04  -199.76235245  -199.76235245    -0.00003165   0.000487   1.9e-03   1.3e-04 0.02
+     1      10    1.6e+01    0    2.0e+01  -199.76235245  -199.76235245 -10198.76235245   0.000487   1.9e-03   1.3e-04 0.02
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -59,10 +54,10 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
 Final NOF Total Energy =    -199.7623525
  
-Total Orbital Internal Iterations = 190
-Total Occupation Internal Iterations = 6
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:   46.96 Seconds
+Elapsed time:   47.15 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -76,6 +71,6 @@ Elapsed time:   46.96 Seconds
 ---------------------------------
 
 Recovering execution output...
-Moving from /scratch/pobleyef/173869 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173869
-mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173869
-mv /scratch/pobleyef/173869/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173869
+Moving from /scratch/pobleyef/179044 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179044
+mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179044
+mv /scratch/pobleyef/179044/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.179044
