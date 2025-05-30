@@ -1,13 +1,13 @@
 G2RC_10_67
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na03
+Job runing on na11
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/174339
-/scratch/pobleyef/174339 directory
-cp G2RC_10_67.jl G2RC_10_67.jld2 to  /scratch/pobleyef/174339/.
+/scratch/pobleyef/176590
+/scratch/pobleyef/176590 directory
+cp G2RC_10_67.jl G2RC_10_67.jld2 to  /scratch/pobleyef/176590/.
 Computing Integrals
-Elapsed time:   65.73 Seconds
+Elapsed time:   13.65 Seconds
 
 Number of basis functions                   (NBF)    = 350
 Number of auxiliary basis functions         (NBFAUX) = 640
@@ -36,12 +36,16 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    2.1e+02   43    2.9e+01 -2649.92169202 -2129.61906908 -12648.92169202   0.017261   6.9e-02   3.1e-04 0.03
-     2      20    3.4e+02    0    4.5e-01 -2649.92785062 -2129.62522769    -0.00615861   0.017261   6.9e-02   3.1e-04 0.03
-     3      40    6.7e+02   14    1.9e+00 -2649.93511612 -2129.63249319    -0.00726550   0.017398   7.0e-02   2.4e-04 0.03
-     4      40    6.8e+02   14    2.4e+00 -2649.93866041 -2129.63603747    -0.00354428   0.015081   6.0e-02   2.1e-04 0.03
-     5      40    6.6e+02   10    1.3e+00 -2649.94112790 -2129.63850497    -0.00246750   0.017178   6.9e-02   2.9e-04 0.03
-Recovering execution output...
-Moving from /scratch/pobleyef/174339 to /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174339
-mkdir -p /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174339
-mv /scratch/pobleyef/174339/* /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174339
+     1      10    6.3e+01    0    2.1e+01 -2649.94123767 -2129.63861474 -12648.94123767   0.017178   6.9e-02   2.9e-04 0.03
+     2      30    1.3e+02    0    5.0e-01 -2649.94123767 -2129.63861474     0.00000000   0.017178   6.9e-02   2.9e-04 0.03
+     3      50    2.1e+02   10    1.7e+00 -2649.94402351 -2129.64140058    -0.00278584   0.008852   3.5e-02   3.3e-04 0.03
+     4      50    2.0e+02   14    2.0e+00 -2649.94517151 -2129.64254858    -0.00114800   0.010500   4.2e-02   2.7e-04 0.03
+     5      50    2.2e+02   10    1.6e+00 -2649.94678046 -2129.64415753    -0.00160895   0.009073   3.6e-02   3.6e-04 0.03
+     6      50    2.1e+02   14    2.3e+00 -2649.94848970 -2129.64586677    -0.00170924   0.009474   3.8e-02   3.1e-04 0.03
+     7      50    2.1e+02   14    2.0e+00 -2649.95061955 -2129.64799662    -0.00212985   0.007208   2.9e-02   2.8e-04 0.03
+     8      50    2.2e+02   12    1.8e+00 -2649.95257361 -2129.64995068    -0.00195406   0.006549   2.6e-02   3.6e-04 0.03
+     9      50    1.9e+02   14    1.8e+00 -2649.95413990 -2129.65151697    -0.00156629   0.006281   2.5e-02   1.9e-04 0.03
+    10      50    1.8e+02   14    2.1e+00 -2649.95565026 -2129.65302732    -0.00151036   0.006394   2.6e-02   2.0e-04 0.03
+    11      50    2.1e+02   14    2.3e+00 -2649.95690651 -2129.65428357    -0.00125625   0.006470   2.6e-02   2.5e-04 0.03
+    12      50    2.5e+02   14    2.6e+00 -2649.95797539 -2129.65535246    -0.00106889   0.005781   2.3e-02   2.7e-04 0.03
+Final NOF Total Energy =    -2129.65535246

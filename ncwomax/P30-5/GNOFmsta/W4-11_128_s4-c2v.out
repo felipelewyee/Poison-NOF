@@ -1,13 +1,13 @@
 W4-11_128_s4-c2v
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nagpu01
+Job runing on na07
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/174368
-/scratch/pobleyef/174368 directory
-cp W4-11_128_s4-c2v.jl W4-11_128_s4-c2v.jld2 to  /scratch/pobleyef/174368/.
+/scratch/pobleyef/176593
+/scratch/pobleyef/176593 directory
+cp W4-11_128_s4-c2v.jl W4-11_128_s4-c2v.jld2 to  /scratch/pobleyef/176593/.
 Computing Integrals
-Elapsed time:   24.67 Seconds
+Elapsed time:   10.23 Seconds
 
 Number of basis functions                   (NBF)    = 280
 Number of auxiliary basis functions         (NBFAUX) = 512
@@ -35,15 +35,13 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.1e+02   42    2.3e+01 -1925.67517864 -1591.97625611 -11924.67517864   0.010153   4.1e-02   2.6e-04 0.04
-     2      20    1.8e+02    0    2.4e-01 -1925.68121516 -1591.98229263    -0.00603652   0.010153   4.1e-02   2.6e-04 0.04
-     3      40    3.7e+02   11    9.8e-01 -1925.68514667 -1591.98622414    -0.00393151   0.013468   5.4e-02   3.1e-04 0.04
-     4      40    3.5e+02   12    9.4e-01 -1925.68852634 -1591.98960381    -0.00337967   0.014609   5.8e-02   2.9e-04 0.04
-     5      40    3.7e+02   12    1.0e+00 -1925.69166421 -1591.99274169    -0.00313787   0.014618   5.8e-02   2.8e-04 0.04
-     6      40    3.7e+02   12    9.6e-01 -1925.69434037 -1591.99541784    -0.00267615   0.010079   4.0e-02   3.1e-04 0.04
-     7      40    3.5e+02    7    6.7e-01 -1925.69666896 -1591.99774643    -0.00232859   0.011578   4.6e-02   4.2e-04 0.04
-     8      40    3.8e+02   11    1.2e+00 -1925.69866335 -1591.99974082    -0.00199439   0.010352   4.1e-02   3.6e-04 0.04
-Recovering execution output...
-Moving from /scratch/pobleyef/174368 to /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174368
-mkdir -p /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174368
-mv /scratch/pobleyef/174368/* /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174368
+     1      10    4.2e+01    0    2.2e+01 -1925.69888446 -1591.99996193 -11924.69888446   0.010352   4.1e-02   3.6e-04 0.04
+     2      30    7.9e+01    0    4.2e-01 -1925.69888446 -1591.99996193     0.00000000   0.010352   4.1e-02   3.6e-04 0.04
+     3      50    1.2e+02    9    1.5e+00 -1925.70108406 -1592.00216153    -0.00219960   0.008053   3.2e-02   3.5e-04 0.04
+     4      50    1.2e+02   14    2.1e+00 -1925.70215439 -1592.00323187    -0.00107034   0.007487   3.0e-02   2.6e-04 0.04
+     5      50    1.2e+02   14    1.9e+00 -1925.70307662 -1592.00415410    -0.00092223   0.008397   3.4e-02   2.4e-04 0.04
+     6      50    1.2e+02   11    1.1e+00 -1925.70409371 -1592.00517118    -0.00101709   0.009947   4.0e-02   3.5e-04 0.04
+     7      50    1.2e+02   16    2.8e+00 -1925.70511502 -1592.00619250    -0.00102131   0.008486   3.4e-02   2.4e-04 0.04
+     8      50    1.3e+02    9    1.5e+00 -1925.70613985 -1592.00721733    -0.00102483   0.006855   2.7e-02   2.8e-04 0.04
+     9      50    1.2e+02   15    1.7e+00 -1925.70699740 -1592.00807488    -0.00085755   0.007258   2.9e-02   2.6e-04 0.04
+Final NOF Total Energy =    -1592.00807488
