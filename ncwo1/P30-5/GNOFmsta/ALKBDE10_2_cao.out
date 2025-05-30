@@ -1,0 +1,100 @@
+ALKBDE10_2_cao
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on na03
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/173843
+/scratch/pobleyef/173843 directory
+cp ALKBDE10_2_cao.jl ALKBDE10_2_cao.jld2 to  /scratch/pobleyef/173843/.
+Computing Integrals
+Elapsed time:   14.42 Seconds
+
+Number of basis functions                   (NBF)    = 113
+Number of auxiliary basis functions         (NBFAUX) = 237
+Inactive Doubly occupied orbitals up to     (NO1)    = 0
+No. considered Strongly Doubly occupied MOs (NDOC)   = 14
+No. considered Strongly Singly occupied MOs (NSOC)   = 0
+NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 1
+Dimension of the Nat. Orb. subspace         (NBF5)   = 28
+No. of electrons                                     = 28
+    No. of alpha electrons                           = 14
+    No. of beta electrons                            = 14
+Multiplicity                                         = 1
+
+Geometry
+========
+Ca       0.0000000       0.0000000      -0.8987290
+ O       0.0000000       0.0000000       0.8987290
+
+No violations of the orthonormality
+No violations of the orthonormality
+ 
+PNOF9/ADABelief Calculation
+==================
+ 
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    5.0e+01   10    2.4e+01  -799.22905525  -752.12465553 -10798.22905525   0.001773   7.1e-03   1.5e-04 0.03
+     2      20    5.6e+01    0    1.7e-02  -799.22993426  -752.12553454    -0.00087902   0.001773   7.1e-03   1.5e-04 0.03
+     3      40    1.2e+02    4    6.6e-03  -799.23064112  -752.12624140    -0.00070685   0.003604   1.4e-02   1.9e-04 0.03
+     4      40    1.1e+02    3    1.8e-02  -799.23076686  -752.12636714    -0.00012574   0.005931   2.4e-02   2.4e-04 0.03
+     5      40    1.1e+02    1    5.7e-02  -799.23081131  -752.12641159    -0.00004445   0.005263   2.1e-02   2.0e-04 0.03
+     6      40    1.1e+02    0    1.5e-02  -799.23081235  -752.12641263    -0.00000103   0.005263   2.1e-02   2.0e-04 0.03
+     7      60    1.6e+02    1    4.6e-02  -799.23090617  -752.12650645    -0.00009382   0.000488   2.0e-03   2.1e-04 0.03
+ 
+RESULTS OF THE OCCUPATION OPTIMIZATION
+========================================
+   1    1.9999915  -149.22416025
+   2    1.9998173  -19.36967153
+   3    1.9998774  -17.53620811
+   4    1.9997910  -13.59457903
+   5    1.9996789  -13.45907209
+   6    1.9996243  -13.45848640
+   7    1.9925569  -2.11025012
+   8    1.9785274  -1.20128284
+   9    1.9786576  -1.15634432
+  10    1.9786634  -1.15633954
+  11    1.9888755  -1.07884996
+  12    1.9675238  -0.45069395
+  13    1.9666447  -0.31733476
+  14    1.9666394  -0.31732035
+  15    0.0333606  -0.03757963
+  16    0.0333553  -0.03760127
+  17    0.0324762  -0.04718444
+  18    0.0111245  -0.02354044
+  19    0.0213366  -0.03774622
+  20    0.0213424  -0.03775706
+  21    0.0214726  -0.03958573
+  22    0.0074431  -0.03591397
+  23    0.0003757  -0.01047774
+  24    0.0003211  -0.00621852
+  25    0.0002090  -0.00579830
+  26    0.0001226  -0.00211640
+  27    0.0001827  -0.00611426
+  28    0.0000085  -0.00266514
+ 
+----------------
+ Final Energies 
+----------------
+Final NOF Total Energy =    -752.1265064
+ 
+Total Orbital Internal Iterations = 250
+Total Occupation Internal Iterations = 19
+ 
+Elapsed time:  746.43 Seconds
+
+---------------------------------
+   Lowdin Population Analysis    
+---------------------------------
+ Idx  Atom   Population   Charge 
+---------------------------------
+  1    Ca    19.372       0.628
+  2     O     8.628      -0.628
+
+---------------------------------
+   M Diagnostic: 0.03
+---------------------------------
+
+Recovering execution output...
+Moving from /scratch/pobleyef/173843 to /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173843
+mkdir -p /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173843
+mv /scratch/pobleyef/173843/* /home-nas/pobleyef/Poison-Set/ncwo1/P30-5/GNOFmsta/arina.173843

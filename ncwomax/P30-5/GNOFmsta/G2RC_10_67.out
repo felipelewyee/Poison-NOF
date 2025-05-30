@@ -1,0 +1,47 @@
+G2RC_10_67
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on na03
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/174339
+/scratch/pobleyef/174339 directory
+cp G2RC_10_67.jl G2RC_10_67.jld2 to  /scratch/pobleyef/174339/.
+Computing Integrals
+Elapsed time:   65.73 Seconds
+
+Number of basis functions                   (NBF)    = 350
+Number of auxiliary basis functions         (NBFAUX) = 640
+Inactive Doubly occupied orbitals up to     (NO1)    = 0
+No. considered Strongly Doubly occupied MOs (NDOC)   = 41
+No. considered Strongly Singly occupied MOs (NSOC)   = 0
+NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 7
+Dimension of the Nat. Orb. subspace         (NBF5)   = 328
+No. of electrons                                     = 82
+    No. of alpha electrons                           = 41
+    No. of beta electrons                            = 41
+Multiplicity                                         = 1
+
+Geometry
+========
+Si       0.0000000       0.0000000       0.0000000
+Cl       1.1825283      -1.1825283       1.1825283
+Cl      -1.1825283       1.1825283       1.1825283
+Cl      -1.1825283      -1.1825283      -1.1825283
+Cl       1.1825283       1.1825283      -1.1825283
+
+No violations of the orthonormality
+No violations of the orthonormality
+ 
+PNOF9/ADABelief Calculation
+==================
+ 
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    2.1e+02   43    2.9e+01 -2649.92169202 -2129.61906908 -12648.92169202   0.017261   6.9e-02   3.1e-04 0.03
+     2      20    3.4e+02    0    4.5e-01 -2649.92785062 -2129.62522769    -0.00615861   0.017261   6.9e-02   3.1e-04 0.03
+     3      40    6.7e+02   14    1.9e+00 -2649.93511612 -2129.63249319    -0.00726550   0.017398   7.0e-02   2.4e-04 0.03
+     4      40    6.8e+02   14    2.4e+00 -2649.93866041 -2129.63603747    -0.00354428   0.015081   6.0e-02   2.1e-04 0.03
+     5      40    6.6e+02   10    1.3e+00 -2649.94112790 -2129.63850497    -0.00246750   0.017178   6.9e-02   2.9e-04 0.03
+Recovering execution output...
+Moving from /scratch/pobleyef/174339 to /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174339
+mkdir -p /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174339
+mv /scratch/pobleyef/174339/* /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174339
