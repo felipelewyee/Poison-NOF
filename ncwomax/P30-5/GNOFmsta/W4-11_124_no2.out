@@ -1,13 +1,13 @@
 W4-11_124_no2
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nh037
+Job runing on nh017
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/174367
-/scratch/pobleyef/174367 directory
-cp W4-11_124_no2.jl W4-11_124_no2.jld2 to  /scratch/pobleyef/174367/.
+/scratch/pobleyef/181922
+/scratch/pobleyef/181922 directory
+cp W4-11_124_no2.jl W4-11_124_no2.jld2 to  /scratch/pobleyef/181922/.
 Computing Integrals
-Elapsed time:    6.30 Seconds
+Elapsed time:    6.33 Seconds
 
 Number of basis functions                   (NBF)    = 171
 Number of auxiliary basis functions         (NBFAUX) = 231
@@ -34,23 +34,7 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    3.0e+01   17    3.5e+01  -269.75751927  -204.81136695 -10268.75751927   0.003442   1.4e-02   2.7e-04 0.04
-     2      20    3.3e+00    0    6.4e-02  -269.76148207  -204.81532975    -0.00396280   0.003442   1.4e-02   2.7e-04 0.04
-     3      40    6.3e+00   11    4.6e-01  -269.76389022  -204.81773789    -0.00240815   0.004383   1.8e-02   2.4e-04 0.04
-     4      40    6.3e+00    8    3.9e-01  -269.76488384  -204.81873151    -0.00099362   0.003049   1.2e-02   2.3e-04 0.04
-     5      40    6.4e+00    8    4.0e-01  -269.76538551  -204.81923318    -0.00050167   0.003197   1.3e-02   2.1e-04 0.04
-     6      40    6.3e+00    4    2.6e-01  -269.76561841  -204.81946608    -0.00023290   0.003033   1.2e-02   1.9e-04 0.04
-     7      40    6.3e+00   10    4.3e-01  -269.76567802  -204.81952570    -0.00005961   0.002915   1.2e-02   1.8e-04 0.04
-     8      40    6.4e+00    4    1.8e-01  -269.76578399  -204.81963167    -0.00010597   0.003676   1.5e-02   1.6e-04 0.04
-     9      40    6.4e+00    1    8.4e-02  -269.76579549  -204.81964316    -0.00001150   0.004035   1.6e-02   2.3e-04 0.04
-    10      40    6.4e+00    0    1.2e-01  -269.76584176  -204.81968944    -0.00004628   0.003043   1.2e-02   2.8e-04 0.04
-    11      50    8.0e+00   10    4.7e-01  -269.76593962  -204.81978729    -0.00009785   0.002357   9.4e-03   1.6e-04 0.04
-    12      50    7.7e+00    0    1.0e-01  -269.76599877  -204.81984645    -0.00005916   0.002697   1.1e-02   2.3e-04 0.04
-    13      60    9.6e+00    4    2.2e-01  -269.76606516  -204.81991283    -0.00006638   0.002038   8.2e-03   2.1e-04 0.04
-    14      60    9.3e+00    0    1.0e-01  -269.76607995  -204.81992762    -0.00001479   0.002619   1.0e-02   2.3e-04 0.04
-    15      70    1.1e+01    1    9.1e-02  -269.76612060  -204.81996827    -0.00004065   0.002551   1.0e-02   2.3e-04 0.04
-    16      70    1.1e+01    0    6.9e-02  -269.76612159  -204.81996926    -0.00000099   0.002551   1.0e-02   2.3e-04 0.04
-    17      71    1.1e+01    0    9.8e-02  -269.76620490  -204.82005258    -0.00008331   0.000494   2.0e-03   2.5e-04 0.04
+     1      10    2.9e+01    0    3.3e+01  -269.76620490  -204.82005258 -10268.76620490   0.000494   2.0e-03   2.5e-04 0.04
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -226,10 +210,10 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
 Final NOF Total Energy =    -204.8200526
  
-Total Orbital Internal Iterations = 781
-Total Occupation Internal Iterations = 78
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:  213.35 Seconds
+Elapsed time:   81.54 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -245,6 +229,6 @@ Elapsed time:  213.35 Seconds
 ---------------------------------
 
 Recovering execution output...
-Moving from /scratch/pobleyef/174367 to /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174367
-mkdir -p /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174367
-mv /scratch/pobleyef/174367/* /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174367
+Moving from /scratch/pobleyef/181922 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmsta/arina.181922
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmsta/arina.181922
+mv /scratch/pobleyef/181922/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmsta/arina.181922

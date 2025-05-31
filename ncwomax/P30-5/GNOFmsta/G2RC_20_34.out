@@ -1,13 +1,13 @@
 G2RC_20_34
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nh038
+Job runing on na12
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/174342
-/scratch/pobleyef/174342 directory
-cp G2RC_20_34.jl G2RC_20_34.jld2 to  /scratch/pobleyef/174342/.
+/scratch/pobleyef/181897
+/scratch/pobleyef/181897 directory
+cp G2RC_20_34.jl G2RC_20_34.jld2 to  /scratch/pobleyef/181897/.
 Computing Integrals
-Elapsed time:    6.31 Seconds
+Elapsed time:    4.22 Seconds
 
 Number of basis functions                   (NBF)    = 114
 Number of auxiliary basis functions         (NBFAUX) = 154
@@ -33,21 +33,7 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    3.0e+01   19    3.6e+01  -133.17584271  -109.40590750 -10132.17584271   0.001152   4.8e-03   1.5e-04 0.03
-     2      20    2.9e+00    0    3.6e-02  -133.17748061  -109.40754540    -0.00163790   0.001188   4.8e-03   1.5e-04 0.03
-     3      40    5.5e+00    6    1.4e-01  -133.17766155  -109.40772635    -0.00018094   0.001625   6.5e-03   1.9e-04 0.03
-     4      40    5.2e+00    6    2.1e-01  -133.17777847  -109.40784326    -0.00011691   0.001466   5.9e-03   1.5e-04 0.03
-     5      40    5.3e+00    3    1.9e-01  -133.17787574  -109.40794054    -0.00009728   0.001532   6.1e-03   2.0e-04 0.03
-     6      40    5.5e+00    4    1.6e-01  -133.17794688  -109.40801167    -0.00007113   0.001469   5.9e-03   1.4e-04 0.03
-     7      40    5.4e+00    4    1.3e-01  -133.17800924  -109.40807403    -0.00006236   0.001515   6.1e-03   1.7e-04 0.03
-     8      40    5.4e+00    4    1.5e-01  -133.17805630  -109.40812109    -0.00004706   0.001743   7.0e-03   1.6e-04 0.03
-     9      40    5.3e+00    1    4.2e-02  -133.17808897  -109.40815377    -0.00003268   0.001751   7.0e-03   2.1e-04 0.03
-    10      40    5.5e+00    3    6.1e-02  -133.17809851  -109.40816330    -0.00000953   0.002622   1.0e-02   1.8e-04 0.03
-    11      40    5.5e+00    1    3.3e-02  -133.17812294  -109.40818774    -0.00002444   0.003119   1.2e-02   1.8e-04 0.03
-    12      40    5.5e+00    3    6.2e-02  -133.17812846  -109.40819325    -0.00000552   0.008448   3.4e-02   1.4e-04 0.03
-    13      40    5.4e+00    1    4.4e-02  -133.17814444  -109.40820923    -0.00001598   0.002978   1.2e-02   1.4e-04 0.03
-    14      40    5.3e+00    0    3.2e-02  -133.17814583  -109.40821062    -0.00000139   0.002978   1.2e-02   1.4e-04 0.03
-    15      31    4.0e+00    1    7.4e-02  -133.17819620  -109.40826100    -0.00005037   0.000488   2.0e-03   1.6e-04 0.03
+     1      10    4.1e+01    0    2.2e+01  -133.17819692  -109.40826171 -10132.17819692   0.000488   2.0e-03   1.6e-04 0.03
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -167,12 +153,12 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =    -109.4082610
+Final NOF Total Energy =    -109.4082617
  
-Total Orbital Internal Iterations = 541
-Total Occupation Internal Iterations = 56
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:  160.64 Seconds
+Elapsed time:   75.19 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -187,6 +173,6 @@ Elapsed time:  160.64 Seconds
 ---------------------------------
 
 Recovering execution output...
-Moving from /scratch/pobleyef/174342 to /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174342
-mkdir -p /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174342
-mv /scratch/pobleyef/174342/* /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174342
+Moving from /scratch/pobleyef/181897 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmsta/arina.181897
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmsta/arina.181897
+mv /scratch/pobleyef/181897/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmsta/arina.181897

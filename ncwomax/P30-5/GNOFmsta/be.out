@@ -1,13 +1,13 @@
 be
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nagpu01
+Job runing on na03
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/174324
-/scratch/pobleyef/174324 directory
-cp be.jl be.jld2 to  /scratch/pobleyef/174324/.
+/scratch/pobleyef/181879
+/scratch/pobleyef/181879 directory
+cp be.jl be.jld2 to  /scratch/pobleyef/181879/.
 Computing Integrals
-Elapsed time:    3.66 Seconds
+Elapsed time:    3.95 Seconds
 
 Number of basis functions                   (NBF)    = 36
 Number of auxiliary basis functions         (NBFAUX) = 51
@@ -32,10 +32,7 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.7e+01    1    2.0e+01   -14.64575570   -14.64575570 -10013.64575570   0.001088   4.4e-03   1.0e-04 0.13
-     2      20    1.2e-02    1    8.5e-04   -14.64579267   -14.64579267    -0.00003696   0.001619   6.5e-03   1.1e-04 0.13
-     3      20    5.0e-02    0    6.6e-04   -14.64580290   -14.64580290    -0.00001023   0.001380   5.5e-03   1.1e-04 0.13
-     4      30    2.6e-02    0    5.7e-04   -14.64581111   -14.64581111    -0.00000822   0.000761   3.0e-03   1.1e-04 0.13
+     1      10    1.9e+01    0    2.2e+01   -14.64581111   -14.64581111 -10013.64581111   0.000761   3.0e-03   1.1e-04 0.13
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -81,10 +78,10 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
 Final NOF Total Energy =     -14.6458111
  
-Total Orbital Internal Iterations = 80
-Total Occupation Internal Iterations = 2
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:   47.64 Seconds
+Elapsed time:   53.67 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -98,6 +95,6 @@ Elapsed time:   47.64 Seconds
 ---------------------------------
 
 Recovering execution output...
-Moving from /scratch/pobleyef/174324 to /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174324
-mkdir -p /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174324
-mv /scratch/pobleyef/174324/* /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/GNOFmsta/arina.174324
+Moving from /scratch/pobleyef/181879 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmsta/arina.181879
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmsta/arina.181879
+mv /scratch/pobleyef/181879/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmsta/arina.181879
