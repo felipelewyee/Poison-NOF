@@ -1,0 +1,86 @@
+f
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on na07
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/196089
+/scratch/pobleyef/196089 directory
+cp f.jl f.jld2 to  /scratch/pobleyef/196089/.
+Computing Integrals
+Elapsed time:    3.75 Seconds
+
+Number of basis functions                   (NBF)    = 57
+Number of auxiliary basis functions         (NBFAUX) = 77
+Inactive Doubly occupied orbitals up to     (NO1)    = 0
+No. considered Strongly Doubly occupied MOs (NDOC)   = 4
+No. considered Strongly Singly occupied MOs (NSOC)   = 1
+NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 1
+Dimension of the Nat. Orb. subspace         (NBF5)   = 9
+No. of electrons                                     = 9
+    No. of alpha electrons                           = 5
+    No. of beta electrons                            = 4
+Multiplicity                                         = 2
+
+Geometry
+========
+ F       0.0000000       0.0000000       0.0000000
+
+No violations of the orthonormality
+No violations of the orthonormality
+ 
+PNOF9/ADABelief Calculation
+==================
+ 
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    1.7e+01    3    2.1e+01   -99.53078504   -99.53078504 -10098.53078504   0.012809   5.1e-02   1.9e-05 0.02
+     2      20    6.7e-02    6    4.5e-04   -99.53517220   -99.53517220    -0.00438716   0.087155   3.5e-01   6.1e-05 0.02
+     3      20    2.1e-02    5    4.0e-04   -99.53752642   -99.53752642    -0.00235422   0.010813   4.3e-02   1.4e-04 0.02
+     4      20    8.9e-03    4    2.8e-04   -99.53826557   -99.53826557    -0.00073916   0.014963   6.0e-02   9.5e-05 0.02
+     5      20    1.3e-02    4    4.1e-04   -99.53957539   -99.53957539    -0.00130982   0.018471   7.4e-02   2.2e-05 0.02
+     6      20    1.2e-02    2    3.3e-04   -99.54112830   -99.54112830    -0.00155291   0.011245   4.5e-02   1.4e-04 0.02
+     7      20    1.2e-02    2    2.7e-04   -99.54204121   -99.54204121    -0.00091292   0.013730   5.5e-02   1.9e-04 0.02
+     8      20    1.2e-02    2    3.0e-04   -99.54257141   -99.54257141    -0.00053019   0.011170   4.5e-02   4.9e-05 0.02
+     9      20    1.1e-02    2    2.6e-04   -99.54296412   -99.54296412    -0.00039271   0.011329   4.5e-02   6.9e-05 0.02
+    10      20    8.7e-03    2    2.5e-04   -99.54319525   -99.54319525    -0.00023113   0.012364   4.9e-02   5.2e-06 0.02
+    11      20    1.2e-02    0    2.1e-04   -99.54320102   -99.54320102    -0.00000578   0.012364   4.9e-02   5.2e-06 0.02
+    12      40    2.3e-02    1    2.9e-04   -99.54433633   -99.54433633    -0.00113530   0.002455   9.8e-03   1.3e-04 0.02
+    13      40    2.1e-02    0    2.5e-04   -99.54433782   -99.54433782    -0.00000149   0.002455   9.8e-03   1.3e-04 0.02
+    14      53    2.7e-02    1    2.9e-04   -99.54437218   -99.54437218    -0.00003436   0.000493   2.0e-03   1.5e-04 0.02
+ 
+RESULTS OF THE OCCUPATION OPTIMIZATION
+========================================
+   1    1.9998648  -26.42786106
+   2    1.9880863  -1.35361074
+   3    1.9847503  -0.86153524
+   4    1.9846559  -0.85619225
+   5    1.0000000  -0.43608309
+   6    0.0153441  -0.02445924
+   7    0.0152497  -0.02446414
+   8    0.0119137  -0.02411150
+   9    0.0001352  -0.00618861
+ 
+----------------
+ Final Energies 
+----------------
+Final NOF Total Energy =     -99.5443722
+ 
+Total Orbital Internal Iterations = 343
+Total Occupation Internal Iterations = 34
+ 
+Elapsed time:   50.59 Seconds
+
+---------------------------------
+   Lowdin Population Analysis    
+---------------------------------
+ Idx  Atom   Population   Charge 
+---------------------------------
+  1     F     9.000      -0.000
+
+---------------------------------
+   M Diagnostic: 0.02
+---------------------------------
+
+Recovering execution output...
+Moving from /scratch/pobleyef/196089 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmsta25/arina.196089
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmsta25/arina.196089
+mv /scratch/pobleyef/196089/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmsta25/arina.196089

@@ -1,0 +1,10 @@
+memory 20Gb
+
+molecule{
+0 1
+He     0.00000000  0.00000000  0.00000000
+}
+
+set reference rhf
+
+energy("CCSD(T)/def2-QZVP")
