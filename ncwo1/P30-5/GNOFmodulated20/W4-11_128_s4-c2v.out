@@ -1,0 +1,46 @@
+W4-11_128_s4-c2v
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on na09
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/203319
+/scratch/pobleyef/203319 directory
+cp W4-11_128_s4-c2v.jl W4-11_128_s4-c2v.jld2 to  /scratch/pobleyef/203319/.
+Computing Integrals
+Elapsed time:  125.53 Seconds
+
+Number of basis functions                   (NBF)    = 280
+Number of auxiliary basis functions         (NBFAUX) = 512
+Inactive Doubly occupied orbitals up to     (NO1)    = 0
+No. considered Strongly Doubly occupied MOs (NDOC)   = 32
+No. considered Strongly Singly occupied MOs (NSOC)   = 0
+NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 1
+Dimension of the Nat. Orb. subspace         (NBF5)   = 64
+No. of electrons                                     = 64
+    No. of alpha electrons                           = 32
+    No. of beta electrons                            = 32
+Multiplicity                                         = 1
+
+Geometry
+========
+ S       0.0000000       1.5523430       0.9219610
+ S       0.0000000       1.0685080      -0.9219610
+ S       0.0000000      -1.0685080      -0.9219610
+ S       0.0000000      -1.5523430       0.9219610
+
+No violations of the orthonormality
+No violations of the orthonormality
+ 
+PNOF9/ADABelief Calculation
+==================
+ 
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    3.9e+02    0    2.1e+01 -1925.03886684 -1591.33994432 -11924.03886684   0.002881   1.2e-02   2.7e-04 0.04
+     2      30    1.1e+03    0    8.0e-02 -1925.03886684 -1591.33994432     0.00000000   0.002881   1.2e-02   2.7e-04 0.04
+     3      50    1.9e+03    0    1.1e-01 -1925.03886684 -1591.33994432     0.00000000   0.002881   1.2e-02   2.7e-04 0.04
+     4      70    2.6e+03    2    8.7e-02 -1925.03915301 -1591.34023049    -0.00028617   0.002413   9.7e-03   3.2e-04 0.04
+Recovering execution output...
+Moving from /scratch/pobleyef/203319 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.203319
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.203319
+mv /scratch/pobleyef/203319/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.203319
+Final NOF Total Energy =    -1591.34023049

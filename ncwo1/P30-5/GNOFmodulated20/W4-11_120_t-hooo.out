@@ -1,0 +1,100 @@
+W4-11_120_t-hooo
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on na14
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/203243
+/scratch/pobleyef/203243 directory
+cp W4-11_120_t-hooo.jl W4-11_120_t-hooo.jld2 to  /scratch/pobleyef/203243/.
+Computing Integrals
+Elapsed time:   19.63 Seconds
+
+Number of basis functions                   (NBF)    = 201
+Number of auxiliary basis functions         (NBFAUX) = 249
+Inactive Doubly occupied orbitals up to     (NO1)    = 0
+No. considered Strongly Doubly occupied MOs (NDOC)   = 12
+No. considered Strongly Singly occupied MOs (NSOC)   = 1
+NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 1
+Dimension of the Nat. Orb. subspace         (NBF5)   = 25
+No. of electrons                                     = 25
+    No. of alpha electrons                           = 13
+    No. of beta electrons                            = 12
+Multiplicity                                         = 2
+
+Geometry
+========
+ O       1.1743930       0.1943130       0.0000000
+ O       0.0000000       0.5531800       0.0000000
+ O      -0.9504710      -0.7177150       0.0000000
+ H      -1.7913740      -0.2382290       0.0000000
+
+No violations of the orthonormality
+No violations of the orthonormality
+ 
+PNOF9/ADABelief Calculation
+==================
+ 
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    9.8e+01    5    2.2e+01  -297.04344375  -225.52988083 -10296.04344375   0.003000   1.2e-02   7.8e-05 0.05
+     2      20    1.6e+02    0    3.1e-02  -297.04723293  -225.53367002    -0.00378919   0.003000   1.2e-02   7.8e-05 0.05
+     3      40    3.1e+02    2    1.1e-02  -297.04729607  -225.53373316    -0.00006314   0.006610   2.6e-02   2.1e-04 0.05
+     4      40    3.1e+02    2    8.0e-03  -297.04743019  -225.53386727    -0.00013412   0.003826   1.5e-02   1.0e-04 0.05
+     5      40    3.1e+02    0    2.1e-02  -297.04743310  -225.53387018    -0.00000291   0.003826   1.5e-02   1.0e-04 0.05
+     6      60    4.8e+02    0    5.1e-03  -297.04776839  -225.53420548    -0.00033529   0.000490   2.0e-03   2.3e-04 0.05
+ 
+RESULTS OF THE OCCUPATION OPTIMIZATION
+========================================
+   1    1.9998363  -20.76458193
+   2    1.9998245  -20.71065902
+   3    1.9998386  -20.66986925
+   4    1.9927255  -1.43002339
+   5    1.9921007  -1.29245512
+   6    1.9889548  -1.11555672
+   7    1.9870259  -0.83517836
+   8    1.9634806  -0.83337164
+   9    1.9721284  -0.76135286
+  10    1.9847660  -0.72484646
+  11    1.9523186  -0.61655451
+  12    1.9832310  -0.58012167
+  13    1.0000000  -0.29867334
+  14    0.0167690  -0.02148344
+  15    0.0476814  -0.07319720
+  16    0.0152340  -0.01806449
+  17    0.0278716  -0.03539620
+  18    0.0365194  -0.05922564
+  19    0.0129741  -0.02072134
+  20    0.0110452  -0.02038675
+  21    0.0078993  -0.02032728
+  22    0.0072745  -0.01940629
+  23    0.0001614  -0.00574668
+  24    0.0001755  -0.00615989
+  25    0.0001637  -0.00576219
+ 
+----------------
+ Final Energies 
+----------------
+Final NOF Total Energy =    -225.5342055
+ 
+Total Orbital Internal Iterations = 210
+Total Occupation Internal Iterations = 9
+ 
+Elapsed time: 1734.66 Seconds
+
+---------------------------------
+   Lowdin Population Analysis    
+---------------------------------
+ Idx  Atom   Population   Charge 
+---------------------------------
+  1     O     7.971       0.029
+  2     O     7.984       0.016
+  3     O     7.645       0.355
+  4     H     1.400      -0.400
+
+---------------------------------
+   M Diagnostic: 0.05
+---------------------------------
+
+Recovering execution output...
+Moving from /scratch/pobleyef/203243 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.203243
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.203243
+mv /scratch/pobleyef/203243/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.203243
