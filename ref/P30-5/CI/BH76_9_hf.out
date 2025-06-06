@@ -31,18 +31,18 @@
     -----------------------------------------------------------------------
 
 
-    Psi4 started on: Thursday, 05 June 2025 05:33PM
+    Psi4 started on: Friday, 06 June 2025 09:25AM
 
-    Process ID: 2536141
-    Host:       na15
+    Process ID: 4035659
+    Host:       na07
     PSIDATADIR: /software-nas/eb2024/easybuild/software/rocky/8.9/amd/zen4/software/PSI4/1.9.1-foss-2023b/share/psi4
     Memory:     500.0 MiB
-    Threads:    10
+    Threads:    40
     
   ==> Input File <==
 
 --------------------------------------------------------------------------
-memory 60Gb
+memory 100Gb
 
 molecule{
 0 1
@@ -55,12 +55,12 @@ set nat_orbs true
 set qc_module detci
 set dipmom true
 
-energy("CISD/def2-QZVP")
+energy("CISDT/def2-QZVP")
 --------------------------------------------------------------------------
 
-  Memory set to  55.879 GiB by Python driver.
+  Memory set to  93.132 GiB by Python driver.
 
-Scratch directory: /scratch/pobleyef/203621/
+Scratch directory: /scratch/pobleyef/203736/
    => Libint2 <=
 
     Primary   basis highest AM E, G, H:  5, 4, 3
@@ -68,8 +68,8 @@ Scratch directory: /scratch/pobleyef/203621/
     Onebody   basis highest AM E, G, H:  6, 5, 4
     Solid Harmonics ordering:            Gaussian
 
-*** tstart() called on na15
-*** at Thu Jun  5 17:33:23 2025
+*** tstart() called on na07
+*** at Fri Jun  6 09:25:50 2025
 
    => Loading Basis Set <=
 
@@ -85,7 +85,7 @@ Scratch directory: /scratch/pobleyef/203621/
                by Justin Turney, Rob Parrish, Andy Simmonett
                           and Daniel G. A. Smith
                               RHF Reference
-                       10 Threads,  57220 MiB Core
+                       40 Threads,  95367 MiB Core
          ---------------------------------------------------------
 
   ==> Geometry <==
@@ -144,23 +144,23 @@ Scratch directory: /scratch/pobleyef/203621/
       Number of basis functions:        87
 
       Integral cutoff                 1.00e-12
-      Number of threads:                10
+      Number of threads:                40
 
   Performing in-core PK
   Using 14657412 doubles for integral storage.
-  We computed 129312 shell quartets total.
+  We computed 312694 shell quartets total.
   Whereas there are 71631 unique shell quartets.
-    80.53 percent of shell quartets recomputed by reordering.
+   336.53 percent of shell quartets recomputed by reordering.
 
   ==> DiskJK: Disk-Based J/K Matrices <==
 
     J tasked:                  Yes
     K tasked:                  Yes
     wK tasked:                  No
-    Memory [MiB]:            42915
+    Memory [MiB]:            71525
     Schwarz Cutoff:          1E-12
 
-    OpenMP threads:             10
+    OpenMP threads:             40
 
   Minimum eigenvalue in the overlap matrix is 5.0218854429E-04.
   Reciprocal condition number of the overlap matrix is 9.4929338391E-05.
@@ -185,16 +185,16 @@ Scratch directory: /scratch/pobleyef/203621/
 
                         Total Energy        Delta E     RMS |[F,P]|
 
-   @RHF iter SAD:   -99.63226005840698   -9.96323e+01   0.00000e+00 
-   @RHF iter   1:  -100.03081711949743   -3.98557e-01   7.06830e-03 ADIIS/DIIS
-   @RHF iter   2:  -100.05813964202844   -2.73225e-02   4.72137e-03 ADIIS/DIIS
-   @RHF iter   3:  -100.07005901157329   -1.19194e-02   3.62472e-04 ADIIS/DIIS
-   @RHF iter   4:  -100.07024667090157   -1.87659e-04   1.02757e-04 ADIIS/DIIS
-   @RHF iter   5:  -100.07026653426257   -1.98634e-05   2.46020e-05 DIIS
+   @RHF iter SAD:   -99.63226005840690   -9.96323e+01   0.00000e+00 
+   @RHF iter   1:  -100.03081711949731   -3.98557e-01   7.06830e-03 DIIS/ADIIS
+   @RHF iter   2:  -100.05813964202837   -2.73225e-02   4.72137e-03 DIIS/ADIIS
+   @RHF iter   3:  -100.07005901157316   -1.19194e-02   3.62472e-04 DIIS/ADIIS
+   @RHF iter   4:  -100.07024667090151   -1.87659e-04   1.02757e-04 DIIS/ADIIS
+   @RHF iter   5:  -100.07026653426270   -1.98634e-05   2.46020e-05 DIIS
    @RHF iter   6:  -100.07026811005872   -1.57580e-06   4.19659e-06 DIIS
-   @RHF iter   7:  -100.07026815998721   -4.99285e-08   4.47416e-07 DIIS
-   @RHF iter   8:  -100.07026816038706   -3.99851e-10   4.98927e-08 DIIS
-   @RHF iter   9:  -100.07026816039111   -4.05009e-12   4.24980e-09 DIIS
+   @RHF iter   7:  -100.07026815998726   -4.99285e-08   4.47416e-07 DIIS
+   @RHF iter   8:  -100.07026816038716   -3.99893e-10   4.98927e-08 DIIS
+   @RHF iter   9:  -100.07026816039102   -3.86535e-12   4.24980e-09 DIIS
   Energy and wave function converged.
 
 
@@ -211,22 +211,22 @@ Scratch directory: /scratch/pobleyef/203621/
     Virtual:                                                              
 
        4A1     0.101876     5A1     0.412652     6A1     0.427596  
-       2B1     0.444707     2B2     0.444707     3B2     0.683648  
-       3B1     0.683648     7A1     0.877391     8A1     1.063374  
-       9A1     1.205828    10A1     1.561861     1A2     1.561861  
+       2B1     0.444707     2B2     0.444707     3B1     0.683648  
+       3B2     0.683648     7A1     0.877391     8A1     1.063374  
+       9A1     1.205828     1A2     1.561861    10A1     1.561861  
        4B1     1.859267     4B2     1.859267    11A1     1.873967  
-       5B2     1.907711     5B1     1.907711     2A2     2.271178  
+       5B1     1.907711     5B2     1.907711     2A2     2.271178  
       12A1     2.271178     6B1     2.402332     6B2     2.402332  
       13A1     2.461076    14A1     2.713740     7B1     2.995797  
        7B2     2.995797    15A1     3.443866    16A1     4.174564  
-       8B2     4.506477     8B1     4.506477     3A2     4.761280  
+       8B1     4.506477     8B2     4.506477     3A2     4.761280  
       17A1     4.761280     9B1     5.307508     9B2     5.307508  
        4A2     5.432501    18A1     5.432501    19A1     5.574336  
       20A1     5.766834    10B1     5.805228    10B2     5.805228  
       11B1     6.124075    11B2     6.124075    21A1     6.312985  
       12B2     6.620084    12B1     6.620084    22A1     7.131914  
        5A2     7.131914    23A1     7.533315    13B2     7.598858  
-      13B1     7.598858    24A1     8.072778     6A2     8.072778  
+      13B1     7.598858     6A2     8.072778    24A1     8.072778  
       14B1     8.088921    14B2     8.088921    25A1     8.137300  
       26A1     9.602181    15B1     9.804436    15B2     9.804436  
       27A1    11.986921     7A2    11.986921    16B1    12.104484  
@@ -245,14 +245,14 @@ Scratch directory: /scratch/pobleyef/203621/
     NA   [     3,    0,    1,    1 ]
     NB   [     3,    0,    1,    1 ]
 
-  @RHF Final Energy:  -100.07026816039111
+  @RHF Final Energy:  -100.07026816039102
 
    => Energetics <=
 
     Nuclear Repulsion Energy =              5.2028471247820747
-    One-Electron Energy =                -150.6204177583491628
-    Two-Electron Energy =                  45.3473024731759864
-    Total Energy =                       -100.0702681603911088
+    One-Electron Energy =                -150.6204177583490775
+    Two-Electron Energy =                  45.3473024731759935
+    Total Energy =                       -100.0702681603910094
 
 Computation Completed
 
@@ -276,20 +276,20 @@ Properties computed using the SCF density matrix
 
  ------------------------------------------------------------------------------------
 
-*** tstop() called on na15 at Thu Jun  5 17:33:35 2025
+*** tstop() called on na07 at Fri Jun  6 09:25:52 2025
 Module time:
-	user time   =      23.87 seconds =       0.40 minutes
-	system time =       0.18 seconds =       0.00 minutes
-	total time  =         12 seconds =       0.20 minutes
+	user time   =      45.58 seconds =       0.76 minutes
+	system time =       1.54 seconds =       0.03 minutes
+	total time  =          2 seconds =       0.03 minutes
 Total time:
-	user time   =      23.87 seconds =       0.40 minutes
-	system time =       0.18 seconds =       0.00 minutes
-	total time  =         12 seconds =       0.20 minutes
+	user time   =      45.58 seconds =       0.76 minutes
+	system time =       1.54 seconds =       0.03 minutes
+	total time  =          2 seconds =       0.03 minutes
  MINTS: Wrapper to libmints.
    by Justin Turney
 
    Calculation information:
-      Number of threads:                10
+      Number of threads:                40
       Number of atoms:                   2
       Number of AO shells:              27
       Number of SO shells:              27
@@ -320,7 +320,7 @@ Total time:
 
    ==> Parameters <==
 
-    EX LEVEL       =        2      H0 BLOCKSIZE  =     1000
+    EX LEVEL       =        3      H0 BLOCKSIZE  =     1000
     VAL EX LEVEL   =        0      H0 GUESS SIZE =     1000
     H0COUPLINGSIZE =        0      H0 COUPLING   =       NO
     MAXITER        =       24      NUM PRINT     =       20
@@ -337,21 +337,21 @@ Total time:
     MAX NUM VECS   =       25      REF SYM       =     AUTO
     IOPEN        =       NO
 
-    EX ALLOW       =  1  1 
+    EX ALLOW       =  1  1  1 
     STATE AVERAGE  =  0(1.00) 
 
    ==> CI Orbital and Space information <==
 
-    RAS1 LVL      =        4      A RAS3 MAX    =        2
-    RAS1 MIN      =        8      B RAS3 MAX    =        2
+    RAS1 LVL      =        4      A RAS3 MAX    =        3
+    RAS1 MIN      =        7      B RAS3 MAX    =        3
     A RAS1 LVL    =        4      RAS4 LVL      =       87
-    A RAS1 MIN    =        3      A RAS4 MAX    =        0
+    A RAS1 MIN    =        2      A RAS4 MAX    =        0
     A RAS1 MAX    =        5      B RAS4 MAX    =        0
     B RAS1 LVL    =        4      RAS4 MAX      =        0
-    B RAS1 MIN    =        3      A RAS34 MAX   =        2
-    B RAS1 MAX    =        5      B RAS34 MAX   =        2
-    RAS3 LVL      =        5      RAS34 MAX     =        2
-    RAS3 MAX      =        2
+    B RAS1 MIN    =        2      A RAS34 MAX   =        3
+    B RAS1 MAX    =        5      B RAS34 MAX   =        3
+    RAS3 LVL      =        5      RAS34 MAX     =        3
+    RAS3 MAX      =        3
    ------------------------------------------------------
                Space    Total    A1    A2    B1    B2
    ------------------------------------------------------
@@ -373,8 +373,8 @@ Total time:
 
    ==> Setting up CI strings <==
 
-    There are 33621 alpha and 33621 beta strings
-    The CI space requires 62029 (6.20E+04) determinants and 9 blocks
+    There are 919221 alpha and 919221 beta strings
+    The CI space requires 7346137 (7.35E+06) determinants and 19 blocks
 
    ==> Transforming CI integrals <==
 
@@ -389,87 +389,89 @@ Total time:
 
    ==> Starting CI iterations <==
 
-    H0 Block Eigenvalue = -100.14954575
+    H0 Block Eigenvalue = -100.11189393
 
     Simultaneous Expansion Method (Block Davidson Method)
     Using 1 initial trial vectors
 
      Iter   Root       Total Energy       Delta E      C RMS
 
-   @CI  0:     0   -100.149545750046   -1.0535E+02   2.3370E+00  
-   @CI  1:     0   -100.377235236412   -2.2769E-01   1.5915E-01  
-   @CI  2:     0   -100.381902836789   -4.6676E-03   4.2321E-02  
-   @CI  3:     0   -100.382191267880   -2.8843E-04   1.0094E-02  
-   @CI  4:     0   -100.382205941521   -1.4674E-05   2.7162E-03  
-   @CI  5:     0   -100.382207057171   -1.1156E-06   7.9915E-04  
-   @CI  6:     0   -100.382207143512   -8.6341E-08   1.8074E-04  
-   @CI  7:     0   -100.382207147575   -4.0636E-09   3.4965E-05 c
+   @CI  0:     0   -100.111893926553   -1.0531E+02   2.3984E+00  
+   @CI  1:     0   -100.380220309936   -2.6833E-01   3.3542E-01  
+   @CI  2:     0   -100.388812808333   -8.5925E-03   8.9050E-02  
+   @CI  3:     0   -100.389322297131   -5.0949E-04   2.3315E-02  
+   @CI  4:     0   -100.389391671319   -6.9374E-05   1.1025E-02  
+   @CI  5:     0   -100.389403208205   -1.1537E-05   4.1656E-03  
+   @CI  6:     0   -100.389404915564   -1.7074E-06   1.5594E-03  
+   @CI  7:     0   -100.389405149967   -2.3440E-07   6.2481E-04  
+   @CI  8:     0   -100.389405185923   -3.5956E-08   2.3411E-04  
+   @CI  9:     0   -100.389405190214   -4.2910E-09   6.6915E-05 c
 
    Computing CI Natural Orbitals
 
    ==> Energetics <==
 
-    SCF energy =         -100.070268160391109
-    Total CI energy =    -100.382207147575485
+    SCF energy =         -100.070268160391009
+    Total CI energy =    -100.389405190213978
 
-   ==> CISD root 0 information <==
+   ==> CISDT root 0 information <==
 
-    CISD Root 0 energy =  -100.382207147575485
+    CISDT Root 0 energy =  -100.389405190213978
 
    Active Space Natural occupation numbers:
 
-        A1   1.999492        A1   1.987245        B2   1.976276
-        B1   1.976276        A1   1.970563        A1   0.021063
-        B1   0.013403        B2   0.013403        A1   0.008190
-        A1   0.004794        B2   0.004755        B1   0.004755
-        A2   0.004534        A1   0.004534        A1   0.001039
-        A1   0.000768        B2   0.000758        B1   0.000758
-        B2   0.000626        B1   0.000626        A1   0.000481
-        A2   0.000481        A1   0.000422        B2   0.000406
-        B1   0.000406        B2   0.000405        B1   0.000405
-        A1   0.000405        A2   0.000405        A1   0.000383
-        A1   0.000147        A1   0.000140        B1   0.000120
-        B2   0.000120        A1   0.000101        B2   0.000089
-        B1   0.000089        A1   0.000085        A2   0.000085
-        A1   0.000064        B1   0.000059        B2   0.000059
-        B2   0.000055        B1   0.000055        A1   0.000054
-        A2   0.000054        A1   0.000044        A2   0.000044
-        B2   0.000041        B1   0.000041        A1   0.000038
-        A2   0.000038        A1   0.000038        B2   0.000038
-        B1   0.000038        A1   0.000021        B2   0.000019
-        B1   0.000019        A1   0.000018        A1   0.000015
-        A2   0.000014        A1   0.000014        B1   0.000013
-        B2   0.000013        A1   0.000012        B2   0.000005
-        B1   0.000005        A1   0.000005        A1   0.000004
-        A2   0.000004        B1   0.000004        B2   0.000004
-        B1   0.000004        B2   0.000004        A1   0.000003
-        A1   0.000002        A1   0.000002        B1   0.000001
-        B2   0.000001        A1   0.000001        A2   0.000001
-        A1   0.000001        B1   0.000001        B2   0.000001
-        A1   0.000001        A1   0.000000        A1   0.000000
+        A1   1.999489        A1   1.986522        B2   1.973667
+        B1   1.973667        A1   1.967371        A1   0.023273
+        B1   0.014904        B2   0.014904        A1   0.008694
+        A1   0.005197        B2   0.005169        B1   0.005169
+        A2   0.004869        A1   0.004869        A1   0.001241
+        B1   0.000950        B2   0.000950        A1   0.000900
+        B2   0.000723        B1   0.000723        A1   0.000542
+        A2   0.000542        A1   0.000481        B2   0.000443
+        B1   0.000443        A1   0.000434        A2   0.000434
+        A1   0.000429        B2   0.000424        B1   0.000424
+        A1   0.000170        A1   0.000154        B1   0.000129
+        B2   0.000129        B1   0.000115        B2   0.000115
+        A1   0.000114        A2   0.000090        A1   0.000090
+        A1   0.000071        B1   0.000067        B2   0.000067
+        B1   0.000056        B2   0.000056        A2   0.000055
+        A1   0.000055        A1   0.000048        A2   0.000048
+        B1   0.000043        B2   0.000043        A1   0.000042
+        B1   0.000041        B2   0.000041        A2   0.000041
+        A1   0.000041        A1   0.000023        A1   0.000021
+        B1   0.000020        B2   0.000020        A1   0.000017
+        A1   0.000015        A2   0.000015        B1   0.000015
+        B2   0.000015        A1   0.000013        A1   0.000005
+        B2   0.000005        B1   0.000005        B1   0.000005
+        B2   0.000005        A2   0.000005        A1   0.000005
+        B1   0.000004        B2   0.000004        A1   0.000004
+        A1   0.000002        A1   0.000002        B2   0.000002
+        B1   0.000002        A1   0.000001        A2   0.000001
+        A1   0.000001        A1   0.000001        B2   0.000001
+        B1   0.000001        A1   0.000001        A1   0.000000
 
    The 20 most important determinants:
 
-    *   1   -0.976928  ( 8135, 8135)  1A1X 2A1X 3A1X 1B1X 1B2X 
-    *   2    0.033908  ( 8142, 8142)  1A1X 2A1X 1B1X 1B2X 6A1X 
-    *   3    0.022888  ( 8238, 8238)  1A1X 2A1X 3A1X 1B2X 2B1X 
-    *   4    0.022888  ( 8257, 8257)  1A1X 2A1X 3A1X 1B1X 2B2X 
-    *   5    0.022316  ( 8151, 8151)  1A1X 2A1X 1B1X 1B2X 9A1X 
-    *   6    0.021566  ( 8142, 8151)  1A1X 2A1X 1B1X 1B2X 6A1A 9A1B 
-    *   7    0.021566  ( 8151, 8142)  1A1X 2A1X 1B1X 1B2X 6A1B 9A1A 
-    *   8    0.021240  ( 8241, 8241)  1A1X 2A1X 3A1X 1B2X 5B1X 
-    *   9    0.021240  ( 8260, 8260)  1A1X 2A1X 3A1X 1B1X 5B2X 
-    *  10    0.018064  ( 8238, 8241)  1A1X 2A1X 3A1X 1B2X 2B1A 5B1B 
-    *  11    0.018064  ( 8241, 8238)  1A1X 2A1X 3A1X 1B2X 2B1B 5B1A 
-    *  12    0.018064  ( 8257, 8260)  1A1X 2A1X 3A1X 1B1X 2B2A 5B2B 
-    *  13    0.018064  ( 8260, 8257)  1A1X 2A1X 3A1X 1B1X 2B2B 5B2A 
-    *  14   -0.016916  ( 8238, 8257)  1A1X 2A1X 3A1X 1B1B 1B2A 2B1A 2B2B 
-    *  15   -0.016916  ( 8257, 8238)  1A1X 2A1X 3A1X 1B1A 1B2B 2B1B 2B2A 
-    *  16   -0.016789  ( 8142, 8257)  1A1X 2A1X 3A1B 1B1X 1B2A 6A1A 2B2B 
-    *  17   -0.016789  ( 8257, 8142)  1A1X 2A1X 3A1A 1B1X 1B2B 6A1B 2B2A 
-    *  18    0.016789  ( 8142, 8238)  1A1X 2A1X 3A1B 1B1A 1B2X 6A1A 2B1B 
-    *  19    0.016789  ( 8238, 8142)  1A1X 2A1X 3A1A 1B1B 1B2X 6A1B 2B1A 
-    *  20    0.015988  ( 8136, 8142)  1A1X 2A1X 1B1X 1B2X 4A1A 6A1B 
+    *   1    0.974800  (230967,230967)  1A1X 2A1X 3A1X 1B1X 1B2X 
+    *   2   -0.035853  (230974,230974)  1A1X 2A1X 1B1X 1B2X 6A1X 
+    *   3   -0.024965  (231089,231089)  1A1X 2A1X 3A1X 1B1X 2B2X 
+    *   4   -0.024965  (231070,231070)  1A1X 2A1X 3A1X 1B2X 2B1X 
+    *   5   -0.022944  (230983,230983)  1A1X 2A1X 1B1X 1B2X 9A1X 
+    *   6   -0.022336  (230974,230983)  1A1X 2A1X 1B1X 1B2X 6A1A 9A1B 
+    *   7   -0.022336  (230983,230974)  1A1X 2A1X 1B1X 1B2X 6A1B 9A1A 
+    *   8   -0.021502  (231092,231092)  1A1X 2A1X 3A1X 1B1X 5B2X 
+    *   9   -0.021502  (231073,231073)  1A1X 2A1X 3A1X 1B2X 5B1X 
+    *  10    0.018878  (231070,231089)  1A1X 2A1X 3A1X 1B1B 1B2A 2B1A 2B2B 
+    *  11    0.018878  (231089,231070)  1A1X 2A1X 3A1X 1B1A 1B2B 2B1B 2B2A 
+    *  12   -0.018515  (231089,231092)  1A1X 2A1X 3A1X 1B1X 2B2A 5B2B 
+    *  13   -0.018515  (231092,231089)  1A1X 2A1X 3A1X 1B1X 2B2B 5B2A 
+    *  14   -0.018515  (231070,231073)  1A1X 2A1X 3A1X 1B2X 2B1A 5B1B 
+    *  15   -0.018515  (231073,231070)  1A1X 2A1X 3A1X 1B2X 2B1B 5B1A 
+    *  16   -0.018412  (230974,231070)  1A1X 2A1X 3A1B 1B1A 1B2X 6A1A 2B1B 
+    *  17   -0.018412  (231070,230974)  1A1X 2A1X 3A1A 1B1B 1B2X 6A1B 2B1A 
+    *  18    0.018412  (230974,231089)  1A1X 2A1X 3A1B 1B1X 1B2A 6A1A 2B2B 
+    *  19    0.018412  (231089,230974)  1A1X 2A1X 3A1A 1B1X 1B2B 6A1B 2B2A 
+    *  20   -0.017126  (230968,230974)  1A1X 2A1X 1B1X 1B2X 4A1A 6A1B 
 
 		 "A good bug is a dead bug" 
 
@@ -482,7 +484,7 @@ Total time:
 
 Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
 
-Properties computed using the CISD density matrix
+Properties computed using the CISDT density matrix
 
 
  Multipole Moments:
@@ -494,12 +496,12 @@ Properties computed using the CISD density matrix
  L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
  Dipole X            :          0.0000000            0.0000000            0.0000000
  Dipole Y            :          0.0000000            0.0000000            0.0000000
- Dipole Z            :          0.1320351           -0.8584145           -0.7263793
- Magnitude           :                                                    0.7263793
+ Dipole Z            :          0.1350695           -0.8584145           -0.7233450
+ Magnitude           :                                                    0.7233450
 
  ------------------------------------------------------------------------------------
 
-    Psi4 stopped on: Thursday, 05 June 2025 05:33PM
-    Psi4 wall time for execution: 0:00:20.57
+    Psi4 stopped on: Friday, 06 June 2025 09:43AM
+    Psi4 wall time for execution: 0:17:48.67
 
 *** Psi4 exiting successfully. Buy a developer a beer!
