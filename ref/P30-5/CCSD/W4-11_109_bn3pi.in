@@ -8,4 +8,4 @@ N     0.000000  0.000000  0.554250
 
 set reference rohf
 
-energy("CCSD(T)/def2-QZVP")
+properties("CCSD/def2-QZVP", properties=["NO_OCCUPATIONS"])

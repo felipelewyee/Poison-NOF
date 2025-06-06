@@ -1,0 +1,440 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Thursday, 05 June 2025 05:49PM
+
+    Process ID: 507338
+    Host:       nh001
+    PSIDATADIR: /software-nas/eb2024/easybuild/software/rocky/8.9/intel/cascadelake/software/PSI4/1.9.1-foss-2023b/share/psi4
+    Memory:     500.0 MiB
+    Threads:    10
+    
+  ==> Input File <==
+
+--------------------------------------------------------------------------
+memory 60Gb
+
+molecule{
+0 2
+F     -1.011195  -0.706276  0.000000
+O     0.000000  0.575215  0.000000
+O     1.137595  0.219345  0.000000
+}
+
+set reference rohf
+set nat_orbs true
+set qc_module detci
+set dipmom true
+
+energy("CISD/def2-QZVP")
+--------------------------------------------------------------------------
+
+  Memory set to  55.879 GiB by Python driver.
+
+Scratch directory: /scratch/pobleyef/203645/
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  5, 4, 3
+    Auxiliary basis highest AM E, G, H:  6, 5, 4
+    Onebody   basis highest AM E, G, H:  6, 5, 4
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on nh001
+*** at Thu Jun  5 17:49:28 2025
+
+   => Loading Basis Set <=
+
+    Name: DEF2-QZVP
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1   entry F          line   338 file /software-nas/eb2024/easybuild/software/rocky/8.9/intel/cascadelake/software/PSI4/1.9.1-foss-2023b/share/psi4/basis/def2-qzvp.gbs 
+    atoms 2-3 entry O          line   290 file /software-nas/eb2024/easybuild/software/rocky/8.9/intel/cascadelake/software/PSI4/1.9.1-foss-2023b/share/psi4/basis/def2-qzvp.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                             ROHF Reference
+                       10 Threads,  57220 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: cs
+    Full point group: Cs
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 2:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         F           -0.991281476003    -0.692366970433     0.000000000000    18.998403162730
+         O            0.019913523997     0.589124029567     0.000000000000    15.994914619570
+         O            1.157508523997     0.233254029567     0.000000000000    15.994914619570
+
+  Running in cs symmetry.
+
+  Rotational constants: A =      2.63543  B =      0.34237  C =      0.30301 [cm^-1]
+  Rotational constants: A =  79008.26118  B =  10264.07931  C =   9083.96772 [MHz]
+  Nuclear repulsion =   68.038139627869697
+
+  Charge       = 0
+  Multiplicity = 2
+  Electrons    = 25
+  Nalpha       = 13
+  Nbeta        = 12
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: DEF2-QZVP
+    Blend: DEF2-QZVP
+    Number of shells: 51
+    Number of basis functions: 171
+    Number of Cartesian functions: 216
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                   3
+      Number of AO shells:              51
+      Number of primitives:             87
+      Number of atomic orbitals:       216
+      Number of basis functions:       171
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                10
+
+  Performing in-core PK
+  Using 216281142 doubles for integral storage.
+  We computed 1109413 shell quartets total.
+  Whereas there are 879801 unique shell quartets.
+    26.10 percent of shell quartets recomputed by reordering.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:            42915
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:             10
+
+  Minimum eigenvalue in the overlap matrix is 4.6988115687E-04.
+  Reciprocal condition number of the overlap matrix is 8.5287418533E-05.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A'       111     111 
+     A"        60      60 
+   -------------------------
+    Total     171     171
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @ROHF iter SAD:  -248.06285101800526   -2.48063e+02   0.00000e+00 
+   @ROHF iter   1:  -248.84357462609134   -7.80724e-01   3.40821e-03 DIIS
+   @ROHF iter   2:  -248.56811059358799    2.75464e-01   6.23165e-03 DIIS
+   @ROHF iter   3:  -248.96769824085962   -3.99588e-01   1.00938e-03 DIIS
+   @ROHF iter   4:  -248.98219084658328   -1.44926e-02   6.35595e-04 DIIS
+   @ROHF iter   5:  -248.98933469905805   -7.14385e-03   2.93141e-04 DIIS
+   @ROHF iter   6:  -248.99243873736620   -3.10404e-03   2.35598e-04 DIIS
+   @ROHF iter   7:  -248.99676684134712   -4.32810e-03   1.45306e-04 DIIS
+   @ROHF iter   8:  -248.99851366560196   -1.74682e-03   6.32155e-05 DIIS
+   @ROHF iter   9:  -248.99860361395329   -8.99484e-05   2.32052e-05 DIIS
+   @ROHF iter  10:  -248.99864570219515   -4.20882e-05   6.75368e-06 DIIS
+   @ROHF iter  11:  -248.99864785365074   -2.15146e-06   2.84510e-06 DIIS
+   @ROHF iter  12:  -248.99864837599930   -5.22349e-07   8.21233e-07 DIIS
+   @ROHF iter  13:  -248.99864842808549   -5.20862e-08   4.05079e-07 DIIS
+   @ROHF iter  14:  -248.99864844324375   -1.51583e-08   1.45877e-07 DIIS
+   @ROHF iter  15:  -248.99864844493564   -1.69189e-09   6.52275e-08 DIIS
+   @ROHF iter  16:  -248.99864844503313   -9.74865e-11   3.18592e-08 DIIS
+   @ROHF iter  17:  -248.99864844507496   -4.18368e-11   7.10544e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1Ap   -26.311878     2Ap   -20.851991     3Ap   -20.775293  
+       4Ap    -1.747189     5Ap    -1.535469     6Ap    -1.155918  
+       7Ap    -0.813309     1App   -0.793500     8Ap    -0.792455  
+       9Ap    -0.635175     2App   -0.632849    10Ap    -0.527388  
+
+    Singly Occupied:                                                      
+
+       3App   -0.268344  
+
+    Virtual:                                                              
+
+      11Ap     0.029664    12Ap     0.245651    13Ap     0.313336  
+       4App    0.322746    14Ap     0.376578    15Ap     0.415623  
+       5App    0.420744    16Ap     0.472005     6App    0.505939  
+      17Ap     0.513959    18Ap     0.561770    19Ap     0.575918  
+      20Ap     0.799978    21Ap     0.982104     7App    1.018425  
+      22Ap     1.168556     8App    1.189312    23Ap     1.250456  
+       9App    1.353099    24Ap     1.382158    25Ap     1.449667  
+      10App    1.480148    26Ap     1.490237    27Ap     1.518111  
+      11App    1.549180    12App    1.634892    28Ap     1.646519  
+      29Ap     1.716482    30Ap     1.832463    31Ap     1.912102  
+      13App    1.919895    14App    1.927645    32Ap     1.976375  
+      33Ap     2.016285    15App    2.066306    34Ap     2.116677  
+      35Ap     2.240066    36Ap     2.657997    37Ap     3.003964  
+      16App    3.085979    38Ap     3.110113    17App    3.209800  
+      18App    3.272210    39Ap     3.381886    40Ap     3.412451  
+      41Ap     3.559061    19App    3.565423    42Ap     3.788925  
+      43Ap     3.946115    20App    3.959278    44Ap     4.011632  
+      45Ap     4.100965    21App    4.138691    46Ap     4.155298  
+      22App    4.163189    23App    4.182285    47Ap     4.255302  
+      48Ap     4.320884    24App    4.386538    49Ap     4.396433  
+      50Ap     4.504557    25App    4.569684    51Ap     4.580359  
+      52Ap     4.647553    26App    4.719465    53Ap     4.778792  
+      27App    4.886052    54Ap     4.954025    28App    5.001281  
+      55Ap     5.037167    56Ap     5.167064    29App    5.262232  
+      57Ap     5.286773    30App    5.440616    58Ap     5.448559  
+      59Ap     5.510836    60Ap     5.592297    31App    5.753406  
+      61Ap     5.860262    32App    5.966912    62Ap     6.099660  
+      63Ap     6.457352    33App    6.771785    64Ap     6.806026  
+      65Ap     7.248769    66Ap     8.346847    34App    8.542634  
+      67Ap     8.601373    35App    8.765171    68Ap     8.823873  
+      36App    9.011399    69Ap     9.057575    37App    9.141148  
+      70Ap     9.169772    71Ap     9.192099    38App    9.298254  
+      72Ap     9.367238    39App    9.736286    73Ap     9.783606  
+      74Ap    10.853942    40App   10.854129    75Ap    10.920803  
+      41App   10.983433    76Ap    10.986611    42App   11.275776  
+      77Ap    11.313602    43App   11.383243    78Ap    11.411424  
+      44App   11.454746    79Ap    11.654533    45App   11.699979  
+      80Ap    11.703901    81Ap    11.790363    82Ap    11.855606  
+      83Ap    11.945841    46App   11.950932    84Ap    11.976040  
+      47App   11.983844    85Ap    11.999947    48App   12.000341  
+      49App   12.020499    86Ap    12.057873    87Ap    12.139472  
+      50App   12.221001    51App   12.236287    52App   12.315377  
+      88Ap    12.358900    53App   12.359858    89Ap    12.414582  
+      90Ap    12.433160    91Ap    12.535984    54App   12.585106  
+      92Ap    12.719516    93Ap    12.837368    94Ap    14.047184  
+      55App   14.523066    95Ap    14.538274    96Ap    14.554946  
+      56App   15.251861    97Ap    15.255578    57App   15.268106  
+      98Ap    15.276998    99Ap    15.440653    58App   15.501229  
+     100Ap    15.572154   101Ap    16.314298    59App   16.487161  
+     102Ap    16.503293   103Ap    16.606169    60App   16.641410  
+     104Ap    16.677896   105Ap    17.182950   106Ap    48.343545  
+     107Ap    49.149593   108Ap    55.308833   109Ap   255.109083  
+     110Ap   255.958897   111Ap   288.092328  
+
+    Final Occupation by Irrep:
+             Ap   App 
+    DOCC [    10,    2 ]
+    SOCC [     0,    1 ]
+    NA   [    10,    3 ]
+    NB   [    10,    2 ]
+
+  @ROHF Final Energy:  -248.99864844507496
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =             68.0381396278696968
+    One-Electron Energy =                -480.3054113252741217
+    Two-Electron Energy =                 163.2686232523294905
+    Total Energy =                       -248.9986484450749629
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.2850875            0.9407871            0.6556996
+ Dipole Y            :         -0.1200848            0.6570989            0.5370140
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.8475412
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on nh001 at Thu Jun  5 17:49:46 2025
+Module time:
+	user time   =      33.93 seconds =       0.57 minutes
+	system time =       0.50 seconds =       0.01 minutes
+	total time  =         18 seconds =       0.30 minutes
+Total time:
+	user time   =      33.93 seconds =       0.57 minutes
+	system time =       0.50 seconds =       0.01 minutes
+	total time  =         18 seconds =       0.30 minutes
+ MINTS: Wrapper to libmints.
+   by Justin Turney
+
+   Calculation information:
+      Number of threads:                10
+      Number of atoms:                   3
+      Number of AO shells:              51
+      Number of SO shells:              51
+      Number of primitives:             87
+      Number of atomic orbitals:       216
+      Number of basis functions:       171
+
+      Number of irreps:                  2
+      Integral cutoff                 1.00e-12
+      Number of functions per irrep: [ 111   60 ]
+
+ OEINTS: Overlap, kinetic, potential, dipole, and quadrupole integrals
+         stored in file 35.
+
+      Computing two-electron integrals...done
+      Computed 48232294 non-zero two-electron integrals.
+        Stored in file 33.
+
+
+         ---------------------------------------------------------
+                          Configuration Interaction
+                            (a 'D E T C I' module)
+
+                 C. David Sherrill, Daniel G. A. Smith, and
+                              Matt L. Leininger
+         ---------------------------------------------------------
+
+Warning: iopen=0,opentype!=closed. Making iopen=1
+
+   ==> Parameters <==
+
+    EX LEVEL       =        2      H0 BLOCKSIZE  =     1000
+    VAL EX LEVEL   =        0      H0 GUESS SIZE =     1000
+    H0COUPLINGSIZE =        0      H0 COUPLING   =       NO
+    MAXITER        =       24      NUM PRINT     =       20
+    NUM ROOTS      =        1      ICORE         =        1
+    PRINT LVL      =        1      FCI           =       NO
+    R CONV         = 1.00e-04      MIXED         =      YES
+    E CONV         = 1.00e-06      MIXED4        =      YES
+    R4S            =       NO      REPL OTF      =       NO
+    DIAG METHOD    =      SEM      FOLLOW ROOT   =        0
+    PRECONDITIONER = DAVIDSON      UPDATE        = DAVIDSON
+    S              =   0.5000      Ms0           =       NO
+    GUESS VECTOR   =  H0BLOCK      OPENTYPE      = HIGHSPIN
+    COLLAPSE SIZE  =        1      HD AVG        = EVANGELISTI
+    MAX NUM VECS   =       25      REF SYM       =     AUTO
+    IOPEN        =      YES
+
+    EX ALLOW       =  1  1 
+    STATE AVERAGE  =  0(1.00) 
+
+   ==> CI Orbital and Space information <==
+
+    RAS1 LVL      =       12      A RAS3 MAX    =        2
+    RAS1 MIN      =       23      B RAS3 MAX    =        2
+    A RAS1 LVL    =       12      RAS4 LVL      =      171
+    A RAS1 MIN    =       11      A RAS4 MAX    =        0
+    A RAS1 MAX    =       13      B RAS4 MAX    =        0
+    B RAS1 LVL    =       12      RAS4 MAX      =        0
+    B RAS1 MIN    =       10      A RAS34 MAX   =        2
+    B RAS1 MAX    =       12      B RAS34 MAX   =        2
+    RAS3 LVL      =       13      RAS34 MAX     =        2
+    RAS3 MAX      =        2
+   ------------------------------------------
+               Space    Total    A'    A"
+   ------------------------------------------
+                 Nso      171   111    60
+                 Nmo      171   111    60
+               Ndocc       12    10     2
+               Nsocc        1     0     1
+   ------------------------------------------
+                 CI Spaces
+   ------------------------------------------
+        Dropped DOCC        0     0     0
+                RAS1       13    10     3
+                RAS2        0     0     0
+                RAS3      158   101    57
+                RAS4        0     0     0
+      Active (total)      171   111    60
+        Dropped UOCC        0     0     0
+   ------------------------------------------
+
+   ==> Setting up CI strings <==
+
+    There are 969489 alpha and 3559595 beta strings
+    The CI space requires 20552542 (2.06E+07) determinants and 9 blocks
+
+   ==> Transforming CI integrals <==
+
+	Presorting SO-basis two-electron integrals.
+	Sorting File: SO Ints (nn|nn) nbuckets = 1
+	Constructing frozen core operators
+	Starting first half-transformation.
+	Sorting half-transformed integrals.
+	First half integral transformation complete.
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+
+   ==> Starting CI iterations <==
+
+    H0 Block Eigenvalue = -249.10280108
+
+    Simultaneous Expansion Method (Block Davidson Method)
+    Using 1 initial trial vectors
+
+     Iter   Root       Total Energy       Delta E      C RMS
+
+   @CI  0:     0   -249.102801084320   -3.1714E+02   3.4833E+00  

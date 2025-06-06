@@ -9,7 +9,7 @@ xyz}
 
 set reference rhf
 
-energy(\"CCSD(T)/def2-QZVP\")
+properties(\"CCSD/def2-QZVP\", properties=[\"NO_OCCUPATIONS\"])
 """
 
 data = YAML.load_file("Reactions.yaml")

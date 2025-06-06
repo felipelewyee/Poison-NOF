@@ -1,0 +1,62 @@
+
+Host: na06
+
+Timers On : Thu Jun  5 17:49:28 2025
+Timers Off: Thu Jun  5 22:37:20 2025
+
+Wall Time:    17272.18 seconds
+
+                                                       Time (seconds)
+Module                                       User      System        Wall        Calls
+Total PK formation time             :     53.117u      0.900s      6.319w      1 calls
+Libint2ERI::Libint2ERI              :      1.583u      0.117s      1.038w     12 calls
+HF: Form core H                     :      0.183u      0.017s      0.013w      1 calls
+HF: Form S/X                        :      0.033u      0.000s      0.002w      1 calls
+HF: Guess                           :      0.950u      0.067s      0.086w      1 calls
+SAD Guess                           :      0.917u      0.067s      0.084w      1 calls
+HF: Form G                          :     14.867u      0.050s      8.294w     11 calls
+JK: D                               :      0.000u      0.000s      0.000w     11 calls
+JK: USO2AO                          :      0.133u      0.000s      0.005w     11 calls
+JK: JK                              :     14.600u      0.050s      8.275w     11 calls
+PK computes JK                      :     14.583u      0.050s      8.272w     11 calls
+JK: AO2USO                          :      0.133u      0.000s      0.013w     11 calls
+HF: Form F                          :      0.000u      0.000s      0.000w     11 calls
+HF: Form D                          :      0.000u      0.000s      0.001w     11 calls
+HF: DIIS                            :      0.800u      0.067s      0.227w     10 calls
+HF: Form C                          :      0.400u      0.033s      0.021w     10 calls
+CIWave: CIvect write                :      1.317u      1.383s      0.798w     62 calls
+CIWave: CIvect read                 :      5.633u      5.550s      3.384w    338 calls
+CIWave: s2                          :  16173.300u    792.783s  10236.183w    112 calls
+CIWave: s3                          :   7211.933u    222.400s   4485.608w    456 calls
+CIWave: s3_mt                       :   6357.317u    218.683s   3968.017w  82256 calls
+CIWave: s1                          :      0.100u      0.033s      0.095w    120 calls
+CIWave: opdm                        :      7.567u      1.300s      5.363w      1 calls
+
+--------------------------------------------------------------------------------------
+Total PK formation time             :     53.117u      0.900s      6.319w      1 calls
+| Libint2ERI::Libint2ERI            :      1.417u      0.100s      0.927w     11 calls
+HF: Form core H                     :      0.183u      0.017s      0.013w      1 calls
+HF: Form S/X                        :      0.033u      0.000s      0.002w      1 calls
+HF: Guess                           :      0.950u      0.067s      0.086w      1 calls
+| SAD Guess                         :      0.917u      0.067s      0.084w      1 calls
+HF: Form G                          :     14.867u      0.050s      8.294w     11 calls
+| JK: D                             :      0.000u      0.000s      0.000w     11 calls
+| JK: USO2AO                        :      0.133u      0.000s      0.005w     11 calls
+| JK: JK                            :     14.600u      0.050s      8.275w     11 calls
+| | PK computes JK                  :     14.583u      0.050s      8.272w     11 calls
+| JK: AO2USO                        :      0.133u      0.000s      0.013w     11 calls
+HF: Form F                          :      0.000u      0.000s      0.000w     11 calls
+HF: Form D                          :      0.000u      0.000s      0.001w     11 calls
+HF: DIIS                            :      0.800u      0.067s      0.227w     10 calls
+HF: Form C                          :      0.400u      0.033s      0.021w     10 calls
+Libint2ERI::Libint2ERI              :      0.167u      0.017s      0.111w      1 calls
+CIWave: CIvect write                :      1.317u      1.383s      0.798w     62 calls
+CIWave: CIvect read                 :      5.633u      5.517s      3.365w    336 calls
+CIWave: s2                          :  16173.300u    792.783s  10236.183w    112 calls
+CIWave: s3                          :   7211.933u    222.400s   4485.608w    456 calls
+| CIWave: s3_mt                     :   6357.317u    218.683s   3968.017w  82256 calls
+CIWave: s1                          :      0.100u      0.033s      0.095w    120 calls
+CIWave: opdm                        :      7.567u      1.300s      5.363w      1 calls
+| CIWave: CIvect read               :      0.000u      0.033s      0.018w      2 calls
+
+**************************************************************************************

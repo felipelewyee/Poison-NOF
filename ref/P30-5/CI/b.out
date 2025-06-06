@@ -1,0 +1,483 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Thursday, 05 June 2025 04:04PM
+
+    Process ID: 803074
+    Host:       nagpu01
+    PSIDATADIR: /software-nas/eb2024/easybuild/software/rocky/8.9/amd/zen4/software/PSI4/1.9.1-foss-2023b/share/psi4
+    Memory:     500.0 MiB
+    Threads:    40
+    
+  ==> Input File <==
+
+--------------------------------------------------------------------------
+memory 60Gb
+
+molecule{
+0 2
+B     0.000000  0.000000  0.000000
+}
+
+set reference rohf
+set nat_orbs true
+set qc_module detci
+set dipmom true
+
+energy("FCI/def2-QZVP")
+--------------------------------------------------------------------------
+
+  Memory set to  55.879 GiB by Python driver.
+
+Scratch directory: /scratch/pobleyef/203546/
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  5, 4, 3
+    Auxiliary basis highest AM E, G, H:  6, 5, 4
+    Onebody   basis highest AM E, G, H:  6, 5, 4
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on nagpu01
+*** at Thu Jun  5 16:04:54 2025
+
+   => Loading Basis Set <=
+
+    Name: DEF2-QZVP
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1 entry B          line   146 file /software-nas/eb2024/easybuild/software/rocky/8.9/amd/zen4/software/PSI4/1.9.1-foss-2023b/share/psi4/basis/def2-qzvp.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                             ROHF Reference
+                       40 Threads,  57220 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: d2h
+    Geometry (in Angstrom), charge = 0, multiplicity = 2:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         B            0.000000000000     0.000000000000     0.000000000000    11.009305360000
+
+  Running in d2h symmetry.
+
+  Rotational constants: A = ************  B = ************  C = ************ [cm^-1]
+  Rotational constants: A = ************  B = ************  C = ************ [MHz]
+  Nuclear repulsion =    0.000000000000000
+
+  Charge       = 0
+  Multiplicity = 2
+  Electrons    = 5
+  Nalpha       = 3
+  Nbeta        = 2
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is CORE.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: DEF2-QZVP
+    Blend: DEF2-QZVP
+    Number of shells: 17
+    Number of basis functions: 57
+    Number of Cartesian functions: 72
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                   1
+      Number of AO shells:              17
+      Number of primitives:             29
+      Number of atomic orbitals:        72
+      Number of basis functions:        57
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                40
+
+  Performing in-core PK
+  Using 2734062 doubles for integral storage.
+  We computed 79679 shell quartets total.
+  Whereas there are 11781 unique shell quartets.
+   576.33 percent of shell quartets recomputed by reordering.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:            42915
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:             40
+
+  Minimum eigenvalue in the overlap matrix is 6.3453909828E-03.
+  Reciprocal condition number of the overlap matrix is 1.6100776532E-03.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Core (One-Electron) Hamiltonian.
+
+   -------------------------------------------------------
+    Irrep   Nso     Nmo     Nalpha   Nbeta   Ndocc  Nsocc
+   -------------------------------------------------------
+     Ag        16      16       2       2       2       0
+     B1g        5       5       0       0       0       0
+     B2g        5       5       0       0       0       0
+     B3g        5       5       0       0       0       0
+     Au         2       2       0       0       0       0
+     B1u        8       8       0       0       0       0
+     B2u        8       8       0       0       0       0
+     B3u        8       8       1       0       0       1
+   -------------------------------------------------------
+    Total      57      57       3       2       2       1
+   -------------------------------------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+    Occupation by irrep:
+             Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u 
+    DOCC [     2,    0,    0,    0,    0,    0,    0,    0 ]
+    SOCC [     0,    0,    0,    0,    0,    0,    1,    0 ]
+    NA   [     2,    0,    0,    0,    0,    0,    1,    0 ]
+    NB   [     2,    0,    0,    0,    0,    0,    0,    0 ]
+
+   @ROHF iter   1:   -22.84364360524345   -2.28436e+01   7.64179e-02 DIIS
+   @ROHF iter   2:   -24.31235317659607   -1.46871e+00   9.38760e-03 DIIS
+   @ROHF iter   3:   -24.51554037722055   -2.03187e-01   2.75745e-03 DIIS
+   @ROHF iter   4:   -24.52721010856003   -1.16697e-02   1.10025e-03 DIIS
+   @ROHF iter   5:   -24.52897265202372   -1.76254e-03   2.74744e-04 DIIS
+   @ROHF iter   6:   -24.52908433312837   -1.11681e-04   2.58177e-05 DIIS
+   @ROHF iter   7:   -24.52908526528827   -9.32160e-07   2.11407e-06 DIIS
+   @ROHF iter   8:   -24.52908527436030   -9.07204e-09   1.54476e-07 DIIS
+   @ROHF iter   9:   -24.52908527438840   -2.80949e-11   2.25173e-08 DIIS
+   @ROHF iter  10:   -24.52908527438908   -6.85674e-13   7.01123e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1Ag    -7.695337     2Ag    -0.494741  
+
+    Singly Occupied:                                                      
+
+       1B2u   -0.085972  
+
+    Virtual:                                                              
+
+       1B1u    0.039978     1B3u    0.039978     2B2u    0.158622  
+       2B1u    0.188172     2B3u    0.188172     3Ag     0.209002  
+       1B2g    0.408351     4Ag     0.408351     1B3g    0.415145  
+       1B1g    0.415145     5Ag     0.417578     3B2u    0.651223  
+       3B1u    0.656566     3B3u    0.656566     6Ag     1.151612  
+       4B1u    1.218473     4B3u    1.218473     4B2u    1.233932  
+       1Au     1.233932     5B1u    1.243264     5B3u    1.243264  
+       5B2u    1.246285     7Ag     1.336136     2B2g    1.336136  
+       2B3g    1.350212     2B1g    1.350212     8Ag     1.354975  
+       6B1u    2.087917     6B3u    2.087917     6B2u    2.101827  
+       3B2g    3.393339     9Ag     3.393339     3B3g    3.413127  
+       3B1g    3.413127     4B2g    3.427382    10Ag     3.427382  
+       4B3g    3.435984     4B1g    3.435984    11Ag     3.438859  
+      12Ag     3.899659     5B2g    3.899659     5B3g    3.922487  
+       5B1g    3.922487    13Ag     3.930199     7B3u    3.942141  
+       7B1u    3.942141     2Au     3.965071     7B2u    3.965071  
+       8B3u    3.978905     8B1u    3.978905     8B2u    3.983497  
+      14Ag     4.931265    15Ag    19.076481    16Ag   102.969104  
+
+    Final Occupation by Irrep:
+             Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u 
+    DOCC [     2,    0,    0,    0,    0,    0,    0,    0 ]
+    SOCC [     0,    0,    0,    0,    0,    0,    1,    0 ]
+    NA   [     2,    0,    0,    0,    0,    0,    1,    0 ]
+    NB   [     2,    0,    0,    0,    0,    0,    0,    0 ]
+
+  @ROHF Final Energy:   -24.52908527438908
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              0.0000000000000000
+    One-Electron Energy =                 -32.3680597372486929
+    Two-Electron Energy =                   7.8389744628596105
+    Total Energy =                        -24.5290852743890824
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.0000000
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on nagpu01 at Thu Jun  5 16:04:57 2025
+Module time:
+	user time   =     104.15 seconds =       1.74 minutes
+	system time =       2.41 seconds =       0.04 minutes
+	total time  =          3 seconds =       0.05 minutes
+Total time:
+	user time   =     104.15 seconds =       1.74 minutes
+	system time =       2.41 seconds =       0.04 minutes
+	total time  =          3 seconds =       0.05 minutes
+ MINTS: Wrapper to libmints.
+   by Justin Turney
+
+   Calculation information:
+      Number of threads:                40
+      Number of atoms:                   1
+      Number of AO shells:              17
+      Number of SO shells:              17
+      Number of primitives:             29
+      Number of atomic orbitals:        72
+      Number of basis functions:        57
+
+      Number of irreps:                  8
+      Integral cutoff                 1.00e-12
+      Number of functions per irrep: [  16    5    5    5    2    8    8    8 ]
+
+ OEINTS: Overlap, kinetic, potential, dipole, and quadrupole integrals
+         stored in file 35.
+
+      Computing two-electron integrals...done
+      Computed 128567 non-zero two-electron integrals.
+        Stored in file 33.
+
+
+         ---------------------------------------------------------
+                          Configuration Interaction
+                            (a 'D E T C I' module)
+
+                 C. David Sherrill, Daniel G. A. Smith, and
+                              Matt L. Leininger
+         ---------------------------------------------------------
+
+Warning: iopen=0,opentype!=closed. Making iopen=1
+
+   ==> Parameters <==
+
+    EX LEVEL       =        5      H0 BLOCKSIZE  =     1000
+    VAL EX LEVEL   =        0      H0 GUESS SIZE =     1000
+    H0COUPLINGSIZE =        0      H0 COUPLING   =       NO
+    MAXITER        =       24      NUM PRINT     =       20
+    NUM ROOTS      =        1      ICORE         =        1
+    PRINT LVL      =        1      FCI           =      YES
+    R CONV         = 1.00e-04      MIXED         =      YES
+    E CONV         = 1.00e-06      MIXED4        =      YES
+    R4S            =       NO      REPL OTF      =       NO
+    DIAG METHOD    =      SEM      FOLLOW ROOT   =        0
+    PRECONDITIONER = DAVIDSON      UPDATE        = DAVIDSON
+    S              =   0.5000      Ms0           =       NO
+    GUESS VECTOR   =  H0BLOCK      OPENTYPE      = HIGHSPIN
+    COLLAPSE SIZE  =        1      HD AVG        = EVANGELISTI
+    MAX NUM VECS   =       25      REF SYM       =     AUTO
+    IOPEN        =      YES
+
+    EX ALLOW       =  1  1  1  1  1 
+    STATE AVERAGE  =  0(1.00) 
+
+   ==> CI Orbital and Space information <==
+
+   ------------------------------------------------------------------------------
+               Space    Total    Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u
+   ------------------------------------------------------------------------------
+                 Nso       57    16     5     5     5     2     8     8     8
+                 Nmo       57    16     5     5     5     2     8     8     8
+               Ndocc        2     2     0     0     0     0     0     0     0
+               Nsocc        1     0     0     0     0     0     0     1     0
+   ------------------------------------------------------------------------------
+                                   CI Spaces
+   ------------------------------------------------------------------------------
+        Dropped DOCC        0     0     0     0     0     0     0     0     0
+              Active       57    16     5     5     5     2     8     8     8
+        Dropped UOCC        0     0     0     0     0     0     0     0     0
+   ------------------------------------------------------------------------------
+
+   ==> Setting up CI strings <==
+
+    There are 29260 alpha and 1596 beta strings
+    The CI space requires 5841820 (5.84E+06) determinants and 8 blocks
+
+   ==> Transforming CI integrals <==
+
+	Presorting SO-basis two-electron integrals.
+	Sorting File: SO Ints (nn|nn) nbuckets = 1
+	Constructing frozen core operators
+	Starting first half-transformation.
+	Sorting half-transformed integrals.
+	First half integral transformation complete.
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+
+   ==> Starting CI iterations <==
+
+    H0 Block Eigenvalue = -24.59604748
+
+    Simultaneous Expansion Method (Block Davidson Method)
+    Using 1 initial trial vectors
+
+     Iter   Root       Total Energy       Delta E      C RMS
+
+   @CI  0:     0    -24.596047478504   -2.4596E+01   9.5710E-01  
+   @CI  1:     0    -24.620553893394   -2.4506E-02   7.7554E-02  
+   @CI  2:     0    -24.620820027592   -2.6613E-04   1.6629E-02  
+   @CI  3:     0    -24.620844239047   -2.4211E-05   7.1430E-03  
+   @CI  4:     0    -24.620848108823   -3.8698E-06   2.2960E-03  
+   @CI  5:     0    -24.620848602687   -4.9386E-07   9.0396E-04  
+   @CI  6:     0    -24.620848660095   -5.7408E-08   2.6144E-04  
+   @CI  7:     0    -24.620848666431   -6.3364E-09   1.0375E-04  
+   @CI  8:     0    -24.620848667156   -7.2411E-10   2.7748E-05 c
+
+   Computing CI Natural Orbitals
+
+   ==> Energetics <==
+
+    SCF energy =          -24.529085274389082
+    Total CI energy =     -24.620848667155599
+
+   ==> FCI root 0 information <==
+
+    FCI Root 0 energy =   -24.620848667155599
+
+   Active Space Natural occupation numbers:
+
+        Ag   1.998687        Ag   1.875939       B2u   0.984180
+       B3u   0.051662       B1u   0.051662        Ag   0.010314
+       B3g   0.006259       B1g   0.006259       B2u   0.005866
+        Ag   0.005225        Ag   0.000692       B2u   0.000500
+        Ag   0.000335       B2g   0.000335       B1u   0.000275
+       B3u   0.000275       B2u   0.000152       B1u   0.000151
+       B3u   0.000151        Ag   0.000117       B2u   0.000114
+        Au   0.000114       B3g   0.000093       B1g   0.000093
+       B1u   0.000083       B3u   0.000083        Ag   0.000080
+       B2u   0.000045        Ag   0.000021       B3g   0.000019
+       B1g   0.000019       B1u   0.000018       B3u   0.000018
+        Ag   0.000014       B2g   0.000014        Ag   0.000012
+        Ag   0.000011       B3g   0.000010       B1g   0.000010
+       B2u   0.000009       B2g   0.000009        Ag   0.000009
+       B3u   0.000008       B1u   0.000008       B2u   0.000007
+        Au   0.000007       B1g   0.000007       B3g   0.000007
+        Ag   0.000003        Ag   0.000003       B2g   0.000003
+        Ag   0.000002       B2g   0.000002       B1u   0.000002
+       B3u   0.000002       B3u   0.000002       B1u   0.000002
+
+   The 20 most important determinants:
+
+    *   1    0.961723  (21800,    0)  1AgX 2AgX 1B2uA 
+    *   2    0.092338  (12080,  957)  1AgX 1B2uA 1B1uX 
+    *   3    0.092338  ( 5776, 1468)  1AgX 1B2uA 1B3uX 
+    *   4    0.067747  (12106,  957)  1AgX 1B2uA 1B1uB 2B1uA 
+    *   5    0.067747  ( 5954, 1468)  1AgX 1B2uA 1B3uB 2B3uA 
+    *   6    0.067159  (12080,  973)  1AgX 1B2uA 1B1uA 2B1uB 
+    *   7    0.067159  ( 5776, 1484)  1AgX 1B2uA 1B3uA 2B3uB 
+    *   8    0.055433  (    4, 1160)  1AgX 2AgA 1B2uB 5AgA 
+    *   9    0.050250  ( 5954, 1484)  1AgX 1B2uA 2B3uX 
+    *  10    0.050250  (12106,  973)  1AgX 1B2uA 2B1uX 
+    *  11    0.039184  (11355,  957)  1AgX 2AgA 1B3gA 1B1uB 
+    *  12    0.039184  ( 3725, 1468)  1AgX 2AgA 1B1gA 1B3uB 
+    *  13    0.038540  (21800,    6)  1AgX 2AgA 1B2uA 5AgB 
+    *  14    0.037454  (   35, 1160)  1AgX 2AgA 1B2uB 8AgA 
+    *  15   -0.030748  (23208,    1)  1AgX 2AgA 3AgB 3B2uA 
+    *  16    0.028144  ( 3725, 1484)  1AgX 2AgA 1B1gA 2B3uB 
+    *  17    0.028144  (11355,  973)  1AgX 2AgA 1B3gA 2B1uB 
+    *  18    0.028141  ( 6137, 1468)  1AgX 1B2uA 1B3uB 3B3uA 
+    *  19    0.028141  (12137,  957)  1AgX 1B2uA 1B1uB 3B1uA 
+    *  20    0.027427  ( 5776, 1500)  1AgX 1B2uA 1B3uA 3B3uB 
+
+		 "A good bug is a dead bug" 
+
+			 - Starship Troopers
+
+		 "I didn't write FORTRAN.  That's the problem."
+
+			 - Edward Valeev
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the FCI density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.0000000
+
+ ------------------------------------------------------------------------------------
+
+    Psi4 stopped on: Thursday, 05 June 2025 04:07PM
+    Psi4 wall time for execution: 0:02:45.55
+
+*** Psi4 exiting successfully. Buy a developer a beer!

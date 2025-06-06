@@ -1,0 +1,16 @@
+memory 20Gb
+
+molecule{
+0 1
+S     0.000000  1.552343  0.921961
+S     0.000000  1.068508  -0.921961
+S     0.000000  -1.068508  -0.921961
+S     0.000000  -1.552343  0.921961
+}
+
+set reference rhf
+set nat_orbs true
+set qc_module detci
+set dipmom true
+
+energy("CISD/def2-QZVP")

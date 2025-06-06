@@ -1,0 +1,1359 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Thursday, 05 June 2025 04:04PM
+
+    Process ID: 2483480
+    Host:       nh033
+    PSIDATADIR: /software-nas/eb2024/easybuild/software/rocky/8.9/intel/cascadelake/software/PSI4/1.9.1-foss-2023b/share/psi4
+    Memory:     500.0 MiB
+    Threads:    40
+    
+  ==> Input File <==
+
+--------------------------------------------------------------------------
+memory 60Gb
+
+molecule{
+1 2
+He     0.00000000  0.00000000  -0.93992827
+He     0.00000000  0.00000000  0.93992827
+}
+
+set reference rohf
+set nat_orbs true
+set qc_module detci
+set dipmom true
+
+energy("FCI/def2-QZVP")
+--------------------------------------------------------------------------
+
+  Memory set to  55.879 GiB by Python driver.
+
+Scratch directory: /scratch/pobleyef/203552/
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  5, 4, 3
+    Auxiliary basis highest AM E, G, H:  6, 5, 4
+    Onebody   basis highest AM E, G, H:  6, 5, 4
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on nh033
+*** at Thu Jun  5 16:04:58 2025
+
+   => Loading Basis Set <=
+
+    Name: DEF2-QZVP
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-2 entry HE         line    40 file /software-nas/eb2024/easybuild/software/rocky/8.9/intel/cascadelake/software/PSI4/1.9.1-foss-2023b/share/psi4/basis/def2-qzvp.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                             ROHF Reference
+                       40 Threads,  57220 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: d2h
+    Full point group: D_inf_h
+
+    Geometry (in Angstrom), charge = 1, multiplicity = 2:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         HE           0.000000000000     0.000000000000    -0.939928270000     4.002603254130
+         HE           0.000000000000     0.000000000000     0.939928270000     4.002603254130
+
+  Running in d2h symmetry.
+
+  Rotational constants: A = ************  B =      2.38361  C =      2.38361 [cm^-1]
+  Rotational constants: A = ************  B =  71458.72049  C =  71458.72049 [MHz]
+  Nuclear repulsion =    1.125994881864762
+
+  Charge       = 1
+  Multiplicity = 2
+  Electrons    = 3
+  Nalpha       = 2
+  Nbeta        = 1
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is PK.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: DEF2-QZVP
+    Blend: DEF2-QZVP
+    Number of shells: 20
+    Number of basis functions: 60
+    Number of Cartesian functions: 70
+    Spherical Harmonics?: true
+    Max angular momentum: 3
+
+  ==> Integral Setup <==
+
+  Using in-core PK algorithm.
+   Calculation information:
+      Number of atoms:                   2
+      Number of AO shells:              20
+      Number of primitives:             28
+      Number of atomic orbitals:        70
+      Number of basis functions:        60
+
+      Integral cutoff                 1.00e-12
+      Number of threads:                40
+
+  Performing in-core PK
+  Using 3350730 doubles for integral storage.
+  We computed 118051 shell quartets total.
+  Whereas there are 22155 unique shell quartets.
+   432.84 percent of shell quartets recomputed by reordering.
+
+  ==> DiskJK: Disk-Based J/K Matrices <==
+
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    Memory [MiB]:            42915
+    Schwarz Cutoff:          1E-12
+
+    OpenMP threads:             40
+
+  Minimum eigenvalue in the overlap matrix is 3.3036594887E-02.
+  Reciprocal condition number of the overlap matrix is 1.1484894497E-02.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     Ag        13      13 
+     B1g        3       3 
+     B2g        7       7 
+     B3g        7       7 
+     Au         3       3 
+     B1u       13      13 
+     B2u        7       7 
+     B3u        7       7 
+   -------------------------
+    Total      60      60
+   -------------------------
+
+  ==> Iterations <==
+
+                        Total Energy        Delta E     RMS |[F,P]|
+
+   @ROHF iter SAD:    -5.72950119738429   -5.72950e+00   0.00000e+00 
+   @ROHF iter   1:    -4.83164090550264    8.97860e-01   8.20511e-03 DIIS
+   @ROHF iter   2:    -4.85467312566467   -2.30322e-02   7.27769e-04 DIIS
+   @ROHF iter   3:    -4.85489791413264   -2.24788e-04   5.17239e-05 DIIS
+   @ROHF iter   4:    -4.85489969734483   -1.78321e-06   6.72454e-06 DIIS
+   @ROHF iter   5:    -4.85489972767772   -3.03329e-08   1.77747e-07 DIIS
+   @ROHF iter   6:    -4.85489972769628   -1.85620e-11   1.31765e-08 DIIS
+   @ROHF iter   7:    -4.85489972769640   -1.15463e-13   1.18657e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1Ag    -1.386955  
+
+    Singly Occupied:                                                      
+
+       1B1u   -1.189697  
+
+    Virtual:                                                              
+
+       2Ag     0.075894     2B1u    0.144504     3Ag     0.460876  
+       1B3u    0.597574     1B2u    0.597574     1B3g    0.718274  
+       1B2g    0.718274     3B1u    1.041352     4Ag     1.689947  
+       4B1u    1.850722     5Ag     3.237229     2B3u    3.326869  
+       2B2u    3.326869     1B1g    3.383744     6Ag     3.383744  
+       5B1u    3.392933     1Au     3.392933     2B3g    3.436070  
+       2B2g    3.436070     6B1u    3.555971     3B3u    4.170794  
+       3B2u    4.170794     7Ag     4.177449     3B3g    4.292141  
+       3B2g    4.292141     7B1u    4.779302     8Ag     9.511552  
+       8B1u    9.709745     4B2u   11.008316     4B3u   11.008316  
+       2B1g   11.009857     9Ag    11.009857     4B3g   11.009875  
+       4B2g   11.009875     2Au    11.010023     9B1u   11.010023  
+       5B2u   11.011705     5B3u   11.011705     5B2g   11.011715  
+       5B3g   11.011715    10Ag    11.014995    10B1u   11.029478  
+      11Ag    15.459600     6B3u   15.515123     6B2u   15.515123  
+       3B1g   15.544692    12Ag    15.544692     3Au    15.549540  
+      11B1u   15.549540     6B2g   15.578606     6B3g   15.578606  
+      12B1u   15.708736     7B3u   17.092592     7B2u   17.092592  
+      13Ag    17.094592     7B2g   17.179075     7B3g   17.179075  
+      13B1u   17.501754  
+
+    Final Occupation by Irrep:
+             Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u 
+    DOCC [     1,    0,    0,    0,    0,    0,    0,    0 ]
+    SOCC [     0,    0,    0,    0,    0,    1,    0,    0 ]
+    NA   [     1,    0,    0,    0,    0,    1,    0,    0 ]
+    NB   [     1,    0,    0,    0,    0,    0,    0,    0 ]
+
+  @ROHF Final Energy:    -4.85489972769640
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =              1.1259948818647618
+    One-Electron Energy =                  -7.6360964711627410
+    Two-Electron Energy =                   1.6552018616015816
+    Total Energy =                         -4.8548997276963970
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.0000000
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on nh033 at Thu Jun  5 16:04:59 2025
+Module time:
+	user time   =      10.92 seconds =       0.18 minutes
+	system time =       0.31 seconds =       0.01 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =      10.92 seconds =       0.18 minutes
+	system time =       0.31 seconds =       0.01 minutes
+	total time  =          1 seconds =       0.02 minutes
+ MINTS: Wrapper to libmints.
+   by Justin Turney
+
+   Calculation information:
+      Number of threads:                40
+      Number of atoms:                   2
+      Number of AO shells:              20
+      Number of SO shells:              10
+      Number of primitives:             28
+      Number of atomic orbitals:        70
+      Number of basis functions:        60
+
+      Number of irreps:                  8
+      Integral cutoff                 1.00e-12
+      Number of functions per irrep: [  13    3    7    7    3   13    7    7 ]
+
+ OEINTS: Overlap, kinetic, potential, dipole, and quadrupole integrals
+         stored in file 35.
+
+      Computing two-electron integrals...done
+      Computed 180477 non-zero two-electron integrals.
+        Stored in file 33.
+
+
+         ---------------------------------------------------------
+                          Configuration Interaction
+                            (a 'D E T C I' module)
+
+                 C. David Sherrill, Daniel G. A. Smith, and
+                              Matt L. Leininger
+         ---------------------------------------------------------
+
+Warning: iopen=0,opentype!=closed. Making iopen=1
+
+   ==> Parameters <==
+
+    EX LEVEL       =        3      H0 BLOCKSIZE  =     1000
+    VAL EX LEVEL   =        0      H0 GUESS SIZE =     1000
+    H0COUPLINGSIZE =        0      H0 COUPLING   =       NO
+    MAXITER        =       24      NUM PRINT     =       20
+    NUM ROOTS      =        1      ICORE         =        1
+    PRINT LVL      =        1      FCI           =      YES
+    R CONV         = 1.00e-04      MIXED         =      YES
+    E CONV         = 1.00e-06      MIXED4        =      YES
+    R4S            =       NO      REPL OTF      =       NO
+    DIAG METHOD    =      SEM      FOLLOW ROOT   =        0
+    PRECONDITIONER = DAVIDSON      UPDATE        = DAVIDSON
+    S              =   0.5000      Ms0           =       NO
+    GUESS VECTOR   =  H0BLOCK      OPENTYPE      = HIGHSPIN
+    COLLAPSE SIZE  =        1      HD AVG        = EVANGELISTI
+    MAX NUM VECS   =       25      REF SYM       =     AUTO
+    IOPEN        =      YES
+
+    EX ALLOW       =  1  1  1 
+    STATE AVERAGE  =  0(1.00) 
+
+   ==> CI Orbital and Space information <==
+
+   ------------------------------------------------------------------------------
+               Space    Total    Ag   B1g   B2g   B3g    Au   B1u   B2u   B3u
+   ------------------------------------------------------------------------------
+                 Nso       60    13     3     7     7     3    13     7     7
+                 Nmo       60    13     3     7     7     3    13     7     7
+               Ndocc        1     1     0     0     0     0     0     0     0
+               Nsocc        1     0     0     0     0     0     1     0     0
+   ------------------------------------------------------------------------------
+                                   CI Spaces
+   ------------------------------------------------------------------------------
+        Dropped DOCC        0     0     0     0     0     0     0     0     0
+              Active       60    13     3     7     7     3    13     7     7
+        Dropped UOCC        0     0     0     0     0     0     0     0     0
+   ------------------------------------------------------------------------------
+
+   ==> Setting up CI strings <==
+
+    There are 1770 alpha and 60 beta strings
+    The CI space requires 14114 (1.41E+04) determinants and 8 blocks
+
+   ==> Transforming CI integrals <==
+
+	Presorting SO-basis two-electron integrals.
+	Sorting File: SO Ints (nn|nn) nbuckets = 1
+	Constructing frozen core operators
+	Starting first half-transformation.
+	Sorting half-transformed integrals.
+	First half integral transformation complete.
+	Starting second half-transformation.
+	Two-electron integral transformation complete.
+
+   ==> Starting CI iterations <==
+
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+(H0block_setup): Can't find CI block!
+    H0 Block Eigenvalue =  -4.90889672
+
+    Simultaneous Expansion Method (Block Davidson Method)
+    Using 1 initial trial vectors
+
+     Iter   Root       Total Energy       Delta E      C RMS
+
+   @CI  0:     0     -4.908896723095   -6.0349E+00   5.3154E-01  
+   @CI  1:     0     -4.931691398861   -2.2795E-02   5.8655E-02  
+   @CI  2:     0     -4.932086591730   -3.9519E-04   1.0796E-02  
+   @CI  3:     0     -4.932121910461   -3.5319E-05   4.1209E-03  
+   @CI  4:     0     -4.932124232987   -2.3225E-06   7.1550E-04  
+   @CI  5:     0     -4.932124323996   -9.1008E-08   1.9277E-04  
+   @CI  6:     0     -4.932124329664   -5.6684E-09   4.1881E-05 c
+
+   Computing CI Natural Orbitals
+
+   ==> Energetics <==
+
+    SCF energy =           -4.854899727696397
+    Total CI energy =      -4.932124329664124
+
+   ==> FCI root 0 information <==
+
+    FCI Root 0 energy =    -4.932124329664124
+
+   Active Space Natural occupation numbers:
+
+        Ag   1.962943       B1u   1.001291        Ag   0.020866
+       B1u   0.006423        Ag   0.001503       B2u   0.001322
+       B3u   0.001322       B3g   0.001160       B2g   0.001160
+       B1u   0.001088        Ag   0.000167       B1u   0.000112
+        Ag   0.000057       B3u   0.000045       B2u   0.000045
+       B2g   0.000036       B3g   0.000036        Ag   0.000032
+       B1u   0.000032       B2u   0.000031       B3u   0.000031
+        Ag   0.000030       B1g   0.000030       B3g   0.000030
+       B2g   0.000030       B1u   0.000030        Au   0.000030
+       B1u   0.000029        Ag   0.000011       B1u   0.000008
+        Ag   0.000004       B2u   0.000003       B3u   0.000003
+       B2g   0.000003       B3g   0.000003       B1u   0.000003
+        Ag   0.000002       B2u   0.000002       B3u   0.000002
+        Ag   0.000002       B1g   0.000002       B2g   0.000002
+       B3g   0.000002       B1u   0.000002        Au   0.000002
+       B1u   0.000002        Ag   0.000002       B2u   0.000002
+       B3u   0.000002       B3g   0.000002       B2g   0.000002
+        Ag   0.000002       B1g   0.000002        Au   0.000002
+       B1u   0.000002       B1u   0.000002       B3u   0.000002
+       B2u   0.000002       B2g   0.000002       B3g   0.000002
+
+   The 20 most important determinants:
+
+    *   1    0.985517  ( 1046,    0)  1AgX 1B1uA 
+    *   2   -0.088311  (    0,   33)  1AgA 1B1uB 2AgA 
+    *   3   -0.054644  ( 1046,    1)  1AgA 1B1uA 2AgB 
+    *   4    0.052674  (  126,   33)  1B1uX 2B1uA 
+    *   5   -0.048293  (    3,   33)  1AgA 1B1uB 4AgA 
+    *   6    0.041282  (  129,   33)  1B1uX 4B1uA 
+    *   7   -0.033667  ( 1047,    0)  1AgB 1B1uA 2AgA 
+    *   8   -0.028695  (    1,   33)  1AgA 1B1uB 3AgA 
+    *   9   -0.026656  ( 1049,    0)  1AgB 1B1uA 4AgA 
+    *  10    0.023756  ( 1047,    1)  1B1uA 2AgX 
+    *  11   -0.021638  ( 1046,    3)  1AgA 1B1uA 4AgB 
+    *  12    0.019824  ( 1048,    2)  1B1uA 3AgX 
+    *  13   -0.019084  ( 1046,    2)  1AgA 1B1uA 3AgB 
+    *  14    0.016400  ( 1049,    1)  1B1uA 2AgB 4AgA 
+    *  15    0.015765  ( 1047,    3)  1B1uA 2AgA 4AgB 
+    *  16    0.015449  (  555,   53)  1B1uA 1B3uX 
+    *  17    0.015449  (  758,   46)  1B1uA 1B2uX 
+    *  18   -0.014902  (  667,   46)  1AgA 1B3gA 1B2uB 
+    *  19   -0.014902  (  422,   53)  1AgA 1B2gA 1B3uB 
+    *  20   -0.014811  ( 1081,    2)  1AgA 3AgB 3B1uA 
+
+		 "A good bug is a dead bug" 
+
+			 - Starship Troopers
+
+		 "I didn't write FORTRAN.  That's the problem."
+
+			 - Edward Valeev
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the FCI density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.0000000            0.0000000            0.0000000
+ Dipole Y            :          0.0000000            0.0000000            0.0000000
+ Dipole Z            :          0.0000000            0.0000000            0.0000000
+ Magnitude           :                                                    0.0000000
+
+ ------------------------------------------------------------------------------------
+
+    Psi4 stopped on: Thursday, 05 June 2025 04:05PM
+    Psi4 wall time for execution: 0:00:01.97
+
+*** Psi4 exiting successfully. Buy a developer a beer!
