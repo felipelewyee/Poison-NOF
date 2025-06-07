@@ -6,7 +6,7 @@ C     0.000000  0.000000  0.620000
 C     0.000000  0.000000  -0.620000
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "W4-11_130_c2"
 

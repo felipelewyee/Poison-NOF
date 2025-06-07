@@ -8,7 +8,7 @@ O     -0.555710  -0.268181  0.555734
 F     -0.555710  -1.384434  -0.493986
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "W4-11_136_foof"
 

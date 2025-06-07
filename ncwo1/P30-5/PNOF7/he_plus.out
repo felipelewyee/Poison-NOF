@@ -1,7 +1,15 @@
+he_plus
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on na11
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/204150
+/scratch/pobleyef/204150 directory
+cp he_plus.jl he_plus.jld2 to  /scratch/pobleyef/204150/.
 Computing Integrals
-Elapsed time:    2.70 Seconds
+Elapsed time:    4.50 Seconds
 
-Number of basis functions                   (NBF)    = 30
+Number of basis functions                   (NBF)    = 14
 Number of auxiliary basis functions         (NBFAUX) = 23
 Inactive Doubly occupied orbitals up to     (NO1)    = 0
 No. considered Strongly Doubly occupied MOs (NDOC)   = 0
@@ -24,21 +32,21 @@ PNOF7/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    9.2e+00    0    9.4e-01    -1.99983222    -1.99983222 -10000.99983222   0.000000   8.9e-15   0.0e+00 0.00
+     1      10    1.9e+01    0    2.9e+00    -1.99892103    -1.99892103 -10000.99892103   0.000000   2.2e-15   0.0e+00 0.00
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
-   1    1.0000000  -0.99991611
+   1    1.0000000  -0.99946052
  
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =      -1.9998322
+Final NOF Total Energy =      -1.9989210
  
 Total Orbital Internal Iterations = 10
 Total Occupation Internal Iterations = 0
  
-Elapsed time:   26.67 Seconds
+Elapsed time:   54.85 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -51,3 +59,7 @@ Elapsed time:   26.67 Seconds
    M Diagnostic: 0.00
 ---------------------------------
 
+Recovering execution output...
+Moving from /scratch/pobleyef/204150 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF7/arina.204150
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF7/arina.204150
+mv /scratch/pobleyef/204150/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF7/arina.204150

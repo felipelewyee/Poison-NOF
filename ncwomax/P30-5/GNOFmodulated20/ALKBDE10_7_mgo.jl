@@ -6,7 +6,7 @@ Mg     0.0000000  0.0000000  0.8639034
 O     0.0000000  0.0000000  -0.8639034
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "ALKBDE10_7_mgo"
 

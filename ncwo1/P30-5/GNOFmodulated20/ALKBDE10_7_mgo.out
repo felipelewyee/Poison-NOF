@@ -1,15 +1,15 @@
 ALKBDE10_7_mgo
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na07
+Job runing on na11
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/203199
-/scratch/pobleyef/203199 directory
-cp ALKBDE10_7_mgo.jl ALKBDE10_7_mgo.jld2 to  /scratch/pobleyef/203199/.
+/scratch/pobleyef/204248
+/scratch/pobleyef/204248 directory
+cp ALKBDE10_7_mgo.jl ALKBDE10_7_mgo.jld2 to  /scratch/pobleyef/204248/.
 Computing Integrals
-Elapsed time:   15.65 Seconds
+Elapsed time:   12.73 Seconds
 
-Number of basis functions                   (NBF)    = 108
+Number of basis functions                   (NBF)    = 64
 Number of auxiliary basis functions         (NBFAUX) = 189
 Inactive Doubly occupied orbitals up to     (NO1)    = 0
 No. considered Strongly Doubly occupied MOs (NDOC)   = 10
@@ -33,59 +33,67 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    4.9e+01    2    2.0e+01  -304.13982369  -274.73786274 -10303.13982369   0.002027   8.1e-03   2.2e-04 0.98
-     2      20    6.7e+01    0    4.9e-02  -304.14029722  -274.73833627    -0.00047353   0.002027   8.1e-03   2.2e-04 0.98
-     3      40    1.2e+02    2    6.1e-02  -304.14040346  -274.73844251    -0.00010624   0.002547   1.0e-02   1.3e-04 0.98
-     4      40    1.3e+02    1    9.9e-03  -304.14043644  -274.73847549    -0.00003298   0.002377   9.5e-03   1.9e-04 0.98
-     5      40    1.5e+02    0    4.0e-02  -304.14043897  -274.73847802    -0.00000253   0.002377   9.5e-03   1.9e-04 0.98
-     6      46    1.7e+02    1    3.9e-02  -304.14050280  -274.73854185    -0.00006383   0.000496   2.0e-03   1.1e-04 0.98
+     1      10    1.8e+01    6    2.1e+01  -300.53846663  -271.13650568 -10299.53846663   0.602906   2.4e+00   1.2e-04 0.00
+     2      10    8.1e-02   11    1.0e-02  -302.62971459  -273.22775364    -2.09124796   0.220261   8.8e-01   2.4e-04 0.01
+     3      10    1.4e-02   13    4.2e-03  -303.71939057  -274.31742962    -1.08967598   0.096479   3.9e-01   1.7e-04 0.03
+     4      10    1.6e-02    8    1.2e-03  -303.93960311  -274.53764216    -0.22021255   0.045859   1.8e-01   1.5e-04 0.04
+     5      10    1.7e-02    6    1.0e-03  -303.97595660  -274.57399565    -0.03635348   0.049417   2.0e-01   2.0e-04 0.05
+     6      10    1.5e-02    6    1.0e-03  -303.99197386  -274.59001291    -0.01601726   0.045224   1.8e-01   1.5e-04 0.05
+     7      10    1.4e-02    5    3.4e-03  -303.99966669  -274.59770574    -0.00769283   0.045635   1.8e-01   1.2e-04 0.05
+     8      10    1.6e-02    3    7.6e-04  -304.00239967  -274.60043872    -0.00273298   0.045837   1.8e-01   2.6e-04 0.05
+     9      10    1.6e-02    4    9.9e-04  -304.00277304  -274.60081209    -0.00037337   0.051553   2.1e-01   1.0e-04 0.05
+    10      10    1.6e-02    2    8.6e-04  -304.00368718  -274.60172622    -0.00091414   0.048142   1.9e-01   1.4e-04 0.05
+    11      10    1.4e-02    2    8.0e-04  -304.00373230  -274.60177135    -0.00004513   0.048039   1.9e-01   1.4e-04 0.05
+    12      10    1.4e-02    1    3.1e-03  -304.00458685  -274.60262589    -0.00085455   0.057301   2.3e-01   1.5e-04 0.05
+    13      10    1.6e-02    0    5.9e-04  -304.00458911  -274.60262816    -0.00000226   0.057301   2.3e-01   1.5e-04 0.05
+    14      30    4.2e-02    2    7.5e-04  -304.01136512  -274.60940417    -0.00677601   0.000667   2.7e-03   1.5e-04 0.05
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
-   1    1.9999476  -49.06031416
-   2    1.9998089  -20.55618861
-   3    1.9978847  -3.79468616
-   4    1.9970984  -2.31546106
-   5    1.9953409  -2.31212298
-   6    1.9971273  -2.31150781
-   7    1.9873701  -1.05672727
-   8    1.9743307  -0.57973720
-   9    1.9742702  -0.57752949
-  10    1.0155997  -0.22352500
-  11    0.9844003  -0.21791808
-  12    0.0257298  -0.03056038
-  13    0.0256693  -0.03063954
-  14    0.0126299  -0.02206551
-  15    0.0028727  -0.01404443
-  16    0.0046591  -0.02783235
-  17    0.0029016  -0.01406331
-  18    0.0021153  -0.01298395
-  19    0.0001911  -0.00665808
-  20    0.0000524  -0.00520943
+   1    1.9999867  -49.05088735
+   2    1.9999267  -20.48857585
+   3    1.9991590  -3.78327046
+   4    1.9986958  -2.29906773
+   5    1.9987297  -2.29894871
+   6    1.9982762  -2.29830563
+   7    1.9897035  -1.11217744
+   8    1.9743043  -0.42680666
+   9    1.9739112  -0.42083825
+  10    1.9514605  -0.34872391
+  11    0.0485395  -0.04636699
+  12    0.0260888  -0.02783188
+  13    0.0256957  -0.02773795
+  14    0.0102965  -0.02152379
+  15    0.0017238  -0.00679618
+  16    0.0012703  -0.00563053
+  17    0.0013042  -0.00547962
+  18    0.0008410  -0.00449493
+  19    0.0000733  -0.00154659
+  20    0.0000133  -0.00066367
  
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =    -274.7385418
+Final NOF Total Energy =    -274.6094042
  
-Total Orbital Internal Iterations = 196
-Total Occupation Internal Iterations = 6
+Total Orbital Internal Iterations = 160
+Total Occupation Internal Iterations = 69
  
-Elapsed time:  729.85 Seconds
+Elapsed time:   51.17 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
 ---------------------------------
  Idx  Atom   Population   Charge 
 ---------------------------------
-  1    Mg    11.946       0.054
-  2     O     8.054      -0.054
+  1    Mg    11.715       0.285
+  2     O     8.285      -0.285
 
 ---------------------------------
-   M Diagnostic: 0.98
+   M Diagnostic: 0.05
 ---------------------------------
 
 Recovering execution output...
-Moving from /scratch/pobleyef/203199 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.203199
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.203199
-mv /scratch/pobleyef/203199/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.203199
+Moving from /scratch/pobleyef/204248 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.204248
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.204248
+mv /scratch/pobleyef/204248/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFmodulated20/arina.204248

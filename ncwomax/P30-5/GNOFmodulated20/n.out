@@ -1,21 +1,21 @@
 n
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na06
+Job runing on na03
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/203146
-/scratch/pobleyef/203146 directory
-cp n.jl n.jld2 to  /scratch/pobleyef/203146/.
+/scratch/pobleyef/204639
+/scratch/pobleyef/204639 directory
+cp n.jl n.jld2 to  /scratch/pobleyef/204639/.
 Computing Integrals
-Elapsed time:    3.99 Seconds
+Elapsed time:    4.19 Seconds
 
-Number of basis functions                   (NBF)    = 57
-Number of auxiliary basis functions         (NBFAUX) = 77
+Number of basis functions                   (NBF)    = 30
+Number of auxiliary basis functions         (NBFAUX) = 79
 Inactive Doubly occupied orbitals up to     (NO1)    = 0
 No. considered Strongly Doubly occupied MOs (NDOC)   = 2
 No. considered Strongly Singly occupied MOs (NSOC)   = 3
-NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 26
-Dimension of the Nat. Orb. subspace         (NBF5)   = 57
+NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 12
+Dimension of the Nat. Orb. subspace         (NBF5)   = 29
 No. of electrons                                     = 7
     No. of alpha electrons                           = 5
     No. of beta electrons                            = 2
@@ -32,80 +32,49 @@ PNOF9/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.7e+01    5    2.0e+01   -54.53404449   -54.53404449 -10053.53404449   0.003961   1.6e-02   1.1e-04 0.02
-     2      20    8.8e-02    0    1.8e-03   -54.53442988   -54.53442988    -0.00038540   0.003961   1.6e-02   1.1e-04 0.02
-     3      40    9.9e-02    1    3.2e-03   -54.53448757   -54.53448757    -0.00005768   0.001279   5.1e-03   1.4e-04 0.02
-     4      40    8.8e-02    1    1.1e-02   -54.53450412   -54.53450412    -0.00001655   0.000745   3.0e-03   1.4e-04 0.02
+     1      10    1.7e+01    0    2.0e+01   -54.51629026   -54.51629026 -10053.51629026   0.000437   1.7e-03   1.1e-04 0.02
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
-   1    1.9997484  -15.64751778
-   2    1.9668293  -0.97941582
-   3    1.0000000  -0.30088553
-   4    1.0000000  -0.30088517
-   5    1.0000000  -0.30087493
-   6    0.0080907  -0.01421749
-   7    0.0002168  -0.00556075
-   8    0.0040198  -0.00557292
-   9    0.0000067  -0.00030509
-  10    0.0040182  -0.00557182
-  11    0.0000040  -0.00004366
-  12    0.0040181  -0.00557132
-  13    0.0000025  -0.00003450
-  14    0.0021051  -0.00314236
-  15    0.0000016  -0.00002772
-  16    0.0021036  -0.00314351
-  17    0.0000015  -0.00002694
-  18    0.0021019  -0.00314082
-  19    0.0000014  -0.00002517
-  20    0.0021005  -0.00313916
-  21    0.0000013  -0.00002473
-  22    0.0020978  -0.00314062
-  23    0.0000013  -0.00002455
-  24    0.0004008  -0.00088743
-  25    0.0000012  -0.00002376
-  26    0.0004007  -0.00088683
-  27    0.0000011  -0.00002352
-  28    0.0004005  -0.00088692
-  29    0.0000011  -0.00002351
-  30    0.0001228  -0.00031964
-  31    0.0000011  -0.00002336
-  32    0.0001214  -0.00031846
-  33    0.0000011  -0.00002281
-  34    0.0001213  -0.00031810
-  35    0.0000010  -0.00002138
-  36    0.0001211  -0.00031790
-  37    0.0000010  -0.00002101
-  38    0.0001211  -0.00031771
-  39    0.0000009  -0.00002061
-  40    0.0001210  -0.00031741
-  41    0.0000009  -0.00002057
-  42    0.0001206  -0.00031653
-  43    0.0000009  -0.00002044
-  44    0.0000945  -0.00024130
-  45    0.0000009  -0.00002042
-  46    0.0000912  -0.00024111
-  47    0.0000009  -0.00002026
-  48    0.0000897  -0.00024112
-  49    0.0000006  -0.00003519
-  50    0.0000891  -0.00024080
-  51    0.0000006  -0.00000526
-  52    0.0000783  -0.00023475
-  53    0.0000005  -0.00000372
-  54    0.0000106  -0.00003972
-  55    0.0000005  -0.00000362
-  56    0.0000105  -0.00003971
-  57    0.0000003  -0.00001330
+   1    1.9998964  -15.64182028
+   2    1.9671780  -0.97674406
+   3    1.0000000  -0.29951312
+   4    1.0000000  -0.29943698
+   5    1.0000000  -0.29943131
+   6    0.0087977  -0.01402690
+   7    0.0000129  -0.00016478
+   8    0.0041425  -0.00565239
+   9    0.0000113  -0.00015310
+  10    0.0040714  -0.00563596
+  11    0.0000104  -0.00014753
+  12    0.0038352  -0.00558033
+  13    0.0000092  -0.00013978
+  14    0.0021665  -0.00324370
+  15    0.0000089  -0.00013775
+  16    0.0021408  -0.00323064
+  17    0.0000083  -0.00013326
+  18    0.0021325  -0.00322414
+  19    0.0000078  -0.00012786
+  20    0.0021311  -0.00322100
+  21    0.0000077  -0.00012696
+  22    0.0020601  -0.00319362
+  23    0.0000073  -0.00011370
+  24    0.0007383  -0.00210980
+  25    0.0000069  -0.00011165
+  26    0.0003320  -0.00059641
+  27    0.0000065  -0.00010610
+  28    0.0002738  -0.00055138
+  29    0.0000064  -0.00010525
  
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =     -54.5345041
+Final NOF Total Energy =     -54.5162903
  
-Total Orbital Internal Iterations = 110
-Total Occupation Internal Iterations = 7
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:   48.05 Seconds
+Elapsed time:   48.93 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -119,6 +88,6 @@ Elapsed time:   48.05 Seconds
 ---------------------------------
 
 Recovering execution output...
-Moving from /scratch/pobleyef/203146 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmodulated20/arina.203146
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmodulated20/arina.203146
-mv /scratch/pobleyef/203146/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmodulated20/arina.203146
+Moving from /scratch/pobleyef/204639 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmodulated20/arina.204639
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmodulated20/arina.204639
+mv /scratch/pobleyef/204639/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFmodulated20/arina.204639

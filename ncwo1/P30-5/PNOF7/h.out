@@ -1,8 +1,16 @@
+h
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on na11
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/204151
+/scratch/pobleyef/204151 directory
+cp h.jl h.jld2 to  /scratch/pobleyef/204151/.
 Computing Integrals
-Elapsed time:    2.64 Seconds
+Elapsed time:    3.72 Seconds
 
-Number of basis functions                   (NBF)    = 30
-Number of auxiliary basis functions         (NBFAUX) = 18
+Number of basis functions                   (NBF)    = 14
+Number of auxiliary basis functions         (NBFAUX) = 30
 Inactive Doubly occupied orbitals up to     (NO1)    = 0
 No. considered Strongly Doubly occupied MOs (NDOC)   = 0
 No. considered Strongly Singly occupied MOs (NSOC)   = 1
@@ -24,21 +32,21 @@ PNOF7/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    9.2e+00    0    9.6e-01    -0.49998330    -0.49998330 -9999.49998330   0.000000   2.7e-15   0.0e+00 0.00
+     1       2    1.8e+01    0    2.7e+00    -0.49980981    -0.49980981 -9999.49980981   0.000000   2.0e-09   0.0e+00 0.00
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
-   1    1.0000000  -0.24999165
+   1    1.0000000  -0.24990491
  
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =      -0.4999833
+Final NOF Total Energy =      -0.4998098
  
-Total Orbital Internal Iterations = 10
+Total Orbital Internal Iterations = 2
 Total Occupation Internal Iterations = 0
  
-Elapsed time:   26.05 Seconds
+Elapsed time:   49.53 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -51,3 +59,7 @@ Elapsed time:   26.05 Seconds
    M Diagnostic: 0.00
 ---------------------------------
 
+Recovering execution output...
+Moving from /scratch/pobleyef/204151 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF7/arina.204151
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF7/arina.204151
+mv /scratch/pobleyef/204151/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF7/arina.204151

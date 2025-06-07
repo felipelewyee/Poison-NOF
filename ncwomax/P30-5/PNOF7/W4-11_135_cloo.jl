@@ -7,7 +7,7 @@ O     0.000000  0.958712  0.000000
 O     1.192069  1.154892  0.000000
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "W4-11_135_cloo"
 

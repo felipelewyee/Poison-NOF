@@ -8,7 +8,7 @@ N     0.03423988  0.64855342  0.00000000
 N     1.06157401  1.12063191  0.00000000
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "BH76_1_n2ohts"
 

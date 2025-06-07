@@ -8,7 +8,7 @@ N     0.03423988  0.64855342  0.00000000
 N     1.06157401  1.12063191  0.00000000
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "BH76_1_n2ohts"
 
@@ -21,7 +21,7 @@ p.maxloop = 10
 
 DoNOF.set_ncwo(p,1)
 
-C = DoNOF.read_C(title=p.title)
-n = DoNOF.read_n(title=p.title)
+C = nothing#DoNOF.read_C(title=p.title)
+n = nothing#DoNOF.read_n(title=p.title)
 
 DoNOF.energy(bset,p,C=C,n=n,do_hfidr=false,do_m_diagnostic=true)

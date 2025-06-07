@@ -6,7 +6,7 @@ H     0.00000000  0.00000000  -0.37159115
 H     0.00000000  0.00000000  0.37159115
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "G2RC_20_1"
 

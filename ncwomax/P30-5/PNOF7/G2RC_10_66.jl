@@ -9,7 +9,7 @@ F     -0.91020186  -0.91020186  -0.91020186
 F     0.91020186  0.91020186  -0.91020186
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "G2RC_10_66"
 

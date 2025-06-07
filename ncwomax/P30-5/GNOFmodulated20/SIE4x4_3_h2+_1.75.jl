@@ -6,7 +6,7 @@ H     0.00000000  0.00000000  -0.92511507
 H     0.00000000  0.00000000  0.92511507
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "SIE4x4_3_h2+_1.75"
 

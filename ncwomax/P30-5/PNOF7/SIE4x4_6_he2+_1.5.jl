@@ -6,7 +6,7 @@ He     0.00000000  0.00000000  -0.80565280
 He     0.00000000  0.00000000  0.80565280
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "SIE4x4_6_he2+_1.5"
 

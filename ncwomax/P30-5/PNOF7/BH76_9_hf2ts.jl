@@ -7,7 +7,7 @@ F     0.00000000  0.00000000  0.04490245
 F     0.00000000  0.00000000  1.52525464
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "BH76_9_hf2ts"
 

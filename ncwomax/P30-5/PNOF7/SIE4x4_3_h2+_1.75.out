@@ -1,16 +1,16 @@
 SIE4x4_3_h2+_1.75
 /software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nagpu01
+Job runing on na20
 Choosing scratch ...
 Automatic scratch folder selection
-/scratch/pobleyef/168316
-/scratch/pobleyef/168316 directory
-cp SIE4x4_3_h2+_1.75.jl SIE4x4_3_h2+_1.75.jld2 to  /scratch/pobleyef/168316/.
+/scratch/pobleyef/204765
+/scratch/pobleyef/204765 directory
+cp SIE4x4_3_h2+_1.75.jl SIE4x4_3_h2+_1.75.jld2 to  /scratch/pobleyef/204765/.
 Computing Integrals
-Elapsed time:    3.86 Seconds
+Elapsed time:    3.56 Seconds
 
-Number of basis functions                   (NBF)    = 60
-Number of auxiliary basis functions         (NBFAUX) = 36
+Number of basis functions                   (NBF)    = 28
+Number of auxiliary basis functions         (NBFAUX) = 60
 Inactive Doubly occupied orbitals up to     (NO1)    = 0
 No. considered Strongly Doubly occupied MOs (NDOC)   = 0
 No. considered Strongly Singly occupied MOs (NSOC)   = 1
@@ -33,21 +33,21 @@ PNOF7/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.8e+01    0    2.6e+00    -0.84674183    -0.56073626 -9999.84674183   0.000000   2.2e-15   0.0e+00 0.00
+     1      10    1.7e+01    0    2.5e+00    -0.84571618    -0.55971061 -9999.84571618   0.000000   3.6e-15   0.0e+00 0.00
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
-   1    1.0000000  -0.42337092
+   1    1.0000000  -0.42285809
  
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =      -0.5607363
+Final NOF Total Energy =      -0.5597106
  
 Total Orbital Internal Iterations = 10
 Total Occupation Internal Iterations = 0
  
-Elapsed time:   48.72 Seconds
+Elapsed time:   47.00 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -62,6 +62,6 @@ Elapsed time:   48.72 Seconds
 ---------------------------------
 
 Recovering execution output...
-Moving from /scratch/pobleyef/168316 to /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/PNOF7/arina.168316
-mkdir -p /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/PNOF7/arina.168316
-mv /scratch/pobleyef/168316/* /home-nas/pobleyef/Poison-Set/ncwomax/P30-5/PNOF7/arina.168316
+Moving from /scratch/pobleyef/204765 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/PNOF7/arina.204765
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/PNOF7/arina.204765
+mv /scratch/pobleyef/204765/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/PNOF7/arina.204765

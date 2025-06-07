@@ -7,7 +7,7 @@ using DoNOF
 mol = \"\"\"
 xyz\"\"\"
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = \"rrrr\"
 

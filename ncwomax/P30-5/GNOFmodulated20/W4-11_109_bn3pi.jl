@@ -6,7 +6,7 @@ B     0.000000  0.000000  -0.775950
 N     0.000000  0.000000  0.554250
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "W4-11_109_bn3pi"
 

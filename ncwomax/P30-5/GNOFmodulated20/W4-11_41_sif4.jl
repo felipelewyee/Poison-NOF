@@ -9,7 +9,7 @@ F     -0.900915  0.900915  -0.900915
 F     0.900915  -0.900915  -0.900915
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "W4-11_41_sif4"
 

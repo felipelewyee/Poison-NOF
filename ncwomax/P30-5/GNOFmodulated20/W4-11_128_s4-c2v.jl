@@ -8,7 +8,7 @@ S     0.000000  -1.068508  -0.921961
 S     0.000000  -1.552343  0.921961
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "W4-11_128_s4-c2v"
 

@@ -8,7 +8,7 @@ Be     -0.7279036  -0.7279036  -0.7279036
 Be     0.7279036  0.7279036  -0.7279036
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "DC13_7_be4"
 

@@ -9,7 +9,7 @@ Cl     -1.03344587  -1.03344587  -1.03344587
 Cl     1.03344587  1.03344587  -1.03344587
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "G2RC_10_62"
 

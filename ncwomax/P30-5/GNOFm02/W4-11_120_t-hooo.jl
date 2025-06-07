@@ -8,7 +8,7 @@ O     -0.950471  -0.717715  0.000000
 H     -1.791374  -0.238229  0.000000
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "W4-11_120_t-hooo"
 
@@ -22,7 +22,7 @@ p.maxloop = 10
 #DoNOF.set_ncwo(p,1)
 p.h_cut = 0.02
 
-C = DoNOF.read_C(title=p.title)
-n = DoNOF.read_n(title=p.title)
+C = nothing#DoNOF.read_C(title=p.title)
+n = nothing#DoNOF.read_n(title=p.title)
 
 DoNOF.energy(bset,p,C=C,n=n,do_hfidr=false,do_m_diagnostic=true)

@@ -8,7 +8,7 @@ P     -0.777375  0.777375  -0.777375
 P     0.777375  -0.777375  -0.777375
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "W4-11_116_p4"
 

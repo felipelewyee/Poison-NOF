@@ -6,7 +6,7 @@ O     0.00000000  0.00000000  0.48444828
 H     0.00000000  0.00000000  -0.48444828
 """
 
-bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
+bset,p = DoNOF.molecule(mol,"cc-pvtz",spherical=true)
 
 p.title = "BH76_1_oh"
 
