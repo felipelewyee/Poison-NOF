@@ -1,0 +1,10 @@
+memory 20Gb
+
+molecule{
+0 3
+S     0.000000  0.000000  0.000000
+}
+
+set reference rohf
+
+energy("CCSD(T)/cc-pVTZ")
