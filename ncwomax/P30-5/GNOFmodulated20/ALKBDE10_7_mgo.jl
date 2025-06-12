@@ -18,7 +18,7 @@ p.maxit = 40
 
 p.maxloop = 10
 
-#DoNOF.set_ncwo(p,1)
+DoNOF.set_ncwo(p,7)
 p.h_cut = 0.020*sqrt(2)
 
 C = DoNOF.read_C(title=p.title)
