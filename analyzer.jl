@@ -94,7 +94,9 @@ function get_nof_ncwo(nof, filename, subset_name, reaction_id)
                 newname = join([subset_name,reaction_id,filename],"_")
                 dir = build_path(rootdir, setname, nof, newname)
                 ncwo = get_data_fromfile(dir, phrase, idx)
-                return Emol, newname
+		if(parse(Float64, ncwo) > 0)
+                    return ncwo, newname
+	        end
             catch
                 nothing
             end
