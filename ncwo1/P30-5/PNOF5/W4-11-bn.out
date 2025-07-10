@@ -1,0 +1,91 @@
+W4-11-bn
+/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
+Job runing on nh015
+Choosing scratch ...
+Automatic scratch folder selection
+/scratch/pobleyef/283458
+/scratch/pobleyef/283458 directory
+cp W4-11-bn.jl W4-11-bn.jld2 to  /scratch/pobleyef/283458/.
+W4-11-bn_C.jld2 not found
+W4-11-bn_n.jld2 not found
+Computing Integrals
+Basis Set                                            = def2-qzvp
+Auxiliary Basis Set                                  = def2-universal-jkfit
+Gaussian Type                                        = Spherical
+Elapsed time:    3.80 Seconds
+
+Number of basis functions                   (NBF)    = 114
+Number of auxiliary basis functions         (NBFAUX) = 152
+Inactive Doubly occupied orbitals up to     (NO1)    = 0
+No. considered Strongly Doubly occupied MOs (NDOC)   = 6
+No. considered Strongly Singly occupied MOs (NSOC)   = 0
+NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 1
+Dimension of the Nat. Orb. subspace         (NBF5)   = 12
+No. of electrons                                     = 12
+    No. of alpha electrons                           = 6
+    No. of beta electrons                            = 6
+Multiplicity                                         = 1
+
+Geometry
+========
+ B       0.0000000       0.0000000      -0.7484170
+ N       0.0000000       0.0000000       0.5345830
+
+No violations of the orthonormality
+No violations of the orthonormality
+ 
+PNOF5/ADABelief Calculation
+==================
+ 
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    2.8e+01   10    3.3e+01   -90.88784916   -76.45202343 -10089.88784916   0.379539   1.5e+00   1.2e-04 0.03
+     2      10    2.9e-01    6    1.2e-02   -93.19318953   -78.75736381    -2.30534038   0.173406   6.9e-01   7.9e-05 0.09
+     3      10    2.3e-01    5    1.3e-03   -93.44184132   -79.00601560    -0.24865179   0.172902   6.9e-01   1.5e-04 0.21
+     4      10    8.7e-02    5    6.5e-03   -93.47608762   -79.04026190    -0.03424630   0.187559   7.5e-01   7.9e-05 0.34
+     5      10    6.6e-02    5    1.3e-03   -93.48544566   -79.04961994    -0.00935804   0.180017   7.2e-01   8.5e-05 0.42
+     6      10    1.8e-01    4    1.8e-03   -93.48935966   -79.05353394    -0.00391400   0.165570   6.6e-01   2.2e-05 0.48
+     7      10    1.0e-01    4    4.0e-02   -93.49143643   -79.05561071    -0.00207677   0.135520   5.4e-01   9.8e-05 0.52
+     8      10    1.2e-01    0    1.3e-03   -93.49174246   -79.05591674    -0.00030603   0.135520   5.4e-01   9.8e-05 0.52
+     9      30    3.8e-01    3    1.5e-03   -93.50206053   -79.06623481    -0.01031807   0.000782   3.1e-03   4.7e-05 0.55
+ 
+RESULTS OF THE OCCUPATION OPTIMIZATION
+========================================
+   1    1.9997372  -15.55814188
+   2    1.9993392  -7.67858351
+   3    1.9945021  -1.01927268
+   4    1.9885615  -0.64509458
+   5    1.9415101  -0.44968740
+   6    1.4458235  -0.36685480
+   7    0.5541765  -0.16017385
+   8    0.0584899  -0.02564899
+   9    0.0114385  -0.01010995
+  10    0.0054979  -0.00722480
+  11    0.0006608  -0.00871195
+  12    0.0002628  -0.00740565
+ 
+----------------
+ Final Energies 
+----------------
+Final NOF Total Energy =     -79.0662348
+ 
+Total Orbital Internal Iterations = 110
+Total Occupation Internal Iterations = 42
+ 
+Elapsed time:   83.25 Seconds
+
+---------------------------------
+   Lowdin Population Analysis    
+---------------------------------
+ Idx  Atom   Population   Charge 
+---------------------------------
+  1     B     5.209      -0.209
+  2     N     6.791       0.209
+
+---------------------------------
+   M Diagnostic: 0.55
+---------------------------------
+
+Recovering execution output...
+Moving from /scratch/pobleyef/283458 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF5/arina.283458
+mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF5/arina.283458
+mv /scratch/pobleyef/283458/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF5/arina.283458
