@@ -32,18 +32,22 @@ DoNOF.energy(bset,p,C=C,n=n,do_hfidr=false,do_m_diagnostic=true)
 
 # Read yaml and look for unique molecules
 data =  YAML.load_file(join(vcat(path[1:end-1], [benchmark, benchmark * ".yaml"]), "/"))
-sets = []
+mols_in_sets = []
 for (reaction, reaction_data) in data
     set_name, reaction_id = split(reaction, ":")
-    push!(sets, set_name * "-" * xyzfile[1:end-4])
+    molecules = reaction_data[2:end]
+    for (coeff, xyzfile) in molecules
+	push!(mols_in_sets, set_name * "-" * xyzfile[1:end-4])
+    end
 end
-molecules = Set(sets)
+molecules = Set(mols_in_sets)
 println(molecules)
 
 # Generate the input files
 for mol in molecules
     xyz = ""
-    for (i, line) in enumerate(eachline(mol*".xyz"))
+    xyzdir = join(vcat(path[1:end-1], [benchmark, mol * ".xyz"]), "/")
+    for (i, line) in enumerate(eachline(xyzdir))
         if (i>=2)
             xyz = xyz * line * "\n"
         end

@@ -130,6 +130,7 @@ for (reaction, reaction_data) in data
     results[set_name] = Dict()
 end
 
+notfound = []
 ADs = Dict()  #Absolute Deviations
 APDs = Dict() #Absolute Percentual Deviation
 # Check each reaction in the Data Set
@@ -154,6 +155,9 @@ for (reaction, reaction_data) in data
         charge, mult = split(readlines(path_to_xyz)[2])
 
         E_NOF,filename = get_nof_E(nof, mol_name, set_name, reaction_id)
+	if E_NOF == 0
+            push!(notfound, set_name * "-" * filename)
+	end
         ncwo_NOF,_ = get_nof_ncwo(nof, mol_name, set_name, reaction_id)
         @printf(" %-20s %3d %10.4f\n", mol_name, count, E_NOF)
 
@@ -199,3 +203,8 @@ end
 @printf("MAD = %.1f\n", mean(values(ADs)))
 
 YAML.write_file(benchmark*"-"*nof*"-"*ncwo*".yaml", results)
+
+println("Not Found")
+for mol in notfound
+    print(mol, " ")
+end
