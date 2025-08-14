@@ -252,10 +252,10 @@ end
 ##### Analysis per reg, iso, bh, nci ####
 for (label, ADs, WADs) in zip(["Reg", "Iso", "BH", "NCI"], [ADs_reg, ADs_iso, ADs_bh, ADs_nci], [WADs_reg, WADs_iso, WADs_bh, WADs_nci])
     println("======== ", label, " ========")
-    outlayers = [key for (key, value) in ADs if value > 50]
-    if length(outlayers) > 1
+    outlayer = [key for (key, value) in ADs if value > 50]
+    if length(outlayer) > 1
         println("I am going to drop the following reactins as AD is too high")
-        for reaction in outlayers
+        for reaction in outlayer
             println(reaction, " ", round(ADs[reaction]))
             pop!(ADs, reaction)
             pop!(WADs, reaction)
