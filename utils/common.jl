@@ -37,24 +37,24 @@ repeated = []
 if benchmark == "P30-10"
     mols_10_in_5 = intersect(mols_10, mols_5)
     repeated = vcat(repeated, mols_10_in_5)
-    println("Repeated with 5:")
-    println(mols_10_in_5)
+    #println("Repeated with 5:")
+    #println(mols_10_in_5)
 end
 
 if benchmark == "P30-20"
     mols_20_in_5 = intersect(mols_20, mols_5)
     repeated = vcat(repeated, mols_20_in_5)
-    println("Repeated with 5:")
-    println(mols_20_in_5)
+    #println("Repeated with 5:")
+    #println(mols_20_in_5)
 
     mols_20_in_10 = intersect(mols_20, mols_10)
     repeated = vcat(repeated, mols_20_in_10)
-    println("Repeated with 10:")
-    println(mols_20_in_10)
+    #println("Repeated with 10:")
+    #println(mols_20_in_10)
 end
 
 for molecule_name in repeated
-    println(string(molecule_name))
+    #println(string(molecule_name))
     rm(string(molecule_name)*".jl", force=true)
     rm(string(molecule_name)*".jld2", force=true)
     rm(string(molecule_name)*".fchk", force=true)
