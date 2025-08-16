@@ -29,9 +29,8 @@ for file in items
     if(E > E_conc)
         mol = replace(file, ".out" => "")
         println("Moving ", mol, " ", E, " ", E_conc)
-         try
+        try
             cp(path_concentrator * mol * ".jld2", mol * ".jld2", force = true)
-            cp(path_concentrator * mol * ".jl", mol * ".jl", force = true)
             cp(path_concentrator * mol * ".out", mol * ".out", force = true)
         catch
             println("Error with " *  mol)

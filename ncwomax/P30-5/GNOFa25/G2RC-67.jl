@@ -22,7 +22,7 @@ p.maxit = 40
 
 p.maxloop = 10
 
-#DoNOF.set_ncwo(p,1)
+DoNOF.set_ncwo(p,1)
 
 C = DoNOF.read_C(title=p.title)
 n = DoNOF.read_n(title=p.title)
