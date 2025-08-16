@@ -1,33 +1,24 @@
-ALKBDE10_7_mgo
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na02
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/212472
-/scratch/pobleyef/212472 directory
-cp ALKBDE10_7_mgo.jl ALKBDE10_7_mgo.jld2 to  /scratch/pobleyef/212472/.
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    8.59 Seconds
+Elapsed time:    1.67 Seconds
 
-Number of basis functions                   (NBF)    = 108
-Number of auxiliary basis functions         (NBFAUX) = 189
+Number of basis functions                   (NBF)    = 51
+Number of auxiliary basis functions         (NBFAUX) = 112
 Inactive Doubly occupied orbitals up to     (NO1)    = 0
-No. considered Strongly Doubly occupied MOs (NDOC)   = 10
+No. considered Strongly Doubly occupied MOs (NDOC)   = 6
 No. considered Strongly Singly occupied MOs (NSOC)   = 0
 NO. of Weakly occ. per St. Doubly occ.  MOs (NCWO)   = 1
-Dimension of the Nat. Orb. subspace         (NBF5)   = 20
-No. of electrons                                     = 20
-    No. of alpha electrons                           = 10
-    No. of beta electrons                            = 10
+Dimension of the Nat. Orb. subspace         (NBF5)   = 12
+No. of electrons                                     = 12
+    No. of alpha electrons                           = 6
+    No. of beta electrons                            = 6
 Multiplicity                                         = 1
 
 Geometry
 ========
-Mg       0.0000000       0.0000000       0.8639034
- O       0.0000000       0.0000000      -0.8639034
+Mg       0.0000000       0.0000000       0.0000000
 
 No violations of the orthonormality
 No violations of the orthonormality
@@ -36,54 +27,54 @@ PNOF8/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    2.7e+01    0    2.1e+01  -304.15036132  -274.74840036 -10303.15036132   0.000646   2.6e-03   2.2e-04 0.97
+     1      10    9.3e+00    6    1.2e+01  -199.70607098  -199.70607098 -10198.70607098   0.276402   1.1e+00   5.1e-05 0.05
+     2      10    4.2e-03    4    3.4e-04  -199.74397169  -199.74397169    -0.03790071   0.178928   7.2e-01   1.9e-04 0.04
+     3      10    1.5e-02    2    2.8e-04  -199.75211451  -199.75211451    -0.00814282   0.217548   8.7e-01   1.9e-04 0.03
+     4      10    4.7e-03    2    6.2e-03  -199.75351085  -199.75351085    -0.00139634   0.254468   1.0e+00   1.1e-04 0.03
+     5      10    3.7e-03    1    2.2e-04  -199.75443149  -199.75443149    -0.00092064   0.230243   9.2e-01   1.5e-04 0.03
+     6      10    5.2e-03    0    1.8e-04  -199.75448160  -199.75448160    -0.00005010   0.230243   9.2e-01   1.5e-04 0.03
+     7      30    1.4e-02    1    2.4e-04  -199.76707307  -199.76707307    -0.01259148   0.014879   6.0e-02   1.2e-04 0.03
+     8      30    1.2e-02    1    2.3e-04  -199.76721816  -199.76721816    -0.00014508   0.014048   5.6e-02   1.2e-04 0.02
+     9      30    1.2e-02    1    2.4e-04  -199.76740975  -199.76740975    -0.00019160   0.009246   3.7e-02   1.1e-04 0.02
+    10      30    1.2e-02    1    2.3e-04  -199.76742233  -199.76742233    -0.00001257   0.009873   3.9e-02   1.4e-04 0.02
+    11      30    1.2e-02    1    2.6e-04  -199.76744177  -199.76744177    -0.00001945   0.009483   3.8e-02   7.8e-05 0.02
+    12      30    1.2e-02    1    2.4e-04  -199.76749742  -199.76749742    -0.00005564   0.010531   4.2e-02   8.5e-05 0.02
+    13      30    1.2e-02    0    2.1e-04  -199.76749882  -199.76749882    -0.00000141   0.010531   4.2e-02   8.5e-05 0.02
+    14      50    1.9e-02    0    2.3e-04  -199.76777277  -199.76777277    -0.00027395   0.000619   2.5e-03   9.3e-05 0.02
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
-   1    1.9999471  -49.06050154
-   2    1.9998032  -20.56010325
-   3    1.9977455  -3.79518683
-   4    1.9969531  -2.31583958
-   5    1.9951606  -2.31192366
-   6    1.9970060  -2.31169057
-   7    1.9861209  -1.09291813
-   8    1.9698081  -0.56680009
-   9    1.9696911  -0.56432968
-  10    1.0252670  -0.22650317
-  11    0.9747330  -0.21763433
-  12    0.0303089  -0.03303580
-  13    0.0301919  -0.03310492
-  14    0.0138791  -0.02304059
-  15    0.0029940  -0.01433741
-  16    0.0048394  -0.02828527
-  17    0.0030469  -0.01439228
-  18    0.0022545  -0.01337874
-  19    0.0001968  -0.00687071
-  20    0.0000529  -0.00527198
+   1    1.9999406  -49.06198991
+   2    1.9976443  -3.78390300
+   3    1.9942265  -2.30265811
+   4    1.9969318  -2.29793278
+   5    1.9969373  -2.29682114
+   6    1.9756862  -0.26068568
+   7    0.0243138  -0.01714974
+   8    0.0030627  -0.01454197
+   9    0.0030682  -0.01455183
+  10    0.0057735  -0.03122967
+  11    0.0023557  -0.01367546
+  12    0.0000594  -0.00568926
  
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =    -274.7484004
+Final NOF Total Energy =    -199.7677728
  
-Total Orbital Internal Iterations = 10
-Total Occupation Internal Iterations = 0
+Total Orbital Internal Iterations = 320
+Total Occupation Internal Iterations = 21
  
-Elapsed time:   60.38 Seconds
+Elapsed time:   27.43 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
 ---------------------------------
  Idx  Atom   Population   Charge 
 ---------------------------------
-  1    Mg    11.953       0.047
-  2     O     8.047      -0.047
+  1    Mg    12.000       0.000
 
 ---------------------------------
-   M Diagnostic: 0.97
+   M Diagnostic: 0.02
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/212472 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFa25/arina.212472
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFa25/arina.212472
-mv /scratch/pobleyef/212472/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFa25/arina.212472
