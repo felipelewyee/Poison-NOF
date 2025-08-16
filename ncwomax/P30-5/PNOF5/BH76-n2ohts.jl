@@ -12,7 +12,7 @@ bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
 
 p.title = "BH76-n2ohts"
 
-p.  ipnof = 5
+p.ipnof = 5
 
 p.RI = true
 p.maxit = 40
