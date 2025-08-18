@@ -11,7 +11,7 @@ bset,p = DoNOF.molecule(mol,"def2-qzvp",spherical=true)
 p.title = "SIE4x4-h2+_1.75"
 
 p.ipnof = 8
-p.ista = 4
+p.ista = 2
 
 p.RI = true
 p.maxit = 40
