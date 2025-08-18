@@ -1,18 +1,8 @@
-DC13-be4
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na18
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/283185
-/scratch/pobleyef/283185 directory
-cp DC13-be4.jl DC13-be4.jld2 to  /scratch/pobleyef/283185/.
-DC13-be4_C.jld2 not found
-DC13-be4_n.jld2 not found
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    4.93 Seconds
+Elapsed time:    4.20 Seconds
 
 Number of basis functions                   (NBF)    = 144
 Number of auxiliary basis functions         (NBFAUX) = 204
@@ -40,24 +30,7 @@ PNOF8/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    3.1e+01    5    2.0e+01   -81.67532757   -57.00058590 -10080.67532757   0.158667   6.3e-01   6.6e-05 0.01
-     2      10    1.5e+01    7    2.0e-03   -82.81938422   -58.14464255    -1.14405665   0.079796   3.2e-01   8.9e-05 0.02
-     3      10    1.4e+01    5    4.9e-03   -83.12561279   -58.45087112    -0.30622857   0.060794   2.4e-01   1.6e-04 0.03
-     4      10    1.4e+01    4    1.9e-03   -83.16804359   -58.49330192    -0.04243080   0.061408   2.5e-01   1.6e-04 0.03
-     5      10    1.5e+01    3    2.0e-03   -83.17627791   -58.50153624    -0.00823432   0.062673   2.5e-01   1.3e-04 0.04
-     6      10    1.5e+01    4    5.7e-03   -83.17830412   -58.50356245    -0.00202621   0.064115   2.6e-01   3.7e-05 0.04
-     7      10    1.4e+01    4    1.6e-03   -83.17908536   -58.50434369    -0.00078124   0.058115   2.3e-01   4.2e-05 0.04
-     8      10    1.4e+01    3    2.2e-02   -83.18111357   -58.50637190    -0.00202821   0.063490   2.5e-01   1.3e-04 0.04
-     9      10    1.3e+01    3    1.9e-03   -83.18199499   -58.50725331    -0.00088141   0.078627   3.1e-01   8.1e-05 0.04
-    10      10    1.4e+01    0    1.5e-02   -83.18210590   -58.50736423    -0.00011092   0.078627   3.1e-01   8.1e-05 0.04
-    11      30    4.2e+01    3    3.7e-02   -83.19435544   -58.51961377    -0.01224954   0.001558   6.2e-03   7.9e-05 0.04
-    12      30    4.1e+01    3    5.0e-03   -83.19580047   -58.52105880    -0.00144504   0.001212   4.8e-03   8.8e-05 0.05
-    13      30    4.2e+01    3    3.5e-03   -83.19733225   -58.52259058    -0.00153177   0.001382   5.5e-03   6.4e-05 0.05
-    14      30    4.2e+01    2    2.6e-03   -83.19851973   -58.52377806    -0.00118748   0.001776   7.1e-03   1.4e-04 0.05
-    15      30    4.1e+01    2    1.8e-03   -83.19889215   -58.52415048    -0.00037243   0.001663   6.7e-03   1.4e-04 0.05
-    16      30    4.2e+01    1    1.8e-03   -83.19895948   -58.52421781    -0.00006733   0.001605   6.4e-03   2.0e-04 0.05
-    17      30    4.2e+01    0    5.3e-03   -83.19896250   -58.52422083    -0.00000302   0.001605   6.4e-03   2.0e-04 0.05
-    18      21    2.9e+01    1    2.1e-02   -83.19904999   -58.52430831    -0.00008749   0.000479   1.9e-03   1.6e-04 0.05
+     1      10    3.6e+01    0    2.2e+01   -83.19905281   -58.52431114 -10082.19905281   0.000479   1.9e-03   1.6e-04 0.05
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -81,12 +54,12 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =     -58.5243083
+Final NOF Total Energy =     -58.5243111
  
-Total Orbital Internal Iterations = 331
-Total Occupation Internal Iterations = 53
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:  514.16 Seconds
+Elapsed time:   71.03 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -102,7 +75,3 @@ Elapsed time:  514.16 Seconds
    M Diagnostic: 0.05
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/283185 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOF/arina.283185
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOF/arina.283185
-mv /scratch/pobleyef/283185/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOF/arina.283185

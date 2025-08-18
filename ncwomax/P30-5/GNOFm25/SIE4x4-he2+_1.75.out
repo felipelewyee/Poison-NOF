@@ -1,16 +1,8 @@
-SIE4x4-he2+_1.75
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nh035
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/284318
-/scratch/pobleyef/284318 directory
-cp SIE4x4-he2+_1.75.jl SIE4x4-he2+_1.75.jld2 to  /scratch/pobleyef/284318/.
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    3.32 Seconds
+Elapsed time:    2.60 Seconds
 
 Number of basis functions                   (NBF)    = 60
 Number of auxiliary basis functions         (NBFAUX) = 46
@@ -36,7 +28,7 @@ PNOF8/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    2.8e+01    0    3.5e+01    -6.06565856    -4.93966599 -10005.06565856   0.000359   1.4e-03   1.0e-04 0.03
+     1      10    2.2e+01    0    2.7e+01    -6.06565856    -4.93966599 -10005.06565856   0.000359   1.4e-03   1.0e-04 0.03
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -109,7 +101,7 @@ Final NOF Total Energy =      -4.9396660
 Total Orbital Internal Iterations = 10
 Total Occupation Internal Iterations = 0
  
-Elapsed time:   82.30 Seconds
+Elapsed time:   63.48 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -123,7 +115,3 @@ Elapsed time:   82.30 Seconds
    M Diagnostic: 0.03
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/284318 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFm25/arina.284318
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFm25/arina.284318
-mv /scratch/pobleyef/284318/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFm25/arina.284318

@@ -1,16 +1,8 @@
-G2RC-62
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nagpu01
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/283884
-/scratch/pobleyef/283884 directory
-cp G2RC-62.jl G2RC-62.jld2 to  /scratch/pobleyef/283884/.
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:   10.71 Seconds
+Elapsed time:   41.56 Seconds
 
 Number of basis functions                   (NBF)    = 337
 Number of auxiliary basis functions         (NBFAUX) = 587
@@ -39,7 +31,7 @@ PNOF7/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    4.7e+01   68    2.8e+01 -2309.00299829 -1874.46673892 -12308.00299829   0.000511   2.0e-03   2.6e-04 0.06
+     1      10    7.2e+01    0    2.5e+01 -2310.80331195 -1876.26705258 -12309.80331195   0.000511   2.0e-03   2.6e-04 0.06
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -380,12 +372,12 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =   -1874.4667389
+Final NOF Total Energy =   -1876.2670526
  
 Total Orbital Internal Iterations = 10
-Total Occupation Internal Iterations = 68
+Total Occupation Internal Iterations = 0
  
-Elapsed time:   88.09 Seconds
+Elapsed time:  116.07 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -402,7 +394,3 @@ Elapsed time:   88.09 Seconds
    M Diagnostic: 0.06
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/283884 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/PNOF7/arina.283884
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/PNOF7/arina.283884
-mv /scratch/pobleyef/283884/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/PNOF7/arina.283884

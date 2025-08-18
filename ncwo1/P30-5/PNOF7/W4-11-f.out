@@ -1,5 +1,8 @@
 Computing Integrals
-Elapsed time:    7.25 Seconds
+Basis Set                                            = def2-qzvp
+Auxiliary Basis Set                                  = def2-universal-jkfit
+Gaussian Type                                        = Spherical
+Elapsed time:    2.56 Seconds
 
 Number of basis functions                   (NBF)    = 57
 Number of auxiliary basis functions         (NBFAUX) = 77
@@ -23,13 +26,8 @@ No violations of the orthonormality
 PNOF7/ADABelief Calculation
 ==================
  
-  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    Grad_orb  Grad_occ
-     1      10    2.2e+01    1    6.6e-01   -99.46617018   -99.46617018 -10098.46617018   0.305082   2.7e+00   2.4e-05 0.01
-     2      30    2.8e-01    1    7.4e-04   -99.48624803   -99.48624803    -0.02007785   0.008056   5.5e-02   8.6e-06 0.01
-     3      30    3.4e-01    0    9.7e-04   -99.48626075   -99.48626075    -0.00001272   0.004332   3.1e-02   1.2e-04 0.01
-     4      40    8.0e-02    0    3.9e-04   -99.48627101   -99.48627101    -0.00001026   0.001502   1.1e-02   5.9e-05 0.01
-     5      50    5.4e-02    0    2.8e-04   -99.48627246   -99.48627246    -0.00000146   0.000450   3.2e-03   8.1e-05 0.01
-     6      60    5.9e-02    0    2.6e-04   -99.48627265   -99.48627265    -0.00000019   0.000094   7.6e-04   7.2e-05 0.01
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    2.1e+01    0    2.6e+01   -99.48627265   -99.48627265 -10098.48627265   0.000094   3.8e-04   7.2e-05 0.01
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -48,10 +46,10 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
 Final NOF Total Energy =     -99.4862726
  
-Total Orbital Internal Iterations = 220
-Total Occupation Internal Iterations = 2
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:  151.03 Seconds
+Elapsed time:   60.01 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    

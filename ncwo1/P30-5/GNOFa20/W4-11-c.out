@@ -1,16 +1,8 @@
-W4-11-c
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na19
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/287176
-/scratch/pobleyef/287176 directory
-cp W4-11-c.jl W4-11-c.jld2 to  /scratch/pobleyef/287176/.
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    2.19 Seconds
+Elapsed time:    2.28 Seconds
 
 Number of basis functions                   (NBF)    = 57
 Number of auxiliary basis functions         (NBFAUX) = 75
@@ -35,26 +27,26 @@ PNOF8/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.6e+01    0    2.0e+01   -37.77884144   -37.77884144 -10036.77884144   0.000497   2.0e-03   5.3e-05 0.16
+     1      10    1.9e+01    2    2.3e+01   -37.76976196   -37.76976196 -10036.76976196   0.000789   3.2e-03   9.8e-05 0.14
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
-   1    1.9994069  -11.30529043
-   2    1.8418455  -0.70609091
-   3    1.0000000  -0.22786162
-   4    1.0000000  -0.22786011
-   5    0.1581545  -0.06374034
-   6    0.0005931  -0.01014914
+   1    1.9994158  -11.30619103
+   2    1.8640339  -0.70691548
+   3    1.0000000  -0.22455756
+   4    1.0000000  -0.22455602
+   5    0.1359661  -0.05731121
+   6    0.0005842  -0.01003692
  
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =     -37.7788414
+Final NOF Total Energy =     -37.7697620
  
 Total Orbital Internal Iterations = 10
-Total Occupation Internal Iterations = 0
+Total Occupation Internal Iterations = 2
  
-Elapsed time:   48.06 Seconds
+Elapsed time:   54.91 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -64,10 +56,6 @@ Elapsed time:   48.06 Seconds
   1     C     6.000       0.000
 
 ---------------------------------
-   M Diagnostic: 0.16
+   M Diagnostic: 0.14
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/287176 to /home-nas/pobleyef/Slim-NOF/ncwo1/Slim05/GNOFa20/arina.287176
-mkdir -p /home-nas/pobleyef/Slim-NOF/ncwo1/Slim05/GNOFa20/arina.287176
-mv /scratch/pobleyef/287176/* /home-nas/pobleyef/Slim-NOF/ncwo1/Slim05/GNOFa20/arina.287176

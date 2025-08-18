@@ -1,16 +1,8 @@
-W4-11_120_t-hooo
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nh038
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/212396
-/scratch/pobleyef/212396 directory
-cp W4-11_120_t-hooo.jl W4-11_120_t-hooo.jld2 to  /scratch/pobleyef/212396/.
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    4.20 Seconds
+Elapsed time:    3.68 Seconds
 
 Number of basis functions                   (NBF)    = 201
 Number of auxiliary basis functions         (NBFAUX) = 249
@@ -38,7 +30,7 @@ PNOF8/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    3.0e+01   32    3.9e+01  -297.39385782  -225.88029491 -10296.39385782   0.000543   2.2e-03   2.5e-04 0.05
+     1      10    2.7e+01    0    2.7e+01  -297.39428737  -225.88072446 -10296.39428737   0.000543   2.2e-03   2.5e-04 0.05
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -239,12 +231,12 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =    -225.8802949
+Final NOF Total Energy =    -225.8807245
  
 Total Orbital Internal Iterations = 10
-Total Occupation Internal Iterations = 32
+Total Occupation Internal Iterations = 0
  
-Elapsed time:   89.24 Seconds
+Elapsed time:   69.54 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -260,7 +252,3 @@ Elapsed time:   89.24 Seconds
    M Diagnostic: 0.05
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/212396 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFa25/arina.212396
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFa25/arina.212396
-mv /scratch/pobleyef/212396/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFa25/arina.212396

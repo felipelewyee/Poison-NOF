@@ -1,18 +1,8 @@
-BH76-hf2ts
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na17
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/283688
-/scratch/pobleyef/283688 directory
-cp BH76-hf2ts.jl BH76-hf2ts.jld2 to  /scratch/pobleyef/283688/.
-BH76-hf2ts_C.jld2 not found
-BH76-hf2ts_n.jld2 not found
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    9.73 Seconds
+Elapsed time:    2.90 Seconds
 
 Number of basis functions                   (NBF)    = 144
 Number of auxiliary basis functions         (NBFAUX) = 172
@@ -39,22 +29,7 @@ PNOF8/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    4.1e+01    4    2.1e+01  -226.80709390  -193.36486238 -10225.80709390   0.884503   3.5e+00   4.0e-05 0.00
-     2      10    2.2e+01    8    6.3e-02  -231.52781414  -198.08558261    -4.72072023   0.306330   1.2e+00   2.0e-04 0.02
-     3      10    2.8e+01    9    1.7e-02  -232.63811475  -199.19588322    -1.11030061   0.301422   1.2e+00   1.2e-04 0.03
-     4      10    2.6e+01    8    5.2e-02  -232.83944567  -199.39721414    -0.20133092   0.298856   1.2e+00   7.4e-05 0.04
-     5      10    2.3e+01    5    5.4e-02  -232.91854897  -199.47631745    -0.07910330   0.281011   1.1e+00   2.0e-04 0.05
-     6      10    2.6e+01    6    6.0e-02  -232.96701388  -199.52478235    -0.04846491   0.296211   1.2e+00   7.8e-05 0.06
-     7      10    2.3e+01    4    9.6e-03  -232.98778266  -199.54555113    -0.02076878   0.305115   1.2e+00   1.1e-04 0.06
-     8      10    2.0e+01    4    3.1e-02  -233.00029263  -199.55806110    -0.01250997   0.287024   1.1e+00   2.0e-04 0.07
-     9      10    2.2e+01    5    3.9e-03  -233.02359986  -199.58136833    -0.02330723   0.261249   1.0e+00   1.5e-04 0.07
-    10      10    1.8e+01    0    1.4e-02  -233.02372022  -199.58148870    -0.00012036   0.261249   1.0e+00   1.5e-04 0.07
-    11      30    5.3e+01    5    2.9e-02  -233.09437433  -199.65214280    -0.07065411   0.012582   5.0e-02   1.4e-04 0.07
-    12      30    5.7e+01    5    2.4e-02  -233.10268651  -199.66045499    -0.00831218   0.006181   2.5e-02   1.6e-04 0.07
-    13      30    5.0e+01    4    4.1e-02  -233.10378636  -199.66155484    -0.00109985   0.006401   2.6e-02   2.3e-04 0.07
-    14      30    5.2e+01    3    2.4e-03  -233.10382623  -199.66159470    -0.00003987   0.006709   2.7e-02   1.6e-04 0.07
-    15      30    5.0e+01    0    8.7e-02  -233.10383206  -199.66160054    -0.00000583   0.006709   2.7e-02   1.6e-04 0.07
-    16      42    6.9e+01    1    1.2e-02  -233.10406152  -199.66183000    -0.00022946   0.000472   1.9e-03   8.9e-05 0.07
+     1      10    2.0e+01    0    2.5e+01  -233.10406226  -199.66183073 -10232.10406226   0.000472   1.9e-03   8.9e-05 0.07
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -81,12 +56,12 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =    -199.6618300
+Final NOF Total Energy =    -199.6618307
  
-Total Orbital Internal Iterations = 292
-Total Occupation Internal Iterations = 71
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:  617.83 Seconds
+Elapsed time:   59.56 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -101,7 +76,3 @@ Elapsed time:  617.83 Seconds
    M Diagnostic: 0.07
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/283688 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFm25/arina.283688
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFm25/arina.283688
-mv /scratch/pobleyef/283688/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFm25/arina.283688

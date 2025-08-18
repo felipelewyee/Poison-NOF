@@ -1,16 +1,8 @@
-SIE4x4-h2+_1.5
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na18
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/284254
-/scratch/pobleyef/284254 directory
-cp SIE4x4-h2+_1.5.jl SIE4x4-h2+_1.5.jld2 to  /scratch/pobleyef/284254/.
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    2.30 Seconds
+Elapsed time:    2.56 Seconds
 
 Number of basis functions                   (NBF)    = 60
 Number of auxiliary basis functions         (NBFAUX) = 36
@@ -36,7 +28,7 @@ PNOF8/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.6e+01    0    2.4e+00    -0.91121698    -0.57754381 -9999.91121698   0.000000   1.6e-15   0.0e+00 0.00
+     1       2    2.2e+01    0    3.0e+00    -0.91121698    -0.57754381 -9999.91121698   0.000000   3.1e-08   0.0e+00 0.00
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -47,10 +39,10 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
 Final NOF Total Energy =      -0.5775438
  
-Total Orbital Internal Iterations = 10
+Total Orbital Internal Iterations = 2
 Total Occupation Internal Iterations = 0
  
-Elapsed time:   46.02 Seconds
+Elapsed time:   61.31 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -64,7 +56,3 @@ Elapsed time:   46.02 Seconds
    M Diagnostic: 0.00
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/284254 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFm/arina.284254
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFm/arina.284254
-mv /scratch/pobleyef/284254/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/GNOFm/arina.284254

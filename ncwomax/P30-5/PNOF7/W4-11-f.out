@@ -1,5 +1,8 @@
 Computing Integrals
-Elapsed time:    2.82 Seconds
+Basis Set                                            = def2-qzvp
+Auxiliary Basis Set                                  = def2-universal-jkfit
+Gaussian Type                                        = Spherical
+Elapsed time:    2.44 Seconds
 
 Number of basis functions                   (NBF)    = 57
 Number of auxiliary basis functions         (NBFAUX) = 77
@@ -20,25 +23,11 @@ Geometry
 No violations of the orthonormality
 No violations of the orthonormality
  
-PNOF7/ADAM Calculation
+PNOF7/ADABelief Calculation
 ==================
  
-  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    Grad_orb  Grad_occ
-0.000210680651144937
-0.0002994929902962177
-     1      10    1.7e+01    2    2.7e+01   -99.54008690   -99.54008690 -10098.54008690   0.103418   8.2e-01   2.0e-04 0.01
-0.00017890002293725806
-0.0002727947741394775
-     2      30    4.9e+00    3    6.8e-03   -99.54451025   -99.54451025    -0.00442336   0.000706   4.7e-03   1.8e-04 0.01
-0.0
-0.0
-     3      30    4.9e+00    0    6.5e-03   -99.54452487   -99.54452487    -0.00001462   0.000485   3.0e-03   1.6e-04 0.01
-0.0
-0.0
-     4      40    6.1e+00    0    1.4e-02   -99.54452604   -99.54452604    -0.00000117   0.000138   9.3e-04   1.6e-04 0.01
-0.0
-0.0
-     5      45    5.8e+00    0    1.3e-02   -99.54452684   -99.54452684    -0.00000080   0.000098   6.1e-04   1.6e-04 0.01
+  Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
+     1      10    2.0e+01    0    2.4e+01   -99.54452684   -99.54452684 -10098.54452684   0.000098   3.9e-04   1.6e-04 0.01
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -105,10 +94,10 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
 Final NOF Total Energy =     -99.5445268
  
-Total Orbital Internal Iterations = 155
-Total Occupation Internal Iterations = 5
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:   92.86 Seconds
+Elapsed time:   57.23 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    

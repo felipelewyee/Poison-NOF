@@ -1,18 +1,8 @@
-SIE4x4-he2+_1.75
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nagpu02
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/283650
-/scratch/pobleyef/283650 directory
-cp SIE4x4-he2+_1.75.jl SIE4x4-he2+_1.75.jld2 to  /scratch/pobleyef/283650/.
-SIE4x4-he2+_1.75_C.jld2 not found
-SIE4x4-he2+_1.75_n.jld2 not found
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    2.36 Seconds
+Elapsed time:    2.66 Seconds
 
 Number of basis functions                   (NBF)    = 60
 Number of auxiliary basis functions         (NBFAUX) = 46
@@ -38,41 +28,35 @@ PNOF8/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.6e+01    3    2.0e+01    -5.99796767    -4.87197510 -10004.99796767   0.021727   8.7e-02   1.4e-06 0.02
-     2      10    5.0e-03    2    2.7e-04    -6.01840722    -4.89241465    -0.02043955   0.011662   4.7e-02   2.6e-05 0.02
-     3      10    4.6e-03    1    2.2e-04    -6.01907834    -4.89308577    -0.00067112   0.010929   4.4e-02   2.0e-05 0.03
-     4      10    4.4e-03    0    2.0e-04    -6.01908898    -4.89309641    -0.00001064   0.012791   5.1e-02   7.3e-05 0.03
-     5      19    9.0e-03    1    4.8e-04    -6.01985311    -4.89386054    -0.00076413   0.000325   1.3e-03   3.5e-05 0.02
+     1      10    2.0e+01    2    2.7e+01    -6.01492017    -4.88892760 -10005.01492017   0.002035   8.1e-03   2.3e-06 0.02
+     2      20    8.6e-03    2    4.6e-04    -6.01600169    -4.89000911    -0.00108151   0.001794   7.2e-03   7.6e-07 0.02
+     3      20    7.0e-03    2    1.8e-04    -6.01659368    -4.89060111    -0.00059199   0.000977   3.9e-03   1.0e-06 0.02
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
-   1    1.9756434  -1.38885635
-   2    1.0000000  -0.81663278
-   3    0.0243566  -0.01769430
+   1    1.9828707  -1.34328630
+   2    1.0000000  -0.86346150
+   3    0.0171293  -0.01604338
  
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =      -4.8938605
+Final NOF Total Energy =      -4.8906011
  
-Total Orbital Internal Iterations = 59
-Total Occupation Internal Iterations = 7
+Total Orbital Internal Iterations = 50
+Total Occupation Internal Iterations = 6
  
-Elapsed time:   47.75 Seconds
+Elapsed time:   61.30 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
 ---------------------------------
  Idx  Atom   Population   Charge 
 ---------------------------------
-  1    He     1.372       0.628
-  2    He     1.628       0.372
+  1    He     1.225       0.775
+  2    He     1.775       0.225
 
 ---------------------------------
    M Diagnostic: 0.02
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/283650 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFa/arina.283650
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFa/arina.283650
-mv /scratch/pobleyef/283650/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOFa/arina.283650

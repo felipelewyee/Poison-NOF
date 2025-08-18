@@ -1,16 +1,8 @@
-W4-11-s4-c2v
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na14
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/284168
-/scratch/pobleyef/284168 directory
-cp W4-11-s4-c2v.jl W4-11-s4-c2v.jld2 to  /scratch/pobleyef/284168/.
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    7.67 Seconds
+Elapsed time:    5.73 Seconds
 
 Number of basis functions                   (NBF)    = 280
 Number of auxiliary basis functions         (NBFAUX) = 512
@@ -38,9 +30,7 @@ PNOF5/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    4.5e+01    0    2.0e+01 -1924.21666133 -1590.51773880 -11923.21666133   0.001211   4.8e-03   2.2e-04 0.56
-     2      30    7.0e+01    0    2.2e-01 -1924.21666133 -1590.51773880     0.00000000   0.001211   4.8e-03   2.2e-04 0.56
-     3      50    1.3e+02    3    4.6e-01 -1924.21679020 -1590.51786767    -0.00012887   0.000787   3.1e-03   2.2e-04 0.56
+     1      10    3.2e+01    0    2.9e+01 -1924.21682004 -1590.51789752 -11923.21682004   0.000787   3.1e-03   2.2e-04 0.56
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -304,12 +294,12 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =   -1590.5178677
+Final NOF Total Energy =   -1590.5178975
  
-Total Orbital Internal Iterations = 90
-Total Occupation Internal Iterations = 3
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:  284.42 Seconds
+Elapsed time:   79.18 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -325,7 +315,3 @@ Elapsed time:  284.42 Seconds
    M Diagnostic: 0.56
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/284168 to /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/PNOF5/arina.284168
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/PNOF5/arina.284168
-mv /scratch/pobleyef/284168/* /home-nas/pobleyef/Poison-NOF/ncwomax/P30-5/PNOF5/arina.284168

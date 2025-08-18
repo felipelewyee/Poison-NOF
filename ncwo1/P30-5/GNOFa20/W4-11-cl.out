@@ -1,16 +1,8 @@
-W4-11-cl
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on na14
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/287179
-/scratch/pobleyef/287179 directory
-cp W4-11-cl.jl W4-11-cl.jld2 to  /scratch/pobleyef/287179/.
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    2.80 Seconds
+Elapsed time:    3.25 Seconds
 
 Number of basis functions                   (NBF)    = 70
 Number of auxiliary basis functions         (NBFAUX) = 128
@@ -35,41 +27,37 @@ PNOF8/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    1.6e+01    0    2.0e+01  -459.75805053  -459.75805053 -10458.75805053   0.001472   5.9e-03   1.9e-04 0.02
-     2      30    7.4e-02    0    7.7e-04  -459.75805053  -459.75805053     0.00000000   0.001472   5.9e-03   1.9e-04 0.02
-     3      50    8.6e-02    0    1.1e-03  -459.75805053  -459.75805053     0.00000000   0.001472   5.9e-03   1.9e-04 0.02
-     4      70    1.1e-01    0    7.6e-04  -459.75805053  -459.75805053     0.00000000   0.001472   5.9e-03   1.9e-04 0.02
-     5      64    1.0e-01    0    4.6e-04  -459.75805407  -459.75805407    -0.00000354   0.000494   2.0e-03   1.9e-04 0.02
+     1      10    1.9e+01    2    2.3e+01  -459.75362273  -459.75362273 -10458.75362273   0.000612   2.4e-03   1.8e-04 0.02
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
-   1    1.9999653  -104.92829475
-   2    1.9992226  -10.61637998
-   3    1.9989663  -8.07716275
-   4    1.9986035  -8.07674722
-   5    1.9989778  -8.07568589
-   6    1.9838009  -1.07815121
-   7    1.9883010  -0.50918217
-   8    1.9774874  -0.50232746
-   9    1.0000000  -0.29189565
-  10    0.0225126  -0.02494305
-  11    0.0116990  -0.02897820
-  12    0.0161991  -0.02377567
-  13    0.0010222  -0.01886832
-  14    0.0013965  -0.02103685
-  15    0.0010337  -0.01893272
-  16    0.0007774  -0.01707151
-  17    0.0000347  -0.00631572
+   1    1.9999656  -104.92823449
+   2    1.9992373  -10.61641650
+   3    1.9989831  -8.07721314
+   4    1.9986238  -8.07676655
+   5    1.9989876  -8.07568115
+   6    1.9844037  -1.07748418
+   7    1.9884859  -0.50880321
+   8    1.9778967  -0.50189655
+   9    1.0000000  -0.29069958
+  10    0.0221033  -0.02464401
+  11    0.0115141  -0.02862662
+  12    0.0155963  -0.02337127
+  13    0.0010124  -0.01873569
+  14    0.0013762  -0.02084898
+  15    0.0010169  -0.01877608
+  16    0.0007627  -0.01688562
+  17    0.0000344  -0.00627247
  
 ----------------
  Final Energies 
 ----------------
-Final NOF Total Energy =    -459.7580541
+Final NOF Total Energy =    -459.7536227
  
-Total Orbital Internal Iterations = 224
-Total Occupation Internal Iterations = 0
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 2
  
-Elapsed time:   47.57 Seconds
+Elapsed time:   54.50 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -82,7 +70,3 @@ Elapsed time:   47.57 Seconds
    M Diagnostic: 0.02
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/287179 to /home-nas/pobleyef/Slim-NOF/ncwo1/Slim05/GNOFa20/arina.287179
-mkdir -p /home-nas/pobleyef/Slim-NOF/ncwo1/Slim05/GNOFa20/arina.287179
-mv /scratch/pobleyef/287179/* /home-nas/pobleyef/Slim-NOF/ncwo1/Slim05/GNOFa20/arina.287179

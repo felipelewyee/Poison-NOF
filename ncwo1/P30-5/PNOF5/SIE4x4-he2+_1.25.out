@@ -1,18 +1,8 @@
-SIE4x4-he2+_1.25
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nh014
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/283448
-/scratch/pobleyef/283448 directory
-cp SIE4x4-he2+_1.25.jl SIE4x4-he2+_1.25.jld2 to  /scratch/pobleyef/283448/.
-SIE4x4-he2+_1.25_C.jld2 not found
-SIE4x4-he2+_1.25_n.jld2 not found
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    3.33 Seconds
+Elapsed time:    2.35 Seconds
 
 Number of basis functions                   (NBF)    = 60
 Number of auxiliary basis functions         (NBFAUX) = 46
@@ -38,8 +28,7 @@ PNOF5/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    2.8e+01    0    3.3e+01    -6.48097924    -4.90458962 -10005.48097924   0.021792   8.7e-02   8.6e-05 0.00
-     2      20    4.7e-02    0    2.6e-04    -6.48337558    -4.90698596    -0.00239634   0.000652   2.6e-03   1.0e-04 0.00
+     1      10    2.0e+01    0    2.4e+01    -6.48337558    -4.90698596 -10005.48337558   0.000652   2.6e-03   1.0e-04 0.00
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -52,10 +41,10 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
 Final NOF Total Energy =      -4.9069860
  
-Total Orbital Internal Iterations = 30
+Total Orbital Internal Iterations = 10
 Total Occupation Internal Iterations = 0
  
-Elapsed time:   80.23 Seconds
+Elapsed time:   58.16 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -69,7 +58,3 @@ Elapsed time:   80.23 Seconds
    M Diagnostic: 0.00
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/283448 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF5/arina.283448
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF5/arina.283448
-mv /scratch/pobleyef/283448/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/PNOF5/arina.283448

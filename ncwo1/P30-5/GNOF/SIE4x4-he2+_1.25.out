@@ -1,18 +1,8 @@
-SIE4x4-he2+_1.25
-/software/eb2024/easybuild/software/common/software/Julia/1.11.3-linux-x86_64/bin/julia
-Job runing on nh013
-Choosing scratch ...
-Automatic scratch folder selection
-/scratch/pobleyef/283198
-/scratch/pobleyef/283198 directory
-cp SIE4x4-he2+_1.25.jl SIE4x4-he2+_1.25.jld2 to  /scratch/pobleyef/283198/.
-SIE4x4-he2+_1.25_C.jld2 not found
-SIE4x4-he2+_1.25_n.jld2 not found
 Computing Integrals
 Basis Set                                            = def2-qzvp
 Auxiliary Basis Set                                  = def2-universal-jkfit
 Gaussian Type                                        = Spherical
-Elapsed time:    3.36 Seconds
+Elapsed time:    2.37 Seconds
 
 Number of basis functions                   (NBF)    = 60
 Number of auxiliary basis functions         (NBFAUX) = 46
@@ -38,10 +28,7 @@ PNOF8/ADABelief Calculation
 ==================
  
   Nitext  Nit_orb  Time   Nit_occ  Time         Eelec          Etot           Ediff      maxdiff    MaxGrad_orb  Grad_occ
-     1      10    2.8e+01    4    3.4e+01    -6.49123262    -4.91484300 -10005.49123262   0.022281   8.9e-02   1.3e-05 0.01
-     2      10    6.2e-03    2    3.3e-04    -6.49999001    -4.92360040    -0.00875739   0.012708   5.1e-02   1.6e-06 0.01
-     3      10    5.9e-03    0    2.4e-04    -6.50030810    -4.92391849    -0.00031809   0.012389   5.0e-02   1.2e-04 0.01
-     4      19    1.0e-02    0    2.4e-04    -6.50093544    -4.92454583    -0.00062734   0.000219   8.7e-04   8.9e-05 0.01
+     1      10    2.0e+01    0    2.5e+01    -6.50093544    -4.92454583 -10005.50093544   0.000219   8.7e-04   8.9e-05 0.01
  
 RESULTS OF THE OCCUPATION OPTIMIZATION
 ========================================
@@ -54,10 +41,10 @@ RESULTS OF THE OCCUPATION OPTIMIZATION
 ----------------
 Final NOF Total Energy =      -4.9245458
  
-Total Orbital Internal Iterations = 49
-Total Occupation Internal Iterations = 6
+Total Orbital Internal Iterations = 10
+Total Occupation Internal Iterations = 0
  
-Elapsed time:   81.04 Seconds
+Elapsed time:   58.66 Seconds
 
 ---------------------------------
    Lowdin Population Analysis    
@@ -71,7 +58,3 @@ Elapsed time:   81.04 Seconds
    M Diagnostic: 0.01
 ---------------------------------
 
-Recovering execution output...
-Moving from /scratch/pobleyef/283198 to /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOF/arina.283198
-mkdir -p /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOF/arina.283198
-mv /scratch/pobleyef/283198/* /home-nas/pobleyef/Poison-NOF/ncwo1/P30-5/GNOF/arina.283198
